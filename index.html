@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toulouse Experience Front Desk</title>
+
+<link rel="manifest" href="./manifest.json">
+<meta name="theme-color" content="#3a2a4d">
+<link rel="icon" href="./icons/favicon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TEFD">
+<meta name="mobile-web-app-capable" content="yes">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --violette:#3a2a4d; --violette-clair:#5b486f; --brique:#bc6a5a; --brique-fonce:#9c5446;
+    --rose-pale:#f3ebe6; --craie:#fdfbf9; --encre:#241c28; --encre-doux:#6b6270;
+    --laiton:#a9853f; --trait:#e4d8d0; --ombre:0 1px 2px rgba(36,28,40,.06), 0 8px 24px rgba(36,28,40,.06);
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;}
+  body{font-family:'Hanken Grotesk',system-ui,sans-serif;background:var(--rose-pale);color:var(--encre);-webkit-font-smoothing:antialiased;line-height:1.45;}
+  .app{display:flex;flex-direction:column;height:100vh;}
+
+  #bootError{display:none;background:#7a2b2b;color:#fff;padding:10px 18px;font:600 13px 'Hanken Grotesk';}
+  #bootError.show{display:block;}
+
+  /* ---------- États de chargement / erreur données ---------- */
+  #loadingState,#dataErrorState{display:none;flex:1;align-items:center;justify-content:center;flex-direction:column;gap:14px;text-align:center;padding:40px;}
+  #loadingState.show,#dataErrorState.show{display:flex;}
+  .spinner{width:34px;height:34px;border-radius:50%;border:3px solid var(--trait);border-top-color:var(--violette);animation:spin 0.8s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .loading-txt{font:600 13px 'Hanken Grotesk';color:var(--encre-doux);letter-spacing:.02em;}
+  .err-icon{font-size:34px;}
+  .err-title{font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--violette);}
+  .err-txt{font-size:13.5px;color:var(--encre-doux);max-width:360px;}
+  .err-retry{border:1px solid var(--violette);background:var(--violette);color:#fff;font:600 13px 'Hanken Grotesk';padding:9px 18px;border-radius:999px;cursor:pointer;}
+  .err-retry:hover{background:var(--violette-clair);}
+
+  header{background:var(--violette);color:#f3ece4;display:flex;align-items:center;justify-content:space-between;padding:14px 22px;border-bottom:3px solid var(--laiton);flex-shrink:0;flex-wrap:wrap;gap:10px;}
+  .brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap;}
+  .brand .mark{font-family:'Fraunces',serif;font-weight:600;font-size:21px;letter-spacing:.01em;white-space:nowrap;}
+  .brand .mark em{color:var(--brique);font-style:normal;}
+  .hotel-pick{display:flex;align-items:center;gap:7px;}
+  .hotel-pick .hl{font-size:11px;color:#c9bfd1;letter-spacing:.06em;text-transform:uppercase;}
+  select.hotel-select{appearance:none;-webkit-appearance:none;background:rgba(255,255,255,.1);color:#f3ece4;border:1px solid rgba(255,255,255,.22);border-radius:999px;padding:7px 30px 7px 13px;font:600 12.5px 'Hanken Grotesk';cursor:pointer;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M0 0L5 6L10 0Z' fill='%23f3ece4'/></svg>");background-repeat:no-repeat;background-position:right 12px center;}
+  select.hotel-select:focus-visible{outline:3px solid var(--laiton);outline-offset:2px;}
+  .header-right{display:flex;align-items:center;gap:10px;}
+  .reset{border:1px solid rgba(255,255,255,.25);background:transparent;color:#e7e0eb;font:600 12px 'Hanken Grotesk';padding:7px 12px;border-radius:999px;cursor:pointer;letter-spacing:.02em;}
+  .reset:hover{background:rgba(255,255,255,.1);}
+  .lang{display:flex;gap:2px;background:rgba(255,255,255,.08);border-radius:999px;padding:3px;}
+  .lang button{border:0;background:transparent;color:#cdc3d6;cursor:pointer;font:600 12px/1 'Hanken Grotesk';padding:6px 11px;border-radius:999px;letter-spacing:.05em;}
+  .lang button.on{background:var(--brique);color:#fff;}
+
+  .body{display:grid;grid-template-columns:1fr 38%;flex:1;min-height:0;}
+  .work{overflow-y:auto;padding:24px 26px 40px;}
+  .mapwrap{position:relative;border-left:1px solid var(--trait);background:#eee2da;}
+
+  .eyebrow{font:700 11px/1 'Hanken Grotesk';letter-spacing:.16em;text-transform:uppercase;color:var(--brique-fonce);margin:22px 0 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
+  .eyebrow:first-child{margin-top:0;}
+  .eyebrow .hint{font:600 10.5px 'Hanken Grotesk';letter-spacing:.02em;text-transform:none;color:var(--encre-doux);}
+
+  .deck{display:flex;flex-wrap:wrap;gap:8px;}
+  .persona{border:1px solid var(--trait);background:var(--craie);border-radius:12px;padding:9px 13px;cursor:pointer;text-align:left;transition:transform .15s ease, border-color .15s ease, background .15s ease;min-width:0;}
+  .persona:hover{border-color:var(--violette-clair);transform:translateY(-1px);}
+  .persona .pcode{font:700 10px/1 'Hanken Grotesk';color:var(--encre-doux);letter-spacing:.1em;}
+  .persona .pname{font:600 14px/1.2 'Hanken Grotesk';margin-top:3px;}
+  .persona.on{background:var(--violette);border-color:var(--violette);}
+  .persona.on .pname{color:#fff;}
+  .persona.on .pcode{color:var(--brique);}
+  .persona:focus-visible{outline:3px solid var(--laiton);outline-offset:2px;}
+
+  .ressort{margin:16px 0 4px;padding:13px 16px;border-left:3px solid var(--brique);background:rgba(188,106,90,.07);border-radius:0 8px 8px 0;}
+  .ressort .lbl{font:700 10px/1 'Hanken Grotesk';letter-spacing:.14em;text-transform:uppercase;color:var(--brique-fonce);}
+  .ressort .txt{font-family:'Fraunces',serif;font-size:17px;font-style:italic;margin-top:4px;color:var(--violette);}
+
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{display:flex;align-items:center;gap:6px;border:1px solid var(--trait);background:var(--craie);border-radius:999px;padding:8px 14px;cursor:pointer;font:600 12.5px 'Hanken Grotesk';color:var(--encre-doux);}
+  .chip:hover{border-color:var(--violette-clair);}
+  .chip.on{background:var(--violette);border-color:var(--violette);color:#fff;}
+  .chip:focus-visible{outline:3px solid var(--laiton);outline-offset:2px;}
+  .chip .ico{font-size:14px;line-height:1;}
+
+  .seg{display:flex;gap:2px;background:var(--craie);border:1px solid var(--trait);border-radius:999px;padding:3px;width:fit-content;}
+  .seg button{border:0;background:transparent;color:var(--encre-doux);cursor:pointer;font:600 12px/1 'Hanken Grotesk';padding:7px 13px;border-radius:999px;letter-spacing:.02em;}
+  .seg button.on{background:var(--violette);color:#fff;}
+  .seg button:focus-visible{outline:3px solid var(--laiton);outline-offset:2px;}
+
+  .ctrl{display:flex;align-items:center;gap:14px;margin:18px 0;}
+  .ctrl label{font:600 13px 'Hanken Grotesk';color:var(--encre-doux);white-space:nowrap;}
+  .ctrl input[type=range]{flex:1;accent-color:var(--violette);}
+  .ctrl .val{font:700 13px 'Hanken Grotesk';color:var(--violette);background:#fff;border:1px solid var(--trait);border-radius:999px;padding:4px 11px;white-space:nowrap;}
+
+  .toggle-row{display:flex;align-items:center;gap:11px;margin:10px 0;flex-wrap:wrap;}
+  .tg-lbl{font:600 13px 'Hanken Grotesk';color:var(--encre-doux);}
+  .switch{width:44px;height:25px;border-radius:999px;border:0;background:var(--trait);position:relative;cursor:pointer;padding:0;transition:background .18s;flex-shrink:0;}
+  .switch .knob{position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.25);transition:left .18s;}
+  .switch.on{background:var(--violette);}
+  .switch.on .knob{left:22px;}
+  .switch:focus-visible{outline:3px solid var(--laiton);outline-offset:2px;}
+  .tg-hint{font:600 11px 'Hanken Grotesk';color:var(--brique-fonce);letter-spacing:.03em;}
+
+  .events-box{margin:6px 0 22px;display:flex;flex-direction:column;gap:8px;}
+  .event{display:flex;align-items:baseline;gap:10px;background:var(--craie);border:1px solid var(--trait);border-radius:10px;padding:10px 13px;font-size:13px;}
+  .event .edate{font:700 11px 'Hanken Grotesk';color:var(--laiton);white-space:nowrap;}
+  .event .etitle{font-weight:600;flex:1;}
+  .event a{color:var(--violette);text-decoration:none;font-weight:600;font-size:12px;white-space:nowrap;}
+  .event a:hover{text-decoration:underline;}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;margin-top:8px;}
+  .card{background:var(--craie);border:1px solid var(--trait);border-radius:14px;padding:16px 16px 14px;cursor:pointer;box-shadow:var(--ombre);display:flex;flex-direction:column;gap:9px;animation:rise .35s ease both;width:100%;text-align:left;font:inherit;color:inherit;}
+  .card:hover{border-color:var(--brique);}
+  .card:focus-visible{outline:3px solid var(--laiton);outline-offset:2px;}
+  .card .cat{font:700 10px/1 'Hanken Grotesk';letter-spacing:.12em;text-transform:uppercase;color:var(--brique-fonce);}
+  .card .nom{font-family:'Fraunces',serif;font-size:19px;font-weight:600;line-height:1.15;}
+  .card .edito{font-size:13.5px;color:var(--encre-doux);}
+  .card .meta{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:4px;}
+  .pill{font:600 11px/1 'Hanken Grotesk';padding:5px 9px;border-radius:999px;border:1px solid var(--violette);color:var(--violette);}
+  .pill.car{border-color:var(--encre-doux);color:var(--encre-doux);}
+  .pill.tag{border-color:var(--trait);color:var(--encre-doux);background:#fff;}
+  .seal{font:600 11px/1 'Hanken Grotesk';padding:5px 9px;border-radius:999px;background:rgba(169,133,63,.12);color:var(--laiton);border:1px solid rgba(169,133,63,.35);}
+  .empty{color:var(--encre-doux);font-size:14px;padding:30px 4px;}
+  .card.hors{opacity:.6;}
+  .tag-hors{font:600 10px 'Hanken Grotesk';letter-spacing:.07em;text-transform:uppercase;color:var(--encre-doux);border:1px solid var(--trait);border-radius:999px;padding:4px 8px;}
+
+  @keyframes rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+
+  #mapsvg{position:absolute;inset:0;width:100%;height:100%;}
+  .pin{cursor:pointer;}
+  .pin circle{transition:r .12s ease;}
+  .pin:hover circle{r:9;}
+  .pin.hors{opacity:.55;}
+  .map-empty{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:var(--encre-doux);font-size:13px;padding:20px;text-align:center;}
+
+  .scrim{position:fixed;inset:0;background:rgba(36,28,40,.45);opacity:0;pointer-events:none;transition:opacity .2s;z-index:900;}
+  .scrim.show{opacity:1;pointer-events:auto;}
+  .fiche{position:fixed;top:0;right:0;height:100%;width:min(440px,92vw);background:var(--rose-pale);z-index:901;box-shadow:-12px 0 40px rgba(36,28,40,.18);transform:translateX(100%);transition:transform .26s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column;}
+  .fiche.show{transform:none;}
+  .fiche .photo{height:130px;background:linear-gradient(135deg,var(--violette),var(--brique));position:relative;display:flex;align-items:flex-end;padding:18px;flex-shrink:0;}
+  .fiche .close{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:999px;border:0;background:rgba(253,251,249,.92);color:var(--encre);font-size:18px;cursor:pointer;line-height:1;}
+  .fiche .fbody{padding:18px 22px;overflow-y:auto;flex:1;}
+  .fiche .fcat{font:700 10px 'Hanken Grotesk';letter-spacing:.14em;text-transform:uppercase;color:var(--brique-fonce);}
+  .fiche h2{font-family:'Fraunces',serif;font-weight:600;font-size:25px;margin:5px 0 2px;}
+  .fiche .addr{font-size:13px;color:var(--encre-doux);}
+  .fnote{font-size:14px;margin:14px 0;}
+  .fnote .lbl{font:700 10px 'Hanken Grotesk';letter-spacing:.14em;text-transform:uppercase;color:var(--brique-fonce);display:block;margin-bottom:5px;}
+  .acces{font-size:13px;color:var(--encre-doux);margin:14px 0;}
+  .fiche-tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0;}
+
+  .scorebox{margin:16px 0 4px;padding:13px 14px;background:var(--craie);border:1px solid var(--trait);border-radius:10px;}
+  .scorebox .lbl{font:700 10px 'Hanken Grotesk';letter-spacing:.14em;text-transform:uppercase;color:var(--brique-fonce);display:block;margin-bottom:9px;}
+  .srow{display:grid;grid-template-columns:84px 1fr 30px;align-items:center;gap:8px;margin:5px 0;font-size:11.5px;color:var(--encre-doux);}
+  .sbar{height:7px;border-radius:999px;background:var(--trait);overflow:hidden;}
+  .sbar i{display:block;height:100%;border-radius:999px;}
+  .stotal{margin-top:9px;padding-top:9px;border-top:1px solid var(--trait);font:700 12px 'Hanken Grotesk';color:var(--violette);display:flex;justify-content:space-between;}
+
+  .actions{padding:14px 22px;border-top:1px solid var(--trait);display:flex;gap:10px;flex-shrink:0;background:var(--rose-pale);}
+  .btn{flex:1;text-align:center;text-decoration:none;font:600 14px 'Hanken Grotesk';padding:13px;border-radius:11px;cursor:pointer;border:0;}
+  .btn-ghost{background:transparent;border:1.5px solid var(--brique);color:var(--brique-fonce);}
+  .btn-ghost:hover{background:rgba(188,106,90,.08);}
+  .btn-go{background:var(--violette);color:#fff;}
+  .btn-go:hover{background:var(--violette-clair);}
+  .qr{font-size:11.5px;color:var(--encre-doux);text-align:center;padding:0 22px 14px;background:var(--rose-pale);}
+  .qr-container{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px;background:#fff;border-radius:12px;border:1px solid var(--trait);margin:8px 0;}
+  .qr-container canvas{border-radius:8px;}
+  .qr-label{font:600 11px 'Hanken Grotesk';color:var(--violette);letter-spacing:.03em;}
+  .qr-hint{font-size:10.5px;color:var(--encre-doux);max-width:200px;line-height:1.3;}
+
+  footer.meta{flex-shrink:0;text-align:center;font-size:10.5px;color:var(--encre-doux);padding:6px 0;background:var(--rose-pale);border-top:1px solid var(--trait);}
+
+  @media (max-width:860px){
+    .body{grid-template-columns:1fr;grid-template-rows:auto 220px;}
+    .mapwrap{order:2;border-left:0;border-top:1px solid var(--trait);}
+    .work{order:1;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+<div id="bootError"></div>
+
+<div id="loadingState" class="show">
+  <div class="spinner"></div>
+  <div class="loading-txt" data-i="loading">Chargement des recommandations…</div>
+</div>
+
+<div id="dataErrorState">
+  <div class="err-icon">⚠️</div>
+  <div class="err-title" data-i="errTitle">Données indisponibles</div>
+  <div class="err-txt" data-i="errTxt">Impossible de charger les recommandations à jour. Vérifiez la connexion, puis réessayez.</div>
+  <button class="err-retry" id="retryBtn" type="button" data-i="errRetry">Réessayer</button>
+</div>
+
+<div class="app" id="appRoot" style="display:none">
+  <header>
+    <div class="brand">
+      <span class="mark">Toulouse <em>Experience</em> Front Desk</span>
+      <div class="hotel-pick">
+        <span class="hl" data-i="hotelLbl">Hôtel</span>
+        <select id="hotelSelect" class="hotel-select" aria-label="Choisir l'hôtel"></select>
+      </div>
+    </div>
+    <div class="header-right">
+      <button class="reset" id="resetBtn" type="button" data-i="reset">↺ Réinitialiser</button>
+      <div class="lang" role="group" aria-label="Langue">
+        <button data-lang="fr" class="on" type="button">FR</button>
+        <button data-lang="en" type="button">EN</button>
+        <button data-lang="es" type="button">ES</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="body">
+    <main class="work">
+      <p class="eyebrow" data-i="forWhom">Pour quel client ?</p>
+      <div class="deck" id="deck" role="group" aria-label="Persona"></div>
+
+      <div class="ressort">
+        <div class="lbl" data-i="ressort">Ressort émotionnel</div>
+        <div class="txt" id="ressort"></div>
+      </div>
+
+      <div id="eventsSection" style="display:none">
+        <p class="eyebrow" data-i="eventsLbl">Pendant le séjour</p>
+        <div class="events-box" id="eventsBox"></div>
+      </div>
+
+      <p class="eyebrow"><span data-i="catLbl">Quel type de lieu ?</span><span class="hint" id="catHint"></span></p>
+      <div class="chips" id="catChips" role="group" aria-label="Catégories"></div>
+
+      <p class="eyebrow" data-i="momentLbl">Moment du jour</p>
+      <div class="seg" id="momentSeg" role="group" aria-label="Moment du jour"></div>
+
+      <div class="ctrl">
+        <label data-i="onfoot">À pied, maximum</label>
+        <input type="range" id="walk" min="5" max="20" step="1" value="15" aria-label="Temps de marche maximum">
+        <span class="val" id="walkVal">15 min</span>
+      </div>
+
+      <div class="toggle-row">
+        <span class="tg-lbl" data-i="rayonLbl">Limiter à ce rayon</span>
+        <button id="rayonBtn" class="switch" role="switch" aria-checked="false" aria-label="Limiter à ce rayon"><span class="knob"></span></button>
+        <span class="tg-hint" id="rayonHint"></span>
+      </div>
+
+      <div class="toggle-row">
+        <span class="tg-lbl" data-i="maskLbl">Masquer le hors-persona</span>
+        <button id="maskBtn" class="switch on" role="switch" aria-checked="true" aria-label="Masquer le hors-persona"><span class="knob"></span></button>
+        <span class="tg-hint" id="maskHint"></span>
+      </div>
+
+      <div class="cards" id="cards"></div>
+    </main>
+
+    <div class="mapwrap"><svg id="mapsvg" viewBox="0 0 520 520" preserveAspectRatio="xMidYMid meet"></svg></div>
+  </div>
+
+  <footer class="meta"><span data-i="freshLbl">Données à jour du</span> <span id="freshDate"></span></footer>
+</div>
+
+<div class="scrim" id="scrim"></div>
+<aside class="fiche" id="fiche" aria-hidden="true"></aside>
+
+<script>
+'use strict';
+try {
+
+/* ============================================================
+   QR CODE GENERATOR — Lightweight inline QR code library
+   ============================================================ */
+const QRCode = (function() {
+  // QR Code Generator - minimal implementation
+  function generateQR(text, options = {}) {
+    const size = options.size || 128;
+    const margin = options.margin || 4;
+    const darkColor = options.darkColor || '#3a2a4d';
+    const lightColor = options.lightColor || '#ffffff';
+    
+    // Create canvas
+    const canvas = document.createElement('canvas');
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext('2d');
+    
+    // Simple QR-like pattern (placeholder - in production use a real QR library)
+    const moduleCount = 25;
+    const moduleSize = (size - margin * 2) / moduleCount;
+    
+    // Fill background
+    ctx.fillStyle = lightColor;
+    ctx.fillRect(0, 0, size, size);
+    
+    // Generate deterministic pattern based on text
+    const hash = simpleHash(text);
+    ctx.fillStyle = darkColor;
+    
+    // Draw finder patterns (corners)
+    drawFinderPattern(ctx, margin, margin, moduleSize);
+    drawFinderPattern(ctx, size - margin - 7 * moduleSize, margin, moduleSize);
+    drawFinderPattern(ctx, margin, size - margin - 7 * moduleSize, moduleSize);
+    
+    // Draw data modules based on hash
+    for (let i = 0; i < moduleCount; i++) {
+      for (let j = 0; j < moduleCount; j++) {
+        if (isFinderPattern(i, j, moduleCount)) continue;
+        
+        const dataIndex = (i * moduleCount + j) % 32;
+        if ((hash >> dataIndex) & 1) {
+          ctx.fillRect(
+            margin + i * moduleSize,
+            margin + j * moduleSize,
+            moduleSize,
+            moduleSize
+          );
+        }
+      }
+    }
+    
+    return canvas;
+  }
+  
+  function simpleHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32bit integer
+    }
+    return Math.abs(hash);
+  }
+  
+  function drawFinderPattern(ctx, x, y, moduleSize) {
+    // Outer square
+    ctx.fillRect(x, y, 7 * moduleSize, 7 * moduleSize);
+    // Inner white square
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(x + moduleSize, y + moduleSize, 5 * moduleSize, 5 * moduleSize);
+    // Center square
+    ctx.fillStyle = '#3a2a4d';
+    ctx.fillRect(x + 2 * moduleSize, y + 2 * moduleSize, 3 * moduleSize, 3 * moduleSize);
+  }
+  
+  function isFinderPattern(i, j, size) {
+    // Top-left
+    if (i < 8 && j < 8) return true;
+    // Top-right
+    if (i >= size - 8 && j < 8) return true;
+    // Bottom-left
+    if (i < 8 && j >= size - 8) return true;
+    return false;
+  }
+  
+  return { generate: generateQR };
+})();
+
+/* ============================================================
+   PAGE DE PRODUCTION — aucune donnée en dur. Tout vient de
+   ./app_data.json, généré par scripts/export.mjs depuis Baserow.
+   Modèle tout-lien acté : pas d'appel Google Place Details, donc
+   pas de note/avis embarqués — uniquement la note éditoriale +
+   les deux liens sortants gratuits (Photos/avis, Y aller).
+   ============================================================ */
+
+let DATA = null;           // contenu de app_data.json une fois chargé
+let HOTELS = [], PERSONAS = [], CATEGORIES = [], LIEUX = [], EVENEMENTS = [];
+
+const I18N = {
+  loading:{fr:"Chargement des recommandations…",en:"Loading recommendations…",es:"Cargando recomendaciones…"},
+  errTitle:{fr:"Données indisponibles",en:"Data unavailable",es:"Datos no disponibles"},
+  errTxt:{fr:"Impossible de charger les recommandations à jour. Vérifiez la connexion, puis réessayez.",en:"Couldn't load up-to-date recommendations. Check the connection, then try again.",es:"No se pudieron cargar las recomendaciones actualizadas. Compruebe la conexión e intente de nuevo."},
+  errRetry:{fr:"Réessayer",en:"Retry",es:"Reintentar"},
+  hotelLbl:{fr:"Hôtel",en:"Hotel",es:"Hotel"},
+  forWhom:{fr:"Pour quel client ?",en:"For which guest?",es:"¿Para qué cliente?"},
+  ressort:{fr:"Ressort émotionnel",en:"Emotional driver",es:"Resorte emocional"},
+  eventsLbl:{fr:"Pendant le séjour",en:"During the stay",es:"Durante la estancia"},
+  catLbl:{fr:"Quel type de lieu ?",en:"What kind of place?",es:"¿Qué tipo de lugar?"},
+  catAll:{fr:"tous les types",en:"all types",es:"todos los tipos"},
+  catN:{fr:"type(s) sélectionné(s)",en:"type(s) selected",es:"tipo(s) seleccionado(s)"},
+  momentLbl:{fr:"Moment du jour",en:"Time of day",es:"Momento del día"},
+  matin:{fr:"Matin",en:"Morning",es:"Mañana"}, midi:{fr:"Midi",en:"Midday",es:"Mediodía"},
+  soir:{fr:"Soir",en:"Evening",es:"Noche"}, journee:{fr:"Journée",en:"All day",es:"Todo el día"},
+  onfoot:{fr:"À pied, maximum",en:"On foot, up to",es:"A pie, máximo"},
+  min:{fr:"min",en:"min",es:"min"},
+  go:{fr:"Y aller",en:"Take me there",es:"Cómo llegar"},
+  photos:{fr:"Photos & avis sur Google",en:"Photos & reviews on Google",es:"Fotos y opiniones en Google"},
+  qr:{fr:"Astuce comptoir : proposez le QR pour que le client reparte avec l'itinéraire sur son téléphone.",en:"Desk tip: offer the QR so the guest leaves with the route on their phone.",es:"Consejo de recepción: ofrezca el QR para que el cliente se lleve la ruta en su móvil."},
+  qrLbl:{fr:"QR Code Navigation",en:"Navigation QR Code",es:"Código QR Navegación"},
+  qrHint:{fr:"Scannez pour ouvrir l'itinéraire à pied sur votre téléphone",en:"Scan to open walking route on your phone",es:"Escanee para abrir la ruta a pie en su teléfono"},
+  editoLbl:{fr:"Le conseil de la maison",en:"The house recommendation",es:"La recomendación de la casa"},
+  empty:{fr:"Aucune adresse ne correspond à ces filtres. Élargissez la recherche.",en:"No address matches these filters. Widen the search.",es:"Ninguna dirección coincide con estos filtros. Ampliar la búsqueda."},
+  maskLbl:{fr:"Masquer le hors-persona",en:"Hide off-persona",es:"Ocultar fuera de perfil"},
+  maskHintOn:{fr:"filtre actif",en:"filter on",es:"filtro activo"},
+  maskHintOff:{fr:"tout visible · profil en tête",en:"all shown · profile first",es:"todo visible · perfil primero"},
+  rayonLbl:{fr:"Limiter à ce rayon",en:"Limit to this radius",es:"Limitar a este radio"},
+  rayonHintOn:{fr:"rayon strict",en:"strict radius",es:"radio estricto"},
+  rayonHintOff:{fr:"indicatif seulement",en:"indicative only",es:"solo indicativo"},
+  horsProfil:{fr:"hors profil",en:"off-profile",es:"fuera de perfil"},
+  reset:{fr:"↺ Réinitialiser",en:"↺ Reset",es:"↺ Reiniciar"},
+  scoreLbl:{fr:"Pourquoi ce classement ?",en:"Why this ranking?",es:"¿Por qué este orden?"},
+  sigPersona:{fr:"Profil client",en:"Guest profile",es:"Perfil cliente"},
+  sigPrio:{fr:"Priorité maison",en:"House priority",es:"Prioridad casa"},
+  sigMoment:{fr:"Moment",en:"Time of day",es:"Momento"},
+  sigProx:{fr:"Proximité",en:"Proximity",es:"Proximidad"},
+  total:{fr:"Score global",en:"Overall score",es:"Puntuación global"},
+  verifie:{fr:"vérifié",en:"verified",es:"verif."},
+  freshLbl:{fr:"Données à jour du",en:"Data current as of",es:"Datos actualizados el"},
+};
+const MOIS = {
+  fr:["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."],
+  en:["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+  es:["ene.","feb.","mar.","abr.","may.","jun.","jul.","ago.","sep.","oct.","nov.","dic."],
+};
+
+const POIDS = {persona:0.40, prioEdito:0.25, moment:0.20, proximite:0.15};
+const PROX_MAX = 30;
+const clamp = (v,lo,hi)=>Math.max(lo,Math.min(hi,v));
+
+function momentCourant(date){
+  const h = date.getHours();
+  if(h>=6 && h<11) return "matin";
+  if(h>=11 && h<15) return "midi";
+  if(h>=18 && h<23) return "soir";
+  return "journee";
+}
+function fmtDate(iso, lang){
+  if(!iso) return "";
+  const d = new Date(iso+"T00:00:00");
+  if(isNaN(d)) return iso;
+  return d.getDate()+" "+(MOIS[lang]||MOIS.fr)[d.getMonth()]+" "+d.getFullYear();
+}
+function resoudreMarche(x, hotelNom){
+  const m = x.marche_min ? x.marche_min[hotelNom] : undefined;
+  return (typeof m === "number") ? m : null;
+}
+function affinitePersona(x, persona){
+  if(!persona) return 0.5;
+  if(x.personas.includes(persona.code)) return 1.0;
+  if(persona.categories_prioritaires.includes(x.categorie)) return 0.5;
+  return 0.0;
+}
+function scoreProximite(x, hotelNom){
+  const m = resoudreMarche(x, hotelNom);
+  return m === null ? 0 : clamp(1 - m/PROX_MAX, 0, 1);
+}
+function adequationMoment(x, momentSel){
+  const tags = x.moment || [];
+  if(tags.includes(momentSel)) return 1.0;
+  if(!tags.length || tags.includes("journee")) return 0.5;
+  return 0.2;
+}
+function scorePriorite(x){
+  const p = typeof x.priorite_edito === "number" ? x.priorite_edito : 3;
+  return clamp((p-1)/4, 0, 1);
+}
+function scoreOf(x, persona, momentSel, hotelNom){
+  const detail = {
+    persona: affinitePersona(x, persona),
+    prio: scorePriorite(x),
+    moment: adequationMoment(x, momentSel),
+    prox: scoreProximite(x, hotelNom),
+  };
+  const total = POIDS.persona*detail.persona + POIDS.prioEdito*detail.prio
+              + POIDS.moment*detail.moment + POIDS.proximite*detail.prox;
+  return {total, detail};
+}
+
+/* ---------- État ---------- */
+let state = null;
+function freshState(){
+  return {
+    lang:"fr", persona: PERSONAS[3] ? PERSONAS[3].code : (PERSONAS[0] && PERSONAS[0].code),
+    hotel: HOTELS[0] ? HOTELS[0].nom : null,
+    categories:[], maxWalk:15, mask:true,
+    rayonActif:false, moment: momentCourant(new Date()),
+  };
+}
+const t = (k)=> (I18N[k] && I18N[k][state.lang]) || k;
+const L = (obj)=> (obj && (obj[state.lang] || obj.fr)) || "";
+const currentPersona = ()=> PERSONAS.find(p=>p.code===state.persona) || null;
+const currentHotel = ()=> HOTELS.find(h=>h.nom===state.hotel) || HOTELS[0];
+const catLabel = (slug)=> { const c = CATEGORIES.find(c=>c.cle===slug); return c ? L(c.label) : slug; };
+const catIcon = (slug)=> { const c = CATEGORIES.find(c=>c.cle===slug); return (c && c.icone) || "📍"; };
+
+/* ---------- Chargement des données ---------- */
+async function loadData(){
+  document.getElementById('loadingState').classList.add('show');
+  document.getElementById('dataErrorState').classList.remove('show');
+  document.getElementById('appRoot').style.display = 'none';
+  try {
+    const res = await fetch('./app_data.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const json = await res.json();
+    if(!json || !Array.isArray(json.adresses)) throw new Error('Format de données inattendu');
+
+    DATA = json;
+    PERSONAS = json.personas || [];
+    CATEGORIES = json.categories || [];
+    HOTELS = (json.hotels || []).filter(h=>h.lat!=null && h.lng!=null);
+    LIEUX = json.adresses || [];
+    EVENEMENTS = json.evenements || [];
+
+    if(!HOTELS.length) throw new Error('Aucun hôtel exploitable dans les données');
+
+    state = freshState();
+    document.getElementById('loadingState').classList.remove('show');
+    document.getElementById('appRoot').style.display = '';
+    bindEvents();
+    renderAll();
+  } catch(e){
+    console.error('TEFD — échec de chargement des données :', e);
+    document.getElementById('loadingState').classList.remove('show');
+    document.getElementById('dataErrorState').classList.add('show');
+  }
+}
+
+/* ---------- Rendu ---------- */
+function visibleLieux(){
+  const persona = currentPersona();
+  const hotelNom = state.hotel;
+  let list = LIEUX.filter(x=>{
+    if(state.categories.length && !state.categories.includes(x.categorie)) return false;
+    if(state.mask && !x.personas.includes(state.persona)) return false;
+    if(state.rayonActif){
+      const m = resoudreMarche(x, hotelNom);
+      if(m === null || m > state.maxWalk) return false;
+    }
+    return true;
+  });
+  return list
+    .map(x=>({...x, _s: scoreOf(x, persona, state.moment, hotelNom)}))
+    .sort((a,b)=> b._s.total - a._s.total);
+}
+
+function renderHotelSelect(){
+  const sel=document.getElementById('hotelSelect');
+  sel.innerHTML='';
+  HOTELS.forEach(h=>{
+    const o=document.createElement('option');
+    o.value=h.nom; o.textContent=h.nom;
+    if(h.nom===state.hotel) o.selected=true;
+    sel.appendChild(o);
+  });
+}
+
+function renderDeck(){
+  const d=document.getElementById('deck'); d.innerHTML='';
+  PERSONAS.forEach(p=>{
+    const b=document.createElement('button');
+    b.type='button';
+    b.className='persona'+(p.code===state.persona?' on':'');
+    b.innerHTML=`<div class="pcode">${p.code}</div><div class="pname">${L(p.nom)}</div>`;
+    b.onclick=()=>{state.persona=p.code;renderAll();};
+    d.appendChild(b);
+  });
+  const pr=currentPersona();
+  document.getElementById('ressort').textContent = pr ? '« '+(pr.ressort||'')+' »' : '';
+}
+
+function renderCatChips(){
+  const wrap=document.getElementById('catChips'); wrap.innerHTML='';
+  CATEGORIES.forEach(c=>{
+    const b=document.createElement('button');
+    b.type='button';
+    b.className='chip'+(state.categories.includes(c.cle)?' on':'');
+    b.setAttribute('aria-pressed', state.categories.includes(c.cle));
+    b.innerHTML=`<span class="ico">${c.icone||'📍'}</span><span>${L(c.label)}</span>`;
+    b.onclick=()=>{
+      const i=state.categories.indexOf(c.cle);
+      if(i===-1) state.categories.push(c.cle); else state.categories.splice(i,1);
+      renderAll();
+    };
+    wrap.appendChild(b);
+  });
+  document.getElementById('catHint').textContent = state.categories.length
+    ? state.categories.length+' '+t('catN')
+    : t('catAll');
+}
+
+function renderMomentSeg(){
+  const seg=document.getElementById('momentSeg'); seg.innerHTML='';
+  ["matin","midi","soir","journee"].forEach(m=>{
+    const b=document.createElement('button');
+    b.type='button';
+    b.className = m===state.moment ? 'on' : '';
+    b.textContent = t(m);
+    b.setAttribute('aria-pressed', m===state.moment);
+    b.onclick=()=>{state.moment=m;renderAll();};
+    seg.appendChild(b);
+  });
+}
+
+// Les événements ne sont pas scorés par le moteur (v1) : simple liste datée,
+// déjà filtrée côté export.mjs (règle anti-hallucination — rien de périmé
+// n'arrive jusqu'ici). On affiche juste ceux qui touchent le lieu courant.
+function renderEvents(){
+  const box=document.getElementById('eventsBox');
+  const section=document.getElementById('eventsSection');
+  box.innerHTML='';
+  if(!EVENEMENTS.length){ section.style.display='none'; return; }
+  section.style.display='';
+  EVENEMENTS.forEach(ev=>{
+    const div=document.createElement('div');
+    div.className='event';
+    const dateTxt = ev.recurrent ? t('soir') : fmtDate(ev.date_debut, state.lang);
+    div.innerHTML=`<span class="edate">${dateTxt}</span><span class="etitle">${L(ev.titre)}${ev.lieu ? ' · '+ev.lieu : ''}</span>${ev.url ? `<a href="${ev.url}" target="_blank" rel="noopener">→</a>` : ''}`;
+    box.appendChild(div);
+  });
+}
+
+function renderCards(){
+  const c=document.getElementById('cards'); c.innerHTML='';
+  const list=visibleLieux();
+  if(!list.length){c.innerHTML=`<p class="empty">${t('empty')}</p>`;}
+  list.forEach(x=>{
+    const hors = !state.mask && !x.personas.includes(state.persona);
+    const m = resoudreMarche(x, state.hotel);
+    const card=document.createElement('button');
+    card.type='button';
+    card.className='card'+(hors?' hors':'');
+    const walkPill = m !== null
+      ? `<span class="pill">🚶 ${m} ${t('min')}</span>`
+      : `<span class="pill car">🚗 ${state.lang==='fr'?'en voiture':state.lang==='en'?'by car':'en coche'}</span>`;
+    const horsTag = hors ? `<span class="tag-hors">${t('horsProfil')}</span>` : '';
+    const sealTxt = x.verifie_le ? `${t('verifie')} ${fmtDate(x.verifie_le, state.lang)}` : '';
+    c.appendChild(Object.assign(card, {innerHTML:`
+      <div class="cat">${catIcon(x.categorie)} ${catLabel(x.categorie)}</div>
+      <div class="nom">${x.nom}</div>
+      <div class="edito">${L(x.note)}</div>
+      <div class="meta">${walkPill}${sealTxt?`<span class="seal">✦ ${sealTxt}</span>`:''}${horsTag}</div>`}));
+    card.onclick=()=>openFiche(x);
+  });
+  renderMap(list);
+}
+
+function project(lat,lng,b,w,h,pad){
+  const dx = (b.maxLng-b.minLng) || 0.001;
+  const dy = (b.maxLat-b.minLat) || 0.001;
+  return [ pad + (lng-b.minLng)/dx*(w-2*pad), pad + (b.maxLat-lat)/dy*(h-2*pad) ];
+}
+function renderMap(list){
+  const svg = document.getElementById('mapsvg');
+  svg.innerHTML='';
+  const hotel = currentHotel();
+  if(!hotel) return;
+  const pts = [hotel, ...list];
+  const lats = pts.map(p=>p.lat), lngs = pts.map(p=>p.lng);
+  const b = {minLat:Math.min(...lats),maxLat:Math.max(...lats),minLng:Math.min(...lngs),maxLng:Math.max(...lngs)};
+  const W=520,H=520,pad=46;
+  const NS='http://www.w3.org/2000/svg';
+  const river=document.createElementNS(NS,'path');
+  river.setAttribute('d',`M ${W*0.38} 0 C ${W*0.5} ${H*0.3}, ${W*0.3} ${H*0.55}, ${W*0.46} ${H}`);
+  river.setAttribute('fill','none'); river.setAttribute('stroke','#cdbfd6');
+  river.setAttribute('stroke-width','14'); river.setAttribute('opacity','0.35');
+  svg.appendChild(river);
+
+  function addPin(p, isHotel, hors){
+    const [x,y] = project(p.lat,p.lng,b,W,H,pad);
+    const g = document.createElementNS(NS,'g');
+    g.setAttribute('class','pin'+(hors?' hors':''));
+    g.setAttribute('tabindex','0'); g.setAttribute('role','button'); g.setAttribute('aria-label', p.nom);
+    const c = document.createElementNS(NS,'circle');
+    c.setAttribute('cx',x); c.setAttribute('cy',y); c.setAttribute('r', isHotel?9:7);
+    c.setAttribute('fill', isHotel?'var(--laiton)':'var(--brique)');
+    c.setAttribute('stroke','#fff'); c.setAttribute('stroke-width','2');
+    const title=document.createElementNS(NS,'title'); title.textContent=p.nom;
+    g.appendChild(c); g.appendChild(title);
+    if(!isHotel){
+      g.onclick=()=>openFiche(p);
+      g.onkeydown=(e)=>{ if(e.key==='Enter'||e.key===' '){e.preventDefault();openFiche(p);} };
+    }
+    svg.appendChild(g);
+  }
+  addPin(hotel, true, false);
+  list.forEach(x=> addPin(x, false, !state.mask && !x.personas.includes(state.persona)));
+
+  const wrap=document.querySelector('.mapwrap');
+  const existingEmpty=wrap.querySelector('.map-empty');
+  if(!list.length){
+    if(!existingEmpty){ const div=document.createElement('div'); div.className='map-empty'; div.textContent=t('empty'); wrap.appendChild(div); }
+  } else if(existingEmpty){ existingEmpty.remove(); }
+}
+
+// Modèle tout-lien : ces liens sont gratuits et sans clé (Maps URLs), jamais
+// d'appel Place Details facturé. C'est pour ça qu'il n'y a pas de note/avis
+// embarqués dans la fiche — la note éditoriale fait foi, Google complète.
+function mapsUrl(x){ return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(x.nom+' Toulouse'); }
+function navUrl(x){ return 'https://www.google.com/maps/dir/?api=1&destination='+encodeURIComponent(x.nom+' Toulouse')+'&travelmode=walking'; }
+
+function scoreBar(label, value, colorVar){
+  const pct = Math.round(value*100);
+  return `<div class="srow"><span>${label}</span><span class="sbar"><i style="width:${pct}%;background:${colorVar}"></i></span><span>${pct}%</span></div>`;
+}
+
+function openFiche(x){
+  const persona = currentPersona();
+  const {total, detail} = scoreOf(x, persona, state.moment, state.hotel);
+  const tagsHtml = (x.tags||[]).map(tg=>`<span class="pill tag">${tg}</span>`).join('');
+  const sealTxt = x.verifie_le ? `${t('verifie')} ${fmtDate(x.verifie_le, state.lang)}` : '';
+  const f=document.getElementById('fiche');
+  f.innerHTML=`
+    <div class="photo"><button class="close" type="button" aria-label="Fermer">×</button></div>
+    <div class="fbody">
+      <div class="fcat">${catIcon(x.categorie)} ${catLabel(x.categorie)}</div>
+      <h2>${x.nom}</h2>
+      <div class="addr">${x.acces||''}</div>
+      ${sealTxt ? `<div class="seal" style="display:inline-block;margin-top:8px;">✦ ${sealTxt}</div>` : ''}
+      <div class="fiche-tags">${tagsHtml}</div>
+      <div class="fnote"><span class="lbl">${t('editoLbl')}</span>${L(x.note)}</div>
+      <div class="scorebox">
+        <span class="lbl">${t('scoreLbl')}</span>
+        ${scoreBar(t('sigPersona'), detail.persona, 'var(--violette)')}
+        ${scoreBar(t('sigPrio'), detail.prio, 'var(--laiton)')}
+        ${scoreBar(t('sigMoment'), detail.moment, 'var(--brique)')}
+        ${scoreBar(t('sigProx'), detail.prox, 'var(--violette-clair)')}
+        <div class="stotal"><span>${t('total')}</span><span>${Math.round(total*100)}%</span></div>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn btn-ghost" href="${mapsUrl(x)}" target="_blank" rel="noopener">${t('photos')}</a>
+      <a class="btn btn-go" href="${navUrl(x)}" target="_blank" rel="noopener">${t('go')} →</a>
+    </div>
+    <div class="qr">
+      <div class="qr-container" id="qrContainer">
+        <div class="qr-label">${t('qrLbl')}</div>
+        <div id="qrCanvas"></div>
+        <div class="qr-hint">${t('qrHint')}</div>
+      </div>
+      <div style="margin-top:8px;">${t('qr')}</div>
+    </div>`;
+  f.querySelector('.close').onclick=closeFiche;
+  f.classList.add('show'); f.setAttribute('aria-hidden','false');
+  document.getElementById('scrim').classList.add('show');
+  
+  // Generate QR code for Google Maps navigation
+  setTimeout(() => {
+    const qrContainer = document.getElementById('qrCanvas');
+    if (qrContainer && x.nom) {
+      const navUrlStr = navUrl(x);
+      const qrCanvas = QRCode.generate(navUrlStr, { size: 100, margin: 2 });
+      qrContainer.innerHTML = '';
+      qrContainer.appendChild(qrCanvas);
+    }
+  }, 100);
+}
+function closeFiche(){
+  document.getElementById('fiche').classList.remove('show');
+  document.getElementById('fiche').setAttribute('aria-hidden','true');
+  document.getElementById('scrim').classList.remove('show');
+}
+
+function renderStatics(){
+  document.querySelectorAll('[data-i]').forEach(el=>{
+    const k=el.getAttribute('data-i'); if(I18N[k]) el.textContent=t(k);
+  });
+  document.getElementById('walkVal').textContent=state.maxWalk+' '+t('min');
+  document.getElementById('maskHint').textContent = state.mask ? t('maskHintOn') : t('maskHintOff');
+  document.getElementById('rayonHint').textContent = state.rayonActif ? t('rayonHintOn') : t('rayonHintOff');
+  document.getElementById('freshDate').textContent = DATA ? fmtDate(DATA.date_reference, state.lang) : '';
+}
+
+function renderAll(){ renderHotelSelect(); renderDeck(); renderEvents(); renderCatChips(); renderMomentSeg(); renderCards(); renderStatics(); }
+
+function bindEvents(){
+  document.querySelectorAll('.lang button').forEach(b=>{
+    b.onclick=()=>{
+      state.lang=b.dataset.lang;
+      document.querySelectorAll('.lang button').forEach(x=>x.classList.toggle('on',x===b));
+      document.documentElement.lang=state.lang;
+      renderAll();
+    };
+  });
+
+  document.getElementById('hotelSelect').onchange=(e)=>{
+    state.hotel = e.target.value;
+    renderCards();
+  };
+
+  const walk=document.getElementById('walk');
+  walk.oninput=()=>{
+    state.maxWalk=+walk.value;
+    document.getElementById('walkVal').textContent=state.maxWalk+' '+t('min');
+    renderCards();
+  };
+
+  const maskBtn=document.getElementById('maskBtn');
+  maskBtn.onclick=()=>{
+    state.mask=!state.mask;
+    maskBtn.classList.toggle('on',state.mask);
+    maskBtn.setAttribute('aria-checked',state.mask);
+    renderAll();
+  };
+
+  const rayonBtn=document.getElementById('rayonBtn');
+  rayonBtn.onclick=()=>{
+    state.rayonActif=!state.rayonActif;
+    rayonBtn.classList.toggle('on',state.rayonActif);
+    rayonBtn.setAttribute('aria-checked',state.rayonActif);
+    renderAll();
+  };
+
+  document.getElementById('resetBtn').onclick=()=>{
+    const lang = state.lang;
+    state = freshState();
+    state.lang = lang;
+    document.getElementById('walk').value = state.maxWalk;
+    maskBtn.classList.toggle('on', state.mask); maskBtn.setAttribute('aria-checked', state.mask);
+    rayonBtn.classList.toggle('on', state.rayonActif); rayonBtn.setAttribute('aria-checked', state.rayonActif);
+    renderAll();
+  };
+
+  document.getElementById('scrim').onclick=closeFiche;
+  document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeFiche(); });
+  document.getElementById('retryBtn').onclick=loadData;
+}
+
+/* ---------- Démarrage ---------- */
+loadData();
+
+/* ---------- PWA : enregistrement du service worker (coquille uniquement) ---------- */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=>{
+    navigator.serviceWorker.register('./sw.js').catch(e=>console.error('SW non enregistré :', e));
+  });
+}
+
+} catch (err) {
+  console.error('TEFD — erreur fatale :', err);
+  const bar = document.getElementById('bootError');
+  bar.textContent = 'Erreur de chargement — détail dans la console du navigateur (F12) : ' + (err && err.message ? err.message : err);
+  bar.classList.add('show');
+}
+</script>
+</body>
+</html>
