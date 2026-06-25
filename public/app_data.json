@@ -1,169 +1,488 @@
 {
-  "genere_le": "2026-06-25T08:00:00.000Z",
+  "genere_le": "2026-06-25T19:03:53.115Z",
   "date_reference": "2026-06-25",
-  "_note": "FIXTURE DE TEST — sera remplacée par le vrai export Baserow dès le premier run de build-data.yml. Forme strictement identique à celle produite par scripts/export.mjs.",
-
   "personas": [
-    {"code":"01","nom":{"fr":"Business aéro","en":"Aerospace business","es":"Negocios aéreo"},
-     "bibliotheque":"Toulouse aéronautique","ressort":"Efficacité, anticipation logistique",
-     "categories_prioritaires":["restaurant","visite"],"ton":"Direct, sans détour, gain de temps."},
-    {"code":"02","nom":{"fr":"Client espagnol","en":"Spanish guest","es":"Cliente español"},
-     "bibliotheque":"Toulouse hispanique","ressort":"Proximité émotionnelle, discrétion culturelle",
-     "categories_prioritaires":["restaurant","eglise"],"ton":"Chaleureux, jamais folklorique."},
-    {"code":"03","nom":{"fr":"Fan rugby","en":"Rugby fan","es":"Aficionado rugby"},
-     "bibliotheque":"Toulouse rugby","ressort":"Fraternité ovale, sans imitation",
-     "categories_prioritaires":["restaurant","evenement_sportif"],"ton":"Complice, pas démonstratif."},
-    {"code":"04","nom":{"fr":"Couple premium","en":"Premium couple","es":"Pareja premium"},
-     "bibliotheque":"Toulouse gastronomie","ressort":"Considération discrète, jamais familiarité",
-     "categories_prioritaires":["restaurant","theatre"],"ton":"Élégant, mesuré."},
-    {"code":"05","nom":{"fr":"Parent étudiant","en":"Student's parent","es":"Padre de estudiante"},
-     "bibliotheque":"Toulouse campus","ressort":"Réassurance silencieuse",
-     "categories_prioritaires":["restaurant","musee"],"ton":"Posé, rassurant."},
-    {"code":"06","nom":{"fr":"City break aéro","en":"Aviation city break","es":"Escapada aérea"},
-     "bibliotheque":"Toulouse aéronautique","ressort":"Émerveillement précis, expertise reconnue",
-     "categories_prioritaires":["musee"],"ton":"Précis, passionné."},
-    {"code":"07","nom":{"fr":"International","en":"International","es":"Internacional"},
-     "bibliotheque":"Toulouse secrète","ressort":"1 client = 3 à 5 prescriptions",
-     "categories_prioritaires":["eglise","visite"],"ton":"Ouvert, multilingue."},
-    {"code":"08","nom":{"fr":"Slow tourism","en":"Slow tourism","es":"Slow tourism"},
-     "bibliotheque":"Toulouse confidentielle","ressort":"Lenteur autorisée, retour saisonnier",
-     "categories_prioritaires":["footing","visite"],"ton":"Calme, sans urgence."}
+    {
+      "code": "P05",
+      "nom": {
+        "fr": "Parent étudiant",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse universitaire",
+      "ressort": "Réassurance silencieuse, 3-4 séjours par an",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P01",
+      "nom": {
+        "fr": "Business aéronautique",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse iconique",
+      "ressort": "Efficacité reconnue, anticipation logistique",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P02",
+      "nom": {
+        "fr": "Client espagnol",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse espagnole",
+      "ressort": "Proximité émotionnelle, discrétion culturelle",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P03",
+      "nom": {
+        "fr": "Fan rugby",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse rugby",
+      "ressort": "Fraternité ovale, sans imitation",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P04",
+      "nom": {
+        "fr": "Couple premium",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse gastronomie",
+      "ressort": "Considération discrète, jamais familiarité",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P06",
+      "nom": {
+        "fr": "City break aéronautique",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse aéronautique loisir",
+      "ressort": "Émerveillement précis, expertise reconnue",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P07",
+      "nom": {
+        "fr": "Client international",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse secrète",
+      "ressort": "1 client = 3-5 prescriptions internationales",
+      "categories_prioritaires": [],
+      "ton": ""
+    },
+    {
+      "code": "P08",
+      "nom": {
+        "fr": "Slow tourism",
+        "en": "",
+        "es": ""
+      },
+      "bibliotheque": "Toulouse confidentielle",
+      "ressort": "Lenteur autorisée, retour saisonnier",
+      "categories_prioritaires": [],
+      "ton": ""
+    }
   ],
-
   "categories": [
-    {"cle":"restaurant","label":{"fr":"Restaurant","en":"Restaurant","es":"Restaurante"},"icone":"🍽️","type":"Lieu"},
-    {"cle":"musee","label":{"fr":"Musée","en":"Museum","es":"Museo"},"icone":"🏛️","type":"Lieu"},
-    {"cle":"theatre","label":{"fr":"Théâtre","en":"Theatre","es":"Teatro"},"icone":"🎭","type":"Lieu"},
-    {"cle":"concert","label":{"fr":"Concert","en":"Concert","es":"Concierto"},"icone":"🎵","type":"Lieu"},
-    {"cle":"eglise","label":{"fr":"Église","en":"Church","es":"Iglesia"},"icone":"⛪","type":"Lieu"},
-    {"cle":"salle_sport","label":{"fr":"Salle de sport","en":"Gym","es":"Gimnasio"},"icone":"🏋️","type":"Lieu"},
-    {"cle":"evenement_sportif","label":{"fr":"Événement sportif","en":"Sports event","es":"Evento deportivo"},"icone":"🏟️","type":"Événement"},
-    {"cle":"footing","label":{"fr":"Footing","en":"Running","es":"Correr"},"icone":"🏃","type":"Parcours"},
-    {"cle":"visite","label":{"fr":"Visite","en":"Walking tour","es":"Visita"},"icone":"🚶","type":"Parcours"}
+    {
+      "cle": "C001",
+      "label": {
+        "fr": "Restaurant",
+        "en": "Restaurant",
+        "es": "Restaurante"
+      },
+      "icone": "🍽️",
+      "type": "Lieu"
+    },
+    {
+      "cle": "C002",
+      "label": {
+        "fr": "Théâtre",
+        "en": "Theater",
+        "es": "Teatro"
+      },
+      "icone": "🎭",
+      "type": "Événement"
+    },
+    {
+      "cle": "C003",
+      "label": {
+        "fr": "Visite à pied",
+        "en": "Walking Tour",
+        "es": "Tour a pie"
+      },
+      "icone": "🚶‍♂️",
+      "type": "Parcours"
+    },
+    {
+      "cle": "C004",
+      "label": {
+        "fr": "Hôtel",
+        "en": "Hotel",
+        "es": "Hotel"
+      },
+      "icone": "🏨",
+      "type": "Lieu"
+    },
+    {
+      "cle": "C005",
+      "label": {
+        "fr": "Shopping",
+        "en": "Shopping",
+        "es": "Compras"
+      },
+      "icone": "🛍️",
+      "type": "Lieu"
+    }
   ],
-
   "hotels": [
-    {"nom":"Hôtel des Beaux-Arts","adresse":"1 Place du Pont-Neuf, Toulouse","lat":43.6007,"lng":1.4415,"personas":["04","07"]},
-    {"nom":"Hôtel Wilson","adresse":"Place Wilson, Toulouse","lat":43.6047,"lng":1.4470,"personas":["01","02"]},
-    {"nom":"Hôtel Compans","adresse":"Boulevard Lascrosses, Toulouse","lat":43.6110,"lng":1.4370,"personas":["07","08"]}
+    {
+      "nom": "Hotel du Capitole",
+      "adresse": "1 Place du Capitole, 31000 Toulouse",
+      "lat": "44",
+      "lng": "1",
+      "personas": []
+    },
+    {
+      "nom": "Hotel des Carmes",
+      "adresse": "2 Place des Carmes, 31000 Toulouse",
+      "lat": "44",
+      "lng": "1",
+      "personas": []
+    },
+    {
+      "nom": "Hotel Saint-Cyprien",
+      "adresse": "3 Rue Saint-Cyprien, 31000 Toulouse",
+      "lat": "44",
+      "lng": "1",
+      "personas": []
+    },
+    {
+      "nom": "Hotel Sept Deniers",
+      "adresse": "4 Rue des Sept Deniers, 31000 Toulouse",
+      "lat": "44",
+      "lng": "1",
+      "personas": []
+    },
+    {
+      "nom": "Hotel des Halles",
+      "adresse": "5 Rue des Halles, 31000 Toulouse",
+      "lat": "44",
+      "lng": "1",
+      "personas": []
+    }
   ],
-
   "adresses": [
-    {"nom":"Py-r","categorie":"restaurant","personas":["04","07"],"place_id":null,
-     "lat":43.6004,"lng":1.4413,"adresse":"19 Rue de la Pleau, Toulouse","quartier":"Carmes",
-     "moment":["soir"],
-     "note":{"fr":"Sud-Ouest revisité sous des voûtes de brique toulousaine. L'adresse pour une célébration sans esbroufe.","en":"Reinvented South-West cuisine under Toulouse brick vaults. The address for an understated celebration.","es":"Cocina del Suroeste reinterpretada bajo bóvedas de ladrillo. La dirección para celebrar sin estridencias."},
-     "acces":"Métro A, station Esquirol","prix":"€€€€","priorite_edito":5,
-     "tags":["étoilé","romantique"],"pmr":true,"verifie_le":"2026-03-10",
-     "marche_min":{"Hôtel des Beaux-Arts":1,"Hôtel Wilson":11,"Hôtel Compans":21}},
-
-    {"nom":"Les Jardins de l'Opéra","categorie":"restaurant","personas":["04"],"place_id":null,
-     "lat":43.6045,"lng":1.4438,"adresse":"1 Place du Capitole, Toulouse","quartier":"Capitole",
-     "moment":["soir"],
-     "note":{"fr":"Une cour préservée au pied du Capitole. Gastronomie du Sud-Ouest, institution toulousaine.","en":"A quiet courtyard at the foot of the Capitole. South-West fine dining, a Toulouse institution.","es":"Un patio resguardado al pie del Capitole. Alta cocina del Suroeste, institución tolosana."},
-     "acces":"Place du Capitole","prix":"€€€€","priorite_edito":5,
-     "tags":["étoilé","cour intérieure"],"pmr":true,"verifie_le":"2026-03-10",
-     "marche_min":{"Hôtel des Beaux-Arts":8,"Hôtel Wilson":4,"Hôtel Compans":16}},
-
-    {"nom":"Théâtre du Capitole","categorie":"theatre","personas":["04","07"],"place_id":null,
-     "lat":43.6044,"lng":1.4441,"adresse":"Place du Capitole, Toulouse","quartier":"Capitole",
-     "moment":["soir"],
-     "note":{"fr":"Opéra et ballet de niveau international, dans un écrin à l'italienne du XIXᵉ. Le lieu d'élection du couple mélomane.","en":"International-level opera and ballet in a 19th-century Italian-style hall. The choice for music-loving couples.","es":"Ópera y ballet de nivel internacional en una sala a la italiana del XIX. El lugar para parejas melómanas."},
-     "acces":"Métro A, Capitole (sortie sur la place)","prix":"€€€","priorite_edito":4,
-     "tags":["programmation live"],"pmr":true,"verifie_le":"2026-01-15",
-     "marche_min":{"Hôtel des Beaux-Arts":8,"Hôtel Wilson":4,"Hôtel Compans":16}},
-
-    {"nom":"Zénith Toulouse Métropole","categorie":"concert","personas":["01","07"],"place_id":null,
-     "lat":43.6453,"lng":1.3667,"adresse":"11 Avenue Raymond Badiou, Toulouse","quartier":"Purpan",
-     "moment":["soir"],
-     "note":{"fr":"La grande salle de la métropole pour les tournées internationales. À réserver tôt : les soirs de concert, plus une chambre ne reste libre alentour.","en":"The metro area's big arena for international tours. Book early — on concert nights, every room nearby sells out.","es":"La gran sala del área metropolitana para las giras internacionales. Reservar pronto: las noches de concierto no queda ni una habitación cerca."},
-     "acces":"Navette / voiture depuis le centre","prix":"€€€","priorite_edito":3,
-     "tags":["grande salle"],"pmr":true,"verifie_le":"2025-11-02",
-     "marche_min":{"Hôtel des Beaux-Arts":null,"Hôtel Wilson":null,"Hôtel Compans":null}},
-
-    {"nom":"Basilique Saint-Sernin","categorie":"eglise","personas":["07","08"],"place_id":null,
-     "lat":43.6083,"lng":1.4419,"adresse":"Place Saint-Sernin, Toulouse","quartier":"Saint-Sernin",
-     "moment":["matin","midi"],
-     "note":{"fr":"La plus grande église romane conservée d'Europe, étape des chemins de Compostelle. Incontournable du client international.","en":"The largest preserved Romanesque church in Europe, a stop on the Compostela routes. A must for international guests.","es":"La mayor iglesia románica conservada de Europa, etapa del Camino de Santiago. Imprescindible para el cliente internacional."},
-     "acces":"Métro B, Compans-Caffarelli","prix":null,"priorite_edito":4,
-     "tags":["UNESCO","patrimoine"],"pmr":true,"verifie_le":"2025-08-20",
-     "marche_min":{"Hôtel des Beaux-Arts":15,"Hôtel Wilson":10,"Hôtel Compans":9}},
-
-    {"nom":"Couvent des Jacobins","categorie":"eglise","personas":["07","08"],"place_id":null,
-     "lat":43.6021,"lng":1.4408,"adresse":"69 Rue Pargaminières, Toulouse","quartier":"Carmes",
-     "moment":["journee"],
-     "note":{"fr":"Le cloître le plus photographié de Toulouse, et la voûte palmier de l'église qui abrite les reliques de saint Thomas d'Aquin.","en":"Toulouse's most photographed cloister, and the church's palm-tree vault sheltering the relics of Saint Thomas Aquinas.","es":"El claustro más fotografiado de Toulouse, y la bóveda palmera de la iglesia que guarda las reliquias de santo Tomás de Aquino."},
-     "acces":"Centre-ville, à deux pas du Capitole","prix":null,"priorite_edito":4,
-     "tags":["cloître","patrimoine"],"pmr":false,"verifie_le":"2025-08-20",
-     "marche_min":{"Hôtel des Beaux-Arts":3,"Hôtel Wilson":10,"Hôtel Compans":18}},
-
-    {"nom":"L'Usine Fitness Wilson","categorie":"salle_sport","personas":["01","05"],"place_id":null,
-     "lat":43.6050,"lng":1.4480,"adresse":"4 Place Wilson, Toulouse","quartier":"Wilson",
-     "moment":["journee"],
-     "note":{"fr":"Salle complète à deux pas de la place Wilson — cardio, musculation, cours collectifs. Utile pour le client qui ne veut pas rompre sa routine en déplacement.","en":"Full gym just off Place Wilson — cardio, weights, group classes. Useful for guests who don't want to break their travel routine.","es":"Gimnasio completo junto a la plaza Wilson — cardio, musculación, clases colectivas. Útil para el cliente que no quiere romper su rutina de viaje."},
-     "acces":"Place Wilson","prix":"€€","priorite_edito":2,
-     "tags":["accès rapide"],"pmr":true,"verifie_le":"2025-08-20",
-     "marche_min":{"Hôtel des Beaux-Arts":12,"Hôtel Wilson":2,"Hôtel Compans":19}},
-
-    {"nom":"Stade Ernest-Wallon","categorie":"evenement_sportif","personas":["03"],"place_id":null,
-     "lat":43.6360,"lng":1.4310,"adresse":"114 Rue des Troènes, Toulouse","quartier":"Ponts-Jumeaux",
-     "moment":["soir"],
-     "note":{"fr":"Antre du Stade Toulousain, club le plus titré d'Europe. Les soirs de match, l'ambiance vaut le déplacement même sans connaître le rugby.","en":"Home ground of Stade Toulousain, Europe's most decorated club. On match nights, the atmosphere is worth it even if you don't know rugby.","es":"Feudo del Stade Toulousain, el club más laureado de Europa. Las noches de partido, el ambiente merece la pena aunque no conozcas el rugby."},
-     "acces":"Navette les soirs de match depuis le centre","prix":null,"priorite_edito":5,
-     "tags":["rugby","ambiance"],"pmr":true,"verifie_le":"2026-01-05",
-     "marche_min":{"Hôtel des Beaux-Arts":null,"Hôtel Wilson":null,"Hôtel Compans":null}},
-
-    {"nom":"Boucle des quais de Garonne","categorie":"footing","personas":["08"],"place_id":null,
-     "lat":43.5985,"lng":1.4390,"adresse":"Quai de la Daurade, Toulouse","quartier":"Saint-Cyprien",
-     "moment":["matin","journee"],
-     "note":{"fr":"5 km plats le long de la Garonne, du pont Saint-Pierre à la Prairie des Filtres. Le parcours que recommande la maison pour courir sans réfléchir à l'itinéraire.","en":"A flat 5 km along the Garonne, from Pont Saint-Pierre to Prairie des Filtres. The house's go-to route for running without thinking about navigation.","es":"5 km llanos junto al Garona, del puente Saint-Pierre a la Prairie des Filtres. La ruta que recomienda la casa para correr sin pensar en el itinerario."},
-     "acces":"Départ quai de la Daurade","prix":null,"priorite_edito":4,
-     "tags":["plat","ombragé"],"pmr":false,"verifie_le":"2025-08-20",
-     "marche_min":{"Hôtel des Beaux-Arts":5,"Hôtel Wilson":16,"Hôtel Compans":24}},
-
-    {"nom":"Marché Victor Hugo","categorie":"visite","personas":["08","02"],"place_id":null,
-     "lat":43.6062,"lng":1.4470,"adresse":"Place Victor Hugo, Toulouse","quartier":"Victor Hugo",
-     "moment":["matin"],
-     "note":{"fr":"Le ventre de Toulouse. Pour le client slow, déjeuner à l'étage chez un traiteur après la flânerie entre les étals.","en":"The belly of Toulouse. For the slow traveller, lunch upstairs at a stallholder after wandering the aisles.","es":"El vientre de Toulouse. Para el viajero slow, comer arriba tras pasear entre los puestos."},
-     "acces":"Métro A, Jean Jaurès","prix":"€€","priorite_edito":3,
-     "tags":["marché","déjeuner"],"pmr":true,"verifie_le":"2025-08-20",
-     "marche_min":{"Hôtel des Beaux-Arts":13,"Hôtel Wilson":3,"Hôtel Compans":17}},
-
-    {"nom":"Brasserie des Beaux-Arts","categorie":"restaurant","personas":["01","03","04"],"place_id":null,
-     "lat":43.6001,"lng":1.4408,"adresse":"1 Quai de la Daurade, Toulouse","quartier":"Saint-Pierre",
-     "moment":["midi","soir"],
-     "note":{"fr":"Sur les quais de la Daurade, banquettes Belle Époque. Idéale pour un dîner pro ou un point de ralliement avant le match.","en":"On the Daurade quayside, Belle Époque benches. Perfect for a business dinner or a pre-match meeting point.","es":"En los muelles de la Daurade, bancos Belle Époque. Ideal para una cena de trabajo o punto de encuentro antes del partido."},
-     "acces":"Quai de la Daurade","prix":"€€€","priorite_edito":3,
-     "tags":["brasserie","terrasse"],"pmr":true,"verifie_le":"2026-03-10",
-     "marche_min":{"Hôtel des Beaux-Arts":2,"Hôtel Wilson":12,"Hôtel Compans":22}},
-
-    {"nom":"Bibent","categorie":"restaurant","personas":["02","07"],"place_id":null,
-     "lat":43.6043,"lng":1.4446,"adresse":"5 Place du Capitole, Toulouse","quartier":"Capitole",
-     "moment":["midi","soir"],
-     "note":{"fr":"Décor classé sur la grande place. Un repère que la clientèle espagnole reconnaît et adopte sans folklore.","en":"Listed interior on the main square. A landmark Spanish guests recognise and adopt, without cliché.","es":"Decoración protegida en la gran plaza. Un referente que el cliente español reconoce y adopta, sin tópicos."},
-     "acces":"Place du Capitole","prix":"€€€","priorite_edito":3,
-     "tags":["brasserie","décor classé"],"pmr":true,"verifie_le":"2026-03-10",
-     "marche_min":{"Hôtel des Beaux-Arts":8,"Hôtel Wilson":3,"Hôtel Compans":17}},
-
-    {"nom":"Cité de l'Espace","categorie":"musee","personas":["06","05"],"place_id":null,
-     "lat":43.5868,"lng":1.4905,"adresse":"Avenue Jean Gonord, Toulouse","quartier":"Rangueil",
-     "moment":["matin","midi"],
-     "note":{"fr":"Fusées, capsules, planétarium. Le temps fort du passionné d'aviation comme de la famille en visite étudiante.","en":"Rockets, capsules, planetarium. The highlight for aviation lovers and visiting student families alike.","es":"Cohetes, cápsulas, planetario. El imprescindible del aficionado a la aviación y de la familia en visita."},
-     "acces":"Bus L8 depuis le centre","prix":"€€€","priorite_edito":4,
-     "tags":["famille","aviation"],"pmr":true,"verifie_le":"2025-08-20",
-     "marche_min":{"Hôtel des Beaux-Arts":null,"Hôtel Wilson":null,"Hôtel Compans":null}}
+    {
+      "nom": "Café du Capitole",
+      "categorie": "C001",
+      "personas": [],
+      "place_id": "ChIJN1t_tDeuVkcR4QK5eZ7Zp8U",
+      "lat": "44",
+      "lng": "1",
+      "adresse": "10 Rue de la République, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "matin",
+        "journée"
+      ],
+      "note": {
+        "fr": "Un café historique au cœur du Capitole.",
+        "en": "A historic café in the heart of the Capitole.",
+        "es": "Un café histórico en el corazón del Capitole."
+      },
+      "acces": "Metro line A, bus 12",
+      "prix": "€€",
+      "priorite_edito": "1",
+      "tags": [
+        "terrasse",
+        "romantique"
+      ],
+      "pmr": true,
+      "verifie_le": "2024-06-01",
+      "marche_min": {
+        "Hotel du Capitole": 0,
+        "Hotel des Carmes": 0,
+        "Hotel Saint-Cyprien": 0,
+        "Hotel Sept Deniers": 0,
+        "Hotel des Halles": 0
+      }
+    },
+    {
+      "nom": "Théâtre des Carmes",
+      "categorie": "C002",
+      "personas": [],
+      "place_id": "ChIJy5bZ1V2uVkcR4QK5eZ7Zp8U",
+      "lat": "44",
+      "lng": "1",
+      "adresse": "5 Place du Carmes, 31000 Toulouse",
+      "quartier": "Carmes",
+      "moment": [
+        "soir"
+      ],
+      "note": {
+        "fr": "Salle de spectacle intime.",
+        "en": "Intimate performance venue.",
+        "es": "Sala de espectáculos íntima."
+      },
+      "acces": "Tram T1, bus 21",
+      "prix": "€",
+      "priorite_edito": "2",
+      "tags": [
+        "groupe"
+      ],
+      "pmr": false,
+      "verifie_le": "2024-06-02",
+      "marche_min": {
+        "Hotel du Capitole": 0,
+        "Hotel des Carmes": 0,
+        "Hotel Saint-Cyprien": 0,
+        "Hotel Sept Deniers": 0,
+        "Hotel des Halles": 0
+      }
+    },
+    {
+      "nom": "Parc Saint-Cyprien",
+      "categorie": "C003",
+      "personas": [],
+      "place_id": "ChIJk2v8YcGuVkcR4QK5eZ7Zp8U",
+      "lat": "44",
+      "lng": "1",
+      "adresse": "12 Rue Saint-Cyprien, 31000 Toulouse",
+      "quartier": "Saint-Cyprien",
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Grand parc avec vue sur la Garonne.",
+        "en": "Large park with Garonne river view.",
+        "es": "Gran parque con vista al río Garonne."
+      },
+      "acces": "Bus 31, bike share",
+      "prix": "€€€",
+      "priorite_edito": "3",
+      "tags": [
+        "vue",
+        "tardif"
+      ],
+      "pmr": true,
+      "verifie_le": "2024-06-03",
+      "marche_min": {
+        "Hotel du Capitole": 0,
+        "Hotel des Carmes": 0,
+        "Hotel Saint-Cyprien": 0,
+        "Hotel Sept Deniers": 0,
+        "Hotel des Halles": 0
+      }
+    },
+    {
+      "nom": "Hôtel Sept Deniers",
+      "categorie": "C004",
+      "personas": [],
+      "place_id": "ChIJm1c9XcGuVkcR4QK5eZ7Zp8U",
+      "lat": "44",
+      "lng": "1",
+      "adresse": "20 Rue des Sept Deniers, 31000 Toulouse",
+      "quartier": "Sept Deniers",
+      "moment": [
+        "journée"
+      ],
+      "note": {
+        "fr": "Hôtel boutique au style contemporain.",
+        "en": "Boutique hotel with contemporary style.",
+        "es": "Hotel boutique con estilo contemporáneo."
+      },
+      "acces": "Metro line B",
+      "prix": "€€",
+      "priorite_edito": "4",
+      "tags": [
+        "terrasse"
+      ],
+      "pmr": false,
+      "verifie_le": "2024-06-04",
+      "marche_min": {
+        "Hotel du Capitole": 0,
+        "Hotel des Carmes": 0,
+        "Hotel Saint-Cyprien": 0,
+        "Hotel Sept Deniers": 0,
+        "Hotel des Halles": 0
+      }
+    },
+    {
+      "nom": "Galerie des Halles",
+      "categorie": "C005",
+      "personas": [],
+      "place_id": "ChIJp0l9YcGuVkcR4QK5eZ7Zp8U",
+      "lat": "44",
+      "lng": "1",
+      "adresse": "8 Rue des Halles, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "matin",
+        "midi"
+      ],
+      "note": {
+        "fr": "Centre commercial moderne avec de nombreuses boutiques.",
+        "en": "Modern shopping center with many stores.",
+        "es": "Centro comercial moderno con muchas tiendas."
+      },
+      "acces": "Tram T2, bus 45",
+      "prix": "€€€€",
+      "priorite_edito": "5",
+      "tags": [
+        "groupe",
+        "vue"
+      ],
+      "pmr": true,
+      "verifie_le": "2024-06-05",
+      "marche_min": {
+        "Hotel du Capitole": 0,
+        "Hotel des Carmes": 0,
+        "Hotel Saint-Cyprien": 0,
+        "Hotel Sept Deniers": 0,
+        "Hotel des Halles": 0
+      }
+    }
   ],
-
   "evenements": [
-    {"titre":{"fr":"Toulouse les Orgues — récital d'orgue","en":"Toulouse les Orgues — organ recital","es":"Toulouse les Orgues — recital de órgano"},
-     "categorie":"concert","personas":["07","08"],"lieu":"Couvent des Jacobins",
-     "date_debut":"2026-07-02","date_fin":"2026-07-02","recurrent":false,
-     "url":"https://toulouseslesorgues.org"},
-    {"titre":{"fr":"Match Stade Toulousain — Top 14","en":"Stade Toulousain match — Top 14","es":"Partido Stade Toulousain — Top 14"},
-     "categorie":"evenement_sportif","personas":["03"],"lieu":"Stade Ernest-Wallon",
-     "date_debut":"2026-07-04","date_fin":"2026-07-04","recurrent":false,
-     "url":"https://stadetoulousain.fr"}
+    {
+      "titre": {
+        "fr": "Festival Saint-Cyprien",
+        "en": "Saint-Cyprien Festival",
+        "es": "Festival de Saint-Cyprien"
+      },
+      "categorie": "C003",
+      "personas": [],
+      "lieu": "Parc Saint-Cyprien",
+      "date_debut": "2024-08-20",
+      "date_fin": "2024-08-22",
+      "recurrent": true,
+      "url": "http://tickets.example.com/festival-sc"
+    }
   ],
-
-  "parcours": []
+  "parcours": [
+    {
+      "nom": {
+        "fr": "Circuit Capitole",
+        "en": "Capitole Circuit",
+        "es": "Circuito Capitole"
+      },
+      "type": "Visite à pied",
+      "personas": [],
+      "duree_min": "30",
+      "distance_km": "2",
+      "profil_ors": "foot-walking",
+      "points": [
+        "Café du Capitole",
+        "Théâtre des Carmes"
+      ],
+      "description": {
+        "fr": "Balade historique du Capitole",
+        "en": "Historic walk of the Capitole",
+        "es": "Paseo histórico del Capitole"
+      }
+    },
+    {
+      "nom": {
+        "fr": "Circuit Carmes",
+        "en": "Carmes Circuit",
+        "es": "Circuito Carmes"
+      },
+      "type": "Visite à pied",
+      "personas": [],
+      "duree_min": "20",
+      "distance_km": "2",
+      "profil_ors": "foot-walking",
+      "points": [
+        "Théâtre des Carmes",
+        "Hôtel Sept Deniers"
+      ],
+      "description": {
+        "fr": "Tour du théâtre et ses alentours",
+        "en": "Theatre and surroundings tour",
+        "es": "Tour del teatro y sus alrededores"
+      }
+    },
+    {
+      "nom": {
+        "fr": "Course Saint-Cyprien",
+        "en": "Saint-Cyprien Run",
+        "es": "Carrera Saint-Cyprien"
+      },
+      "type": "Footing",
+      "personas": [],
+      "duree_min": "35",
+      "distance_km": "5",
+      "profil_ors": "foot-hiking",
+      "points": [
+        "Parc Saint-Cyprien",
+        "Galerie des Halles"
+      ],
+      "description": {
+        "fr": "Course matinale au parc",
+        "en": "Morning run in the park",
+        "es": "Carrera matutina en el parque"
+      }
+    },
+    {
+      "nom": {
+        "fr": "Circuit Hôtel Sept Deniers",
+        "en": "Sept Deniers Hotel Circuit",
+        "es": "Circuito Hotel Sept Deniers"
+      },
+      "type": "Visite à pied",
+      "personas": [],
+      "duree_min": "15",
+      "distance_km": "1",
+      "profil_ors": "foot-walking",
+      "points": [
+        "Café du Capitole",
+        "Hôtel Sept Deniers"
+      ],
+      "description": {
+        "fr": "Visite de l'hôtel et ses environs",
+        "en": "Hotel tour and surroundings",
+        "es": "Tour del hotel y sus alrededores"
+      }
+    },
+    {
+      "nom": {
+        "fr": "Parcours Halles",
+        "en": "Halles Route",
+        "es": "Ruta Halles"
+      },
+      "type": "Visite à pied",
+      "personas": [],
+      "duree_min": "45",
+      "distance_km": "3",
+      "profil_ors": "foot-walking",
+      "points": [
+        "Parc Saint-Cyprien",
+        "Galerie des Halles"
+      ],
+      "description": {
+        "fr": "Shopping marathon aux Halles",
+        "en": "Shopping marathon at the Halles",
+        "es": "Maratón de compras en las Halles"
+      }
+    }
+  ],
+  "marche_calcule_le": "2026-06-25T19:03:54.163Z"
 }
