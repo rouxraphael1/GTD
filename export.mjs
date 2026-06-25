@@ -59,7 +59,12 @@ async function main() {
   // -- Adresses publiées
   const outAdresses = adresses.filter(isPublished).map((r) => ({
     nom: r.nom,
-    categorie: single(r.categorie),
+    // BUGFIX : "categorie" est un champ Lien → Catégories (table 5 du schéma),
+    // pas une sélection simple. single() ne fonctionne que sur les vraies
+    // sélections (quartier, fourchette_prix...) ; un champ lien renvoie un
+    // tableau même à liaison unique, d'où linkValues()[0]. Suppose que le
+    // champ primaire de la table Catégories est `cle` (le slug technique).
+    categorie: linkValues(r.categorie)[0] || null,
     personas: linkValues(r.personas),
     place_id: r.place_id_google || null,
     lat: r.latitude, lng: r.longitude,
@@ -82,7 +87,7 @@ async function main() {
     .filter((r) => r.recurrent || (r.date_fin && r.date_fin >= todayParis))
     .map((r) => ({
       titre: i18n(r, "titre"),
-      categorie: single(r.categorie),
+      categorie: linkValues(r.categorie)[0] || null, // même correctif que pour Adresses (champ lien, pas sélection simple)
       personas: linkValues(r.personas),
       lieu: linkValues(r.lieu)[0] || null,
       date_debut: r.date_debut || null,
