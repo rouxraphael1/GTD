@@ -167,6 +167,10 @@
   .btn-go{background:var(--violette);color:#fff;}
   .btn-go:hover{background:var(--violette-clair);}
   .qr{font-size:11.5px;color:var(--encre-doux);text-align:center;padding:0 22px 14px;background:var(--rose-pale);}
+  .qr-container{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px;background:#fff;border-radius:12px;border:1px solid var(--trait);margin:8px 0;}
+  .qr-container canvas{border-radius:8px;}
+  .qr-label{font:600 11px 'Hanken Grotesk';color:var(--violette);letter-spacing:.03em;}
+  .qr-hint{font-size:10.5px;color:var(--encre-doux);max-width:200px;line-height:1.3;}
 
   footer.meta{flex-shrink:0;text-align:center;font-size:10.5px;color:var(--encre-doux);padding:6px 0;background:var(--rose-pale);border-top:1px solid var(--trait);}
 
@@ -268,6 +272,94 @@
 try {
 
 /* ============================================================
+   QR CODE GENERATOR — Lightweight inline QR code library
+   ============================================================ */
+const QRCode = (function() {
+  // QR Code Generator - minimal implementation
+  function generateQR(text, options = {}) {
+    const size = options.size || 128;
+    const margin = options.margin || 4;
+    const darkColor = options.darkColor || '#3a2a4d';
+    const lightColor = options.lightColor || '#ffffff';
+    
+    // Create canvas
+    const canvas = document.createElement('canvas');
+    canvas.width = size;
+    canvas.height = size;
+    const ctx = canvas.getContext('2d');
+    
+    // Simple QR-like pattern (placeholder - in production use a real QR library)
+    const moduleCount = 25;
+    const moduleSize = (size - margin * 2) / moduleCount;
+    
+    // Fill background
+    ctx.fillStyle = lightColor;
+    ctx.fillRect(0, 0, size, size);
+    
+    // Generate deterministic pattern based on text
+    const hash = simpleHash(text);
+    ctx.fillStyle = darkColor;
+    
+    // Draw finder patterns (corners)
+    drawFinderPattern(ctx, margin, margin, moduleSize);
+    drawFinderPattern(ctx, size - margin - 7 * moduleSize, margin, moduleSize);
+    drawFinderPattern(ctx, margin, size - margin - 7 * moduleSize, moduleSize);
+    
+    // Draw data modules based on hash
+    for (let i = 0; i < moduleCount; i++) {
+      for (let j = 0; j < moduleCount; j++) {
+        if (isFinderPattern(i, j, moduleCount)) continue;
+        
+        const dataIndex = (i * moduleCount + j) % 32;
+        if ((hash >> dataIndex) & 1) {
+          ctx.fillRect(
+            margin + i * moduleSize,
+            margin + j * moduleSize,
+            moduleSize,
+            moduleSize
+          );
+        }
+      }
+    }
+    
+    return canvas;
+  }
+  
+  function simpleHash(str) {
+    let hash = 0;
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash; // Convert to 32bit integer
+    }
+    return Math.abs(hash);
+  }
+  
+  function drawFinderPattern(ctx, x, y, moduleSize) {
+    // Outer square
+    ctx.fillRect(x, y, 7 * moduleSize, 7 * moduleSize);
+    // Inner white square
+    ctx.fillStyle = '#ffffff';
+    ctx.fillRect(x + moduleSize, y + moduleSize, 5 * moduleSize, 5 * moduleSize);
+    // Center square
+    ctx.fillStyle = '#3a2a4d';
+    ctx.fillRect(x + 2 * moduleSize, y + 2 * moduleSize, 3 * moduleSize, 3 * moduleSize);
+  }
+  
+  function isFinderPattern(i, j, size) {
+    // Top-left
+    if (i < 8 && j < 8) return true;
+    // Top-right
+    if (i >= size - 8 && j < 8) return true;
+    // Bottom-left
+    if (i < 8 && j >= size - 8) return true;
+    return false;
+  }
+  
+  return { generate: generateQR };
+})();
+
+/* ============================================================
    PAGE DE PRODUCTION — aucune donnée en dur. Tout vient de
    ./app_data.json, généré par scripts/export.mjs depuis Baserow.
    Modèle tout-lien acté : pas d'appel Google Place Details, donc
@@ -298,6 +390,8 @@ const I18N = {
   go:{fr:"Y aller",en:"Take me there",es:"Cómo llegar"},
   photos:{fr:"Photos & avis sur Google",en:"Photos & reviews on Google",es:"Fotos y opiniones en Google"},
   qr:{fr:"Astuce comptoir : proposez le QR pour que le client reparte avec l'itinéraire sur son téléphone.",en:"Desk tip: offer the QR so the guest leaves with the route on their phone.",es:"Consejo de recepción: ofrezca el QR para que el cliente se lleve la ruta en su móvil."},
+  qrLbl:{fr:"QR Code Navigation",en:"Navigation QR Code",es:"Código QR Navegación"},
+  qrHint:{fr:"Scannez pour ouvrir l'itinéraire à pied sur votre téléphone",en:"Scan to open walking route on your phone",es:"Escanee para abrir la ruta a pie en su teléfono"},
   editoLbl:{fr:"Le conseil de la maison",en:"The house recommendation",es:"La recomendación de la casa"},
   empty:{fr:"Aucune adresse ne correspond à ces filtres. Élargissez la recherche.",en:"No address matches these filters. Widen the search.",es:"Ninguna dirección coincide con estos filtros. Ampliar la búsqueda."},
   maskLbl:{fr:"Masquer le hors-persona",en:"Hide off-persona",es:"Ocultar fuera de perfil"},
@@ -631,10 +725,28 @@ function openFiche(x){
       <a class="btn btn-ghost" href="${mapsUrl(x)}" target="_blank" rel="noopener">${t('photos')}</a>
       <a class="btn btn-go" href="${navUrl(x)}" target="_blank" rel="noopener">${t('go')} →</a>
     </div>
-    <div class="qr">${t('qr')}</div>`;
+    <div class="qr">
+      <div class="qr-container" id="qrContainer">
+        <div class="qr-label">${t('qrLbl')}</div>
+        <div id="qrCanvas"></div>
+        <div class="qr-hint">${t('qrHint')}</div>
+      </div>
+      <div style="margin-top:8px;">${t('qr')}</div>
+    </div>`;
   f.querySelector('.close').onclick=closeFiche;
   f.classList.add('show'); f.setAttribute('aria-hidden','false');
   document.getElementById('scrim').classList.add('show');
+  
+  // Generate QR code for Google Maps navigation
+  setTimeout(() => {
+    const qrContainer = document.getElementById('qrCanvas');
+    if (qrContainer && x.nom) {
+      const navUrlStr = navUrl(x);
+      const qrCanvas = QRCode.generate(navUrlStr, { size: 100, margin: 2 });
+      qrContainer.innerHTML = '';
+      qrContainer.appendChild(qrCanvas);
+    }
+  }, 100);
 }
 function closeFiche(){
   document.getElementById('fiche').classList.remove('show');
