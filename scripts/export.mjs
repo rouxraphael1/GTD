@@ -1,4 +1,4 @@
-// export.mjs — Génère public/app_data.json depuis Baserow (source de vérité TEFD).
+// export.mjs — Génère app_data.json depuis Baserow (source de vérité TEFD).
 // Node 18+ (fetch natif). Aucune dépendance.
 //
 // Lancement local :  BASEROW_TOKEN=xxx node scripts/export.mjs

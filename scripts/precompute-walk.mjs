@@ -10,7 +10,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 
 const KEY  = process.env.ORS_API_KEY;
-const FILE = process.env.OUT_PATH || "public/app_data.json";
+const FILE = process.env.OUT_PATH || "app_data.json";
 const ORS  = "https://api.openrouteservice.org/v2/matrix/foot-walking";
 
 // Limite Matrix ORS : sources × destinations ≤ 3500 par requête.
