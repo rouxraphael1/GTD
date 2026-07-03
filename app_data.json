@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-07-02T11:56:50.726Z",
-  "date_reference": "2026-07-02",
+  "genere_le": "2026-07-03T11:55:44.970Z",
+  "date_reference": "2026-07-03",
   "personas": [
     {
       "code": "01",
@@ -779,7 +779,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 132
+        "Hotel de France": 133
       }
     },
     {
@@ -1052,7 +1052,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 52
+        "Hotel de France": 53
       }
     },
     {
@@ -1218,5 +1218,5 @@
     }
   ],
   "parcours": [],
-  "marche_calcule_le": "2026-07-02T11:56:51.841Z"
+  "marche_calcule_le": "2026-07-03T11:55:46.196Z"
 }
