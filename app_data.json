@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-07-03T11:55:44.970Z",
-  "date_reference": "2026-07-03",
+  "genere_le": "2026-07-04T10:44:47.626Z",
+  "date_reference": "2026-07-04",
   "personas": [
     {
       "code": "01",
@@ -1218,5 +1218,5 @@
     }
   ],
   "parcours": [],
-  "marche_calcule_le": "2026-07-03T11:55:46.196Z"
+  "marche_calcule_le": "2026-07-04T10:44:48.765Z"
 }
