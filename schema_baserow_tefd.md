@@ -2,7 +2,7 @@
 
 **Rôle :** base de vérité unique. Une seule saisie alimente deux livrables : le `app_data.json` de la PWA et le PDF du *Livret de référence factuelle*.
 
-**Principe directeur :** Baserow stocke la *sélection éditoriale* et les métadonnées (personas, notes, `place_id`), **jamais** les photos/avis (récupérés en direct chez Google via le `place_id`, donc toujours frais). Tout élément daté n'est exporté que si sa date est future → garantie anti-hallucination.
+**Principe directeur :** Baserow stocke la *sélection éditoriale* et les métadonnées (personas, notes, `osm_id`). Tout le stack est open source et gratuit : résolution de lieux via **Nominatim** (OSM), photos via **Wikimedia Commons / Mapillary**, navigation via liens `geo:` universels, avis via la **note éditoriale du Livret** (positionnement premium — le conseil de la maison vaut mieux que la moyenne TripAdvisor). Tout élément daté n'est exporté que si sa date est future → garantie anti-hallucination.
 
 ---
 
@@ -27,7 +27,8 @@
 | `nom` | Texte | Nom du lieu (neutre en langue) |
 | `categorie` | Lien → Catégories | Restaurant, musée, église, salle de sport… |
 | `personas` | Lien → Personas (multiple) | Quels profils cette adresse sert |
-| `place_id_google` | Texte | Clé de récupération avis/photos/horaires en direct |
+| `osm_id` | Texte | Identifiant OSM du lieu (ex. `node/123456789`) — résolu via Nominatim à la saisie |
+| `osm_type` | Texte | `node`, `way` ou `relation` — complète `osm_id` pour construire l'URL OSM |
 | `latitude` | Nombre (décimal) | Affichage carte + calcul ORS |
 | `longitude` | Nombre (décimal) | Idem |
 | `adresse` | Texte | Adresse postale lisible |
@@ -197,4 +198,4 @@
 
 - **Référent TEFD** : écrit directement dans Baserow (= l'interface admin, rien à développer). Valide les suggestions. Garant des cycles mars / septembre / trimestriel.
 - **Réceptionniste** : via l'appli, propose une adresse → table *Suggestions* → modération.
-- **Résolution `place_id`** : écran « Ajouter une adresse » (PWA admin) → Worker → Google Text Search → confirmation humaine → écriture Baserow avec `place_id` + lat/lng.
+- **Résolution `osm_id`** : script `resolve-osm.mjs` → Nominatim (gratuit, sans clé) → confirmation humaine → écriture Baserow avec `osm_id` + `osm_type` + lat/lng. Zéro dépendance Google.

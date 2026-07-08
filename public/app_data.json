@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-06-25T20:26:44.682Z",
-  "date_reference": "2026-06-25",
+  "genere_le": "2026-07-08T15:15:26.724Z",
+  "date_reference": "2026-07-08",
   "personas": [
     {
       "code": "01",
@@ -230,9 +230,10 @@
       "personas": [
         "04"
       ],
-      "place_id": null,
-      "lat": "43.6017000",
-      "lng": "1.4442000",
+      "osm_id": "2799416140",
+      "osm_type": "node",
+      "lat": "43.5994814",
+      "lng": "1.4410164",
       "adresse": "2 Rue du Languedoc, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -246,7 +247,6 @@
       },
       "acces": "",
       "prix": "€€€",
-      "priorite_edito": "5",
       "tags": [
         "gastronomique",
         "étoilé",
@@ -254,10 +254,7 @@
         "romantique"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Stephane Tournie",
@@ -265,7 +262,8 @@
       "personas": [
         "04"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6006000",
       "lng": "1.4448000",
       "adresse": "Rue des Changes, 31000 Toulouse",
@@ -280,7 +278,6 @@
       },
       "acces": "",
       "prix": "€€€€",
-      "priorite_edito": "5",
       "tags": [
         "gastronomique",
         "étoilé",
@@ -288,10 +285,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 11
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Lambinon",
@@ -300,7 +294,8 @@
         "04",
         "07"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6012000",
       "lng": "1.4435000",
       "adresse": "Rue des Filatiers, 31000 Toulouse",
@@ -316,17 +311,13 @@
       },
       "acces": "",
       "prix": "€€€",
-      "priorite_edito": "4",
       "tags": [
         "gastronomique",
         "terrasse",
         "chaleureux"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 10
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cave a manger N5",
@@ -335,7 +326,8 @@
         "01",
         "04"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6028000",
       "lng": "1.4432000",
       "adresse": "5 Rue de la Pomme, 31000 Toulouse",
@@ -351,17 +343,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
       "tags": [
         "bistronomique",
         "terrasse",
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 8
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Bibendum",
@@ -370,7 +358,8 @@
         "04",
         "07"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6032000",
       "lng": "1.4445000",
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -386,17 +375,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
       "tags": [
         "bistronomique",
         "terrasse",
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 6
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cantine de l'Opera",
@@ -405,7 +390,8 @@
         "04",
         "08"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6038000",
       "lng": "1.4440000",
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -420,17 +406,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "4",
       "tags": [
         "bistronomique",
         "décontracté",
         "accueillant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 6
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Solides",
@@ -440,7 +422,8 @@
         "05",
         "08"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6014000",
       "lng": "1.4451000",
       "adresse": "Rue de la Pomme, 31000 Toulouse",
@@ -455,17 +438,13 @@
       },
       "acces": "",
       "prix": "€€€",
-      "priorite_edito": "3",
       "tags": [
         "gastronomique",
         "romantique",
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cafe Le Bibent",
@@ -474,9 +453,10 @@
         "02",
         "07"
       ],
-      "place_id": null,
-      "lat": "43.6043000",
-      "lng": "1.4440000",
+      "osm_id": "5981188951",
+      "osm_type": "node",
+      "lat": "43.6037802",
+      "lng": "1.4434455",
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -491,17 +471,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
       "tags": [
         "historique",
         "terrasse",
         "décontracté"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 5
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "El Bocadillo",
@@ -510,7 +486,8 @@
         "02",
         "07"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6009000",
       "lng": "1.4446000",
       "adresse": "Rue Pargaminieres, 31000 Toulouse",
@@ -525,17 +502,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
       "tags": [
         "décontracté",
         "accueillant",
         "chaleureux"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 10
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Brasserie des Beaux-Arts",
@@ -543,7 +516,8 @@
       "personas": [
         "03"
       ],
-      "place_id": null,
+      "osm_id": null,
+      "osm_type": null,
       "lat": "43.6038000",
       "lng": "1.4418000",
       "adresse": "Rue des Beaux-Arts, 31000 Toulouse",
@@ -559,17 +533,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
       "tags": [
         "terrasse",
         "animé",
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 8
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Marche Victor Hugo",
@@ -580,9 +550,10 @@
         "07",
         "08"
       ],
-      "place_id": null,
-      "lat": "43.6047000",
-      "lng": "1.4453000",
+      "osm_id": "828576847",
+      "osm_type": "way",
+      "lat": "43.6065101",
+      "lng": "1.4466498",
       "adresse": "Place Victor Hugo, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -596,17 +567,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
       "tags": [
         "terrasse",
         "animé",
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 4
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Marche Saint-Aubin",
@@ -615,7 +582,8 @@
         "07",
         "08"
       ],
-      "place_id": null,
+      "osm_id": "1150978954",
+      "osm_type": "node",
       "lat": "43.6055000",
       "lng": "1.4395000",
       "adresse": "Allees Charles de Fitte, 31300 Toulouse",
@@ -631,17 +599,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "3",
       "tags": [
         "terrasse",
         "animé",
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 11
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Les Abattoirs",
@@ -651,7 +615,8 @@
         "07",
         "08"
       ],
-      "place_id": null,
+      "osm_id": "22896377",
+      "osm_type": "way",
       "lat": "43.6009000",
       "lng": "1.4295000",
       "adresse": "76 Allees Charles de Fitte, 31300 Toulouse",
@@ -666,7 +631,6 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "4",
       "tags": [
         "art",
         "contemporain",
@@ -674,10 +638,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 26
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Fondation Bemberg",
@@ -686,9 +647,10 @@
         "04",
         "08"
       ],
-      "place_id": null,
-      "lat": "43.6002000",
-      "lng": "1.4421000",
+      "osm_id": "1982847379",
+      "osm_type": "node",
+      "lat": "43.6001991",
+      "lng": "1.4420464",
       "adresse": "Place d'Assezat, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -701,17 +663,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "5",
       "tags": [
         "art",
         "histoire",
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 13
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Musee des Augustins",
@@ -720,7 +678,8 @@
         "05",
         "07"
       ],
-      "place_id": null,
+      "osm_id": "22718219",
+      "osm_type": "way",
       "lat": "43.6002000",
       "lng": "1.4442000",
       "adresse": "22 Rue de Metz, 31000 Toulouse",
@@ -735,7 +694,6 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
       "tags": [
         "art",
         "histoire",
@@ -743,10 +701,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 11
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Aeroscopia",
@@ -755,7 +710,8 @@
         "01",
         "06"
       ],
-      "place_id": null,
+      "osm_id": "1465652591",
+      "osm_type": "way",
       "lat": "43.6636000",
       "lng": "1.3712000",
       "adresse": "Avenue Francis Crick, 31700 Blagnac",
@@ -770,17 +726,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "4",
       "tags": [
         "histoire",
         "famille",
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 149
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cite de l'Espace",
@@ -789,7 +741,8 @@
         "05",
         "06"
       ],
-      "place_id": null,
+      "osm_id": "4722585",
+      "osm_type": "way",
       "lat": "43.5874000",
       "lng": "1.4920000",
       "adresse": "Avenue Jean Baylet, 31500 Toulouse",
@@ -804,7 +757,6 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
       "tags": [
         "histoire",
         "famille",
@@ -812,10 +764,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 70
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "L'Envol des Pionniers",
@@ -824,7 +773,8 @@
         "01",
         "06"
       ],
-      "place_id": null,
+      "osm_id": "8495554",
+      "osm_type": "relation",
       "lat": "43.5795000",
       "lng": "1.4850000",
       "adresse": "1 Rue de Montaudran, 31500 Toulouse",
@@ -839,17 +789,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
       "tags": [
         "histoire",
         "famille",
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 71
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Basilique Saint-Sernin",
@@ -859,9 +805,10 @@
         "07",
         "08"
       ],
-      "place_id": null,
-      "lat": "43.6083000",
-      "lng": "1.4418000",
+      "osm_id": "260584755",
+      "osm_type": "way",
+      "lat": "43.6083818",
+      "lng": "1.4419702",
       "adresse": "Place Saint-Sernin, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -874,7 +821,6 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "5",
       "tags": [
         "historique",
         "religieux",
@@ -882,10 +828,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Couvent des Jacobins",
@@ -894,7 +837,8 @@
         "07",
         "08"
       ],
-      "place_id": null,
+      "osm_id": "1562254",
+      "osm_type": "relation",
       "lat": "43.6008000",
       "lng": "1.4435000",
       "adresse": "Place des Jacobins, 31000 Toulouse",
@@ -909,7 +853,6 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
       "tags": [
         "historique",
         "religieux",
@@ -917,10 +860,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 11
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Pont-Neuf",
@@ -930,9 +870,10 @@
         "07",
         "08"
       ],
-      "place_id": null,
-      "lat": "43.6017000",
-      "lng": "1.4412000",
+      "osm_id": "1149065200",
+      "osm_type": "node",
+      "lat": "43.5996918",
+      "lng": "1.4409577",
       "adresse": "Pont-Neuf, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -945,17 +886,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
       "tags": [
         "historique",
         "patrimoine",
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 11
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Halle aux Grains",
@@ -964,7 +901,8 @@
         "04",
         "08"
       ],
-      "place_id": null,
+      "osm_id": "24861515",
+      "osm_type": "way",
       "lat": "43.6024000",
       "lng": "1.4451000",
       "adresse": "Place de la Trinite, 31000 Toulouse",
@@ -979,16 +917,12 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "4",
       "tags": [
         "culturel",
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 7
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Theatre du Capitole",
@@ -996,9 +930,10 @@
       "personas": [
         "04"
       ],
-      "place_id": null,
-      "lat": "43.6036000",
-      "lng": "1.4440000",
+      "osm_id": "784885230",
+      "osm_type": "way",
+      "lat": "43.6041433",
+      "lng": "1.4443378",
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1011,16 +946,12 @@
       },
       "acces": "",
       "prix": "€€€",
-      "priorite_edito": "4",
       "tags": [
         "culturel",
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 6
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Stade Ernest-Wallon",
@@ -1028,7 +959,8 @@
       "personas": [
         "03"
       ],
-      "place_id": null,
+      "osm_id": "517561059",
+      "osm_type": "way",
       "lat": "43.6175000",
       "lng": "1.4088000",
       "adresse": "Route de Muret, 31200 Toulouse",
@@ -1043,17 +975,13 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "4",
       "tags": [
         "rugby",
         "stade",
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 56
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Berges de la Garonne",
@@ -1063,7 +991,8 @@
         "05",
         "08"
       ],
-      "place_id": null,
+      "osm_id": "22937315",
+      "osm_type": "way",
       "lat": "43.6015000",
       "lng": "1.4390000",
       "adresse": "Quai de la Daurade, 31000 Toulouse",
@@ -1080,17 +1009,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
       "tags": [
         "calme",
         "famille",
         "footing"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 14
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Canal du Midi",
@@ -1099,7 +1024,8 @@
         "07",
         "08"
       ],
-      "place_id": null,
+      "osm_id": "12833864697",
+      "osm_type": "node",
       "lat": "43.5950000",
       "lng": "1.4380000",
       "adresse": "Canal du Midi, 31300 Toulouse",
@@ -1116,7 +1042,6 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "3",
       "tags": [
         "calme",
         "famille",
@@ -1124,10 +1049,7 @@
         "patrimoine"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 24
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Passerelle de la Daurade",
@@ -1135,7 +1057,8 @@
       "personas": [
         "08"
       ],
-      "place_id": null,
+      "osm_id": "23149002",
+      "osm_type": "way",
       "lat": "43.6005000",
       "lng": "1.4380000",
       "adresse": "Passerelle de la Daurade, 31000 Toulouse",
@@ -1152,17 +1075,13 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "3",
       "tags": [
         "calme",
         "romantique",
         "patrimoine"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 16
-      }
+      "verifie_le": "2026-01-15"
     }
   ],
   "evenements": [
@@ -1217,6 +1136,5 @@
       "url": "https://www.cite-espace.com"
     }
   ],
-  "parcours": [],
-  "marche_calcule_le": "2026-06-25T20:35:36.490Z"
+  "parcours": []
 }

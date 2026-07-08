@@ -1,0 +1,28 @@
+nom,adresse,baserow_row_id,osm_type,osm_id,latitude,longitude,osm_url
+"Py-r","19 descente de la Halle aux Poissons Toulouse","10","node","2799416140","43.5994814","1.4410164","https://www.openstreetmap.org/node/2799416140"
+"Stephane Tournie","1 place du Capitole Toulouse","11",,,,,
+"Lambinon","Rue des Filatiers Toulouse","12",,,,,
+"Cave a manger N5","5 Rue de la Pomme Toulouse","13",,,,,
+"Bibendum","Place du Capitole Toulouse","14",,,,,
+"Cantine de l Opera","Place du Capitole Toulouse","15",,,,,
+"Solides","Rue de la Pomme Toulouse","16",,,,,
+"Cafe Le Bibent","Place du Capitole Toulouse","17","node","5981188951","43.6037802","1.4434455","https://www.openstreetmap.org/node/5981188951"
+"El Bocadillo","Rue Pargaminieres Toulouse","18",,,,,
+"Brasserie des Beaux-Arts","Rue des Beaux-Arts Toulouse","19",,,,,
+"Marche Victor Hugo","Place Victor Hugo Toulouse","20","way","828576847","43.6065101","1.4466498","https://www.openstreetmap.org/way/828576847"
+"Marche Saint-Aubin","Allees Charles de Fitte Toulouse","21",,,,,
+"Les Abattoirs","76 Allees Charles de Fitte Toulouse","22",,,,,
+"Fondation Bemberg","Place d Assezat Toulouse","23","node","1982847379","43.6001991","1.4420464","https://www.openstreetmap.org/node/1982847379"
+"Musee des Augustins","22 Rue de Metz Toulouse","24",,,,,
+"Aeroscopia","Avenue Francis Crick Blagnac","25",,,,,
+"Cite de l Espace","Avenue Jean Baylet Toulouse","26",,,,,
+"L Envol des Pionniers","1 Rue de Montaudran Toulouse","27",,,,,
+"Basilique Saint-Sernin","Place Saint-Sernin Toulouse","28","way","260584755","43.6083818","1.4419702","https://www.openstreetmap.org/way/260584755"
+"Couvent des Jacobins","Place des Jacobins Toulouse","29",,,,,
+"Pont-Neuf","Pont-Neuf Toulouse","30","node","1149065200","43.5996918","1.4409577","https://www.openstreetmap.org/node/1149065200"
+"Halle aux Grains","Place de la Trinite Toulouse","31",,,,,
+"Theatre du Capitole","Place du Capitole Toulouse","32","way","784885230","43.6041433","1.4443378","https://www.openstreetmap.org/way/784885230"
+"Stade Ernest-Wallon","Route de Muret Toulouse","33",,,,,
+"Berges de la Garonne","Quai de la Daurade Toulouse","34",,,,,
+"Canal du Midi","Canal du Midi Toulouse","35",,,,,
+"Passerelle de la Daurade","Passerelle de la Daurade Toulouse","36",,,,,
