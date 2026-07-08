@@ -36,20 +36,20 @@ jobs:
           T_PERSONAS:   ${{ secrets.T_PERSONAS }}
           T_CATEGORIES: ${{ secrets.T_CATEGORIES }}
           T_HOTELS:     ${{ secrets.T_HOTELS }}
-          OUT_PATH: public/app_data.json
+          OUT_PATH: app_data.json
         run: node scripts/export.mjs
 
       - name: Précalculer les temps de marche (ORS Matrix)
         env:
           ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
-          OUT_PATH: public/app_data.json
+          OUT_PATH: app_data.json
         run: node scripts/precompute-walk.mjs
 
       - name: Committer si le contenu a changé
         run: |
           git config user.name  "tefd-bot"
           git config user.email "bot@tefd.local"
-          git add public/app_data.json
+          git add app_data.json
           if git diff --staged --quiet; then
             echo "Aucun changement de données."
           else

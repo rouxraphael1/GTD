@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-06-25T20:26:44.682Z",
-  "date_reference": "2026-06-25",
+  "genere_le": "2026-07-08T11:18:45.880Z",
+  "date_reference": "2026-07-08",
   "personas": [
     {
       "code": "01",
@@ -256,7 +256,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 9
+        "Hotel de France": 8
       }
     },
     {
@@ -290,7 +290,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 11
+        "Hotel de France": 9
       }
     },
     {
@@ -325,7 +325,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 10
+        "Hotel de France": 9
       }
     },
     {
@@ -360,7 +360,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 8
+        "Hotel de France": 7
       }
     },
     {
@@ -429,7 +429,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 6
+        "Hotel de France": 5
       }
     },
     {
@@ -464,7 +464,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 9
+        "Hotel de France": 7
       }
     },
     {
@@ -534,7 +534,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 10
+        "Hotel de France": 9
       }
     },
     {
@@ -605,7 +605,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 4
+        "Hotel de France": 3
       }
     },
     {
@@ -640,7 +640,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 11
+        "Hotel de France": 9
       }
     },
     {
@@ -676,7 +676,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 26
+        "Hotel de France": 24
       }
     },
     {
@@ -710,7 +710,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 13
+        "Hotel de France": 12
       }
     },
     {
@@ -745,7 +745,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 11
+        "Hotel de France": 10
       }
     },
     {
@@ -779,7 +779,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 149
+        "Hotel de France": 133
       }
     },
     {
@@ -814,7 +814,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 70
+        "Hotel de France": 58
       }
     },
     {
@@ -848,7 +848,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 71
+        "Hotel de France": 61
       }
     },
     {
@@ -884,7 +884,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 9
+        "Hotel de France": 8
       }
     },
     {
@@ -919,7 +919,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 11
+        "Hotel de France": 9
       }
     },
     {
@@ -954,7 +954,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 11
+        "Hotel de France": 10
       }
     },
     {
@@ -987,7 +987,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 7
+        "Hotel de France": 6
       }
     },
     {
@@ -1052,7 +1052,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 56
+        "Hotel de France": 53
       }
     },
     {
@@ -1089,7 +1089,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 14
+        "Hotel de France": 13
       }
     },
     {
@@ -1126,7 +1126,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 24
+        "Hotel de France": 22
       }
     },
     {
@@ -1161,7 +1161,7 @@
       "pmr": true,
       "verifie_le": "2026-01-15",
       "marche_min": {
-        "Hotel de France": 16
+        "Hotel de France": 13
       }
     }
   ],
@@ -1218,5 +1218,5 @@
     }
   ],
   "parcours": [],
-  "marche_calcule_le": "2026-06-25T20:35:36.490Z"
+  "marche_calcule_le": "2026-07-08T11:18:46.837Z"
 }
