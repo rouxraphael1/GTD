@@ -96,6 +96,7 @@ async function main() {
     categorie: Array.isArray(r.categorie) ? (r.categorie[0]?.value || null) : (r.categorie || null),
     personas: linkValues(r.personas),
     place_id: r.place_id_google || null,
+    url: r.site_web || r.url || null,
     lat: r.latitude != null ? Number(r.latitude) : null,
     lng: r.longitude != null ? Number(r.longitude) : null,
     adresse: r.adresse,

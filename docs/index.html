@@ -299,6 +299,7 @@ const I18N = {
   photos:{fr:"Photos & avis sur Google",en:"Photos & reviews on Google",es:"Fotos y opiniones en Google"},
   qr:{fr:"Astuce comptoir : proposez le QR pour que le client reparte avec l'itinéraire sur son téléphone.",en:"Desk tip: offer the QR so the guest leaves with the route on their phone.",es:"Consejo de recepción: ofrezca el QR para que el cliente se lleve la ruta en su móvil."},
   editoLbl:{fr:"Le conseil de la maison",en:"The house recommendation",es:"La recomendación de la casa"},
+  siteWeb:{fr:"Site web",en:"Website",es:"Sitio web"},
   empty:{fr:"Aucune adresse ne correspond à ces filtres. Élargissez la recherche.",en:"No address matches these filters. Widen the search.",es:"Ninguna dirección coincide con estos filtros. Ampliar la búsqueda."},
   maskLbl:{fr:"Masquer le hors-persona",en:"Hide off-persona",es:"Ocultar fuera de perfil"},
   maskHintOn:{fr:"filtre actif",en:"filter on",es:"filtro activo"},
@@ -628,6 +629,7 @@ function openFiche(x){
       </div>
     </div>
     <div class="actions">
+      ${x.url ? `<a class="btn btn-ghost" href="${x.url}" target="_blank" rel="noopener">${t('siteWeb')}</a>` : ''}
       <a class="btn btn-ghost" href="${mapsUrl(x)}" target="_blank" rel="noopener">${t('photos')}</a>
       <a class="btn btn-go" href="${navUrl(x)}" target="_blank" rel="noopener">${t('go')} →</a>
     </div>

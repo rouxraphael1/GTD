@@ -254,7 +254,8 @@
         "romantique"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.py-r.com/"
     },
     {
       "nom": "Les Jardins de l'Opéra",
@@ -285,7 +286,8 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://lesjardinsdelopera.fr/"
     },
     {
       "nom": "Cave a manger N5",
@@ -317,7 +319,8 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.le5winebar.fr/"
     },
     {
       "nom": "Bibendum",
@@ -349,7 +352,8 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://bibent.fr/"
     },
     {
       "nom": "Cantine de l'Opera",
@@ -380,7 +384,8 @@
         "accueillant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://lesjardinsdelopera.fr/"
     },
     {
       "nom": "Solides",
@@ -412,7 +417,8 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.solides.fr/"
     },
     {
       "nom": "Cafe Le Bibent",
@@ -445,7 +451,8 @@
         "décontracté"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://bibent.fr/"
     },
     {
       "nom": "El Bocadillo",
@@ -476,7 +483,8 @@
         "chaleureux"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.boca-toulouse.fr/"
     },
     {
       "nom": "Brasserie des Beaux-Arts",
@@ -507,7 +515,8 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://brasserielesbeauxarts.fr/"
     },
     {
       "nom": "Marche Victor Hugo",
@@ -606,7 +615,8 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.lesabattoirs.org/"
     },
     {
       "nom": "Fondation Bemberg",
@@ -637,7 +647,8 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.fondation-bemberg.fr/"
     },
     {
       "nom": "Musee des Augustins",
@@ -669,7 +680,8 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://augustins.toulouse.fr/"
     },
     {
       "nom": "Aeroscopia",
@@ -700,7 +712,8 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.aeroscopia.fr/"
     },
     {
       "nom": "Cite de l'Espace",
@@ -732,7 +745,8 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.cite-espace.com/"
     },
     {
       "nom": "L'Envol des Pionniers",
@@ -763,7 +777,8 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://www.lenvol-des-pionniers.com/"
     },
     {
       "nom": "Basilique Saint-Sernin",
@@ -796,7 +811,8 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://basilique-saint-sernin.fr/"
     },
     {
       "nom": "Couvent des Jacobins",
@@ -828,7 +844,8 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://jacobins.toulouse.fr/fr/"
     },
     {
       "nom": "Pont-Neuf",
@@ -890,7 +907,8 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://onct.toulouse.fr/la-halle-aux-grains/"
     },
     {
       "nom": "Theatre du Capitole",
@@ -919,7 +937,8 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://opera.toulouse.fr/"
     },
     {
       "nom": "Stade Ernest-Wallon",
@@ -949,7 +968,8 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "url": "https://billetterie.stadetoulousain.fr/"
     },
     {
       "nom": "Berges de la Garonne",
@@ -1074,7 +1094,8 @@
       "priorite_edito": 3,
       "tags": [],
       "pmr": false,
-      "verifie_le": null
+      "verifie_le": null,
+      "url": "https://www.michelsarran.com/"
     },
     {
       "nom": "SEPT",
@@ -1106,7 +1127,8 @@
         "élégant"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "url": "https://www.sept-toulouse.fr/"
     },
     {
       "nom": "Agapes",
@@ -1454,7 +1476,8 @@
         "contemporain"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "url": "https://theatre-cite.com/"
     },
     {
       "nom": "La Halle de la Machine",
@@ -1486,7 +1509,8 @@
         "contemporain"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "url": "https://www.lahalledelamachine.com/"
     },
     {
       "nom": "Muséum de Toulouse",
@@ -1517,7 +1541,8 @@
         "art"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "url": "https://museum.toulouse-metropole.fr/"
     },
     {
       "nom": "Cathédrale Saint-Étienne",
@@ -1549,7 +1574,8 @@
         "gratuit"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "url": "https://paroissescathedraletoulouse.fr/"
     },
     {
       "nom": "Notre-Dame de la Daurade",
@@ -1643,7 +1669,8 @@
         "moderne"
       ],
       "pmr": false,
-      "verifie_le": "2026-07-01"
+      "verifie_le": "2026-07-01",
+      "url": "https://www.keepcool-sport.fr/"
     },
     {
       "nom": "Basic-Fit Toulouse Jean Jaurès",
@@ -1674,7 +1701,8 @@
         "moderne"
       ],
       "pmr": false,
-      "verifie_le": "2026-07-01"
+      "verifie_le": "2026-07-01",
+      "url": "https://www.basic-fit.fr/"
     },
     {
       "nom": "Place du Capitole",
