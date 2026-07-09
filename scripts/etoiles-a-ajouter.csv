@@ -1,0 +1,25 @@
+# Étoilés Michelin manquants — à ajouter dans Baserow
+# Corrections incluses : Py-r (adresse), Stephane Tournie → Jardins de l'Opéra, Brasserie des Beaux-Arts
+# Format : nom,adresse,baserow_row_id (vide = nouvelle ligne)
+#
+# CORRECTIONS lignes existantes
+Les Jardins de l Opera,"1 place du Capitole Toulouse",11
+Brasserie des Beaux-Arts,"1 quai de la Daurade Toulouse",19
+#
+# NOUVEAUX étoilés Toulouse intra-muros
+Michel Sarran,"21 boulevard Armand Duportal Toulouse",
+SEPT,"11 rue Theodore-Ozenne Toulouse",
+Acte 2 Yannick Delpech,"1 rue Pane-Boeuf Toulouse",
+Agapes,"7 rue de l Industrie Toulouse",
+L Ecorce,"8 rue de l Esquille Toulouse",
+#
+# NOUVEAUX étoilés Haute-Garonne
+Maison Pellestor-Veyrier,"28 chemin de Gramont Colomiers",
+En Marge,"1204 route de Lacroix-Falgarde Aureville",
+L Aparte,"21 rue de l Europe Montrable",
+Auberge de la Forge,"8 rue Jean Parisot Lavalette",
+En Pleine Nature,"6 place de la Mairie Quint-Fonsegrives",
+#
+# BISTRONOMIE reconnue manquante
+Le Genty Magre,"3 rue Genty-Magre Toulouse",
+Une Table a Deux,"10 rue de la Pleau Toulouse",

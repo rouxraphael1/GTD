@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-07-08T11:18:45.880Z",
-  "date_reference": "2026-07-08",
+  "genere_le": "2026-07-09T12:24:32.407Z",
+  "date_reference": "2026-07-09",
   "personas": [
     {
       "code": "01",
@@ -231,9 +231,9 @@
         "04"
       ],
       "place_id": null,
-      "lat": "43.6017000",
-      "lng": "1.4442000",
-      "adresse": "2 Rue du Languedoc, 31000 Toulouse",
+      "lat": "43.5994814",
+      "lng": "1.4410164",
+      "adresse": "19 descente de la Halle aux Poissons, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
         "midi",
@@ -254,13 +254,10 @@
         "romantique"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 8
-      }
+      "verifie_le": "2026-01-15"
     },
     {
-      "nom": "Stephane Tournie",
+      "nom": "Les Jardins de l'Opéra",
       "categorie": "restaurant",
       "personas": [
         "04"
@@ -268,7 +265,7 @@
       "place_id": null,
       "lat": "43.6006000",
       "lng": "1.4448000",
-      "adresse": "Rue des Changes, 31000 Toulouse",
+      "adresse": "1 place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
         "soir"
@@ -288,45 +285,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
-    },
-    {
-      "nom": "Lambinon",
-      "categorie": "restaurant",
-      "personas": [
-        "04",
-        "07"
-      ],
-      "place_id": null,
-      "lat": "43.6012000",
-      "lng": "1.4435000",
-      "adresse": "Rue des Filatiers, 31000 Toulouse",
-      "quartier": "Saint-Cyprien",
-      "moment": [
-        "midi",
-        "soir"
-      ],
-      "note": {
-        "fr": "Chef Pierre Lambinon — menu en huit temps, produits de saison.",
-        "en": "Chef Pierre Lambinon — eight-course tasting menu, seasonal produce.",
-        "es": "Chef Pierre Lambinon — menu de ocho tiempos, productos de temporada."
-      },
-      "acces": "",
-      "prix": "€€€",
-      "priorite_edito": "4",
-      "tags": [
-        "gastronomique",
-        "terrasse",
-        "chaleureux"
-      ],
-      "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cave a manger N5",
@@ -351,17 +310,14 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
+      "priorite_edito": "5",
       "tags": [
         "bistronomique",
         "terrasse",
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 7
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Bibendum",
@@ -393,10 +349,7 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 6
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cantine de l'Opera",
@@ -427,10 +380,7 @@
         "accueillant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 5
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Solides",
@@ -462,10 +412,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 7
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cafe Le Bibent",
@@ -475,8 +422,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6043000",
-      "lng": "1.4440000",
+      "lat": "43.6037802",
+      "lng": "1.4434455",
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -498,10 +445,7 @@
         "décontracté"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 5
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "El Bocadillo",
@@ -532,10 +476,7 @@
         "chaleureux"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Brasserie des Beaux-Arts",
@@ -544,9 +485,9 @@
         "03"
       ],
       "place_id": null,
-      "lat": "43.6038000",
-      "lng": "1.4418000",
-      "adresse": "Rue des Beaux-Arts, 31000 Toulouse",
+      "lat": "43.5998208",
+      "lng": "1.4405189",
+      "adresse": "1 quai de la Daurade, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
         "midi",
@@ -566,10 +507,7 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 8
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Marche Victor Hugo",
@@ -581,8 +519,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6047000",
-      "lng": "1.4453000",
+      "lat": "43.6065101",
+      "lng": "1.4466498",
       "adresse": "Place Victor Hugo, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -596,17 +534,14 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
+      "priorite_edito": "5",
       "tags": [
         "terrasse",
         "animé",
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 3
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Marche Saint-Aubin",
@@ -638,10 +573,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Les Abattoirs",
@@ -674,10 +606,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 24
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Fondation Bemberg",
@@ -687,8 +616,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6002000",
-      "lng": "1.4421000",
+      "lat": "43.6001991",
+      "lng": "1.4420464",
       "adresse": "Place d'Assezat, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -708,10 +637,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 12
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Musee des Augustins",
@@ -743,10 +669,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 10
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Aeroscopia",
@@ -770,17 +693,14 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "4",
+      "priorite_edito": "5",
       "tags": [
         "histoire",
         "famille",
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 133
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cite de l'Espace",
@@ -804,7 +724,7 @@
       },
       "acces": "",
       "prix": "€€",
-      "priorite_edito": "3",
+      "priorite_edito": "5",
       "tags": [
         "histoire",
         "famille",
@@ -812,10 +732,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 58
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "L'Envol des Pionniers",
@@ -846,10 +763,7 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 61
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Basilique Saint-Sernin",
@@ -860,8 +774,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6083000",
-      "lng": "1.4418000",
+      "lat": "43.6083818",
+      "lng": "1.4419702",
       "adresse": "Place Saint-Sernin, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -882,10 +796,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 8
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Couvent des Jacobins",
@@ -909,7 +820,7 @@
       },
       "acces": "",
       "prix": "€",
-      "priorite_edito": "4",
+      "priorite_edito": "5",
       "tags": [
         "historique",
         "religieux",
@@ -917,22 +828,19 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 9
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Pont-Neuf",
-      "categorie": "eglise",
+      "categorie": "visite",
       "personas": [
         "04",
         "07",
         "08"
       ],
       "place_id": null,
-      "lat": "43.6017000",
-      "lng": "1.4412000",
+      "lat": "43.5996918",
+      "lng": "1.4409577",
       "adresse": "Pont-Neuf, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -952,10 +860,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 10
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Halle aux Grains",
@@ -985,10 +890,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 6
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Theatre du Capitole",
@@ -997,8 +899,8 @@
         "04"
       ],
       "place_id": null,
-      "lat": "43.6036000",
-      "lng": "1.4440000",
+      "lat": "43.6041433",
+      "lng": "1.4443378",
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1017,10 +919,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 6
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Stade Ernest-Wallon",
@@ -1050,10 +949,7 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 53
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Berges de la Garonne",
@@ -1087,10 +983,7 @@
         "footing"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 13
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Canal du Midi",
@@ -1124,10 +1017,7 @@
         "patrimoine"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 22
-      }
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Passerelle de la Daurade",
@@ -1159,10 +1049,767 @@
         "patrimoine"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "marche_min": {
-        "Hotel de France": 13
-      }
+      "verifie_le": "2026-01-15"
+    },
+    {
+      "nom": "Michel Sarran",
+      "categorie": "restaurant",
+      "personas": [
+        "01",
+        "04"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "21 boulevard Armand Duportal, 31000 Toulouse",
+      "quartier": null,
+      "moment": [],
+      "note": {
+        "fr": "",
+        "en": "",
+        "es": ""
+      },
+      "acces": "",
+      "prix": null,
+      "priorite_edito": 3,
+      "tags": [],
+      "pmr": false,
+      "verifie_le": null
+    },
+    {
+      "nom": "SEPT",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "07"
+      ],
+      "place_id": null,
+      "lat": "43.5997000",
+      "lng": "1.4432000",
+      "adresse": "11 rue Théodore-Ozenne, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "soir"
+      ],
+      "note": {
+        "fr": "Étoilé Michelin. Maison contemporaine, menu surprise mer + accents nippons. 15 convives max. Vins accordés aux mets. Pour client curieux et ouvert, amateur de gastronomie créative hors codes classiques.",
+        "en": "Michelin starred. Contemporary house, surprise menu with sea and Japanese accents. Max 15 guests. Wine pairings. For curious guests who enjoy creative, unconventional gastronomy.",
+        "es": "Estrella Michelin. Casa contemporánea, menú sorpresa mar + acentos nipones. Máx. 15 comensales. Maridaje de vinos. Para el cliente curioso amante de la gastronomía creativa."
+      },
+      "acces": "Quartier des Antiquaires — 8 min à pied du Capitole",
+      "prix": "€€€€",
+      "priorite_edito": "5",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "romantique",
+        "élégant"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Agapes",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "07"
+      ],
+      "place_id": null,
+      "lat": "43.6076000",
+      "lng": "1.4489000",
+      "adresse": "7 rue de l'Industrie, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "soir"
+      ],
+      "note": {
+        "fr": "Nouvelle étoile Michelin 2026. Petit bistrot gastronomique chaleureux, cuisine de saison pleine de relief. Coup de cœur des inspecteurs. Virginie Béziaud en salle, passion du vin.",
+        "en": "New Michelin star 2026. Warm gastronomic bistro, seasonal cuisine full of character. Michelin inspectors' favourite. Passionate sommelier front of house.",
+        "es": "Nueva estrella Michelin 2026. Pequeño bistró gastronómico cálido, cocina de temporada llena de carácter. El favorito de los inspectores."
+      },
+      "acces": "Quartier Saint-Aubin — 12 min à pied du Capitole",
+      "prix": "€€€",
+      "priorite_edito": "4",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "chaleureux"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Le Genty Magre",
+      "categorie": "restaurant",
+      "personas": [
+        "01",
+        "04"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "3 rue Genty-Magre, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Bistronomie de référence toulousaine. Cuisine soignée, cadre agréable. Idéal pour anniversaires et occasions spéciales. Un cran au-dessus, sans l'apparat étoilé.",
+        "en": "Toulouse's benchmark bistronomy. Refined cuisine, pleasant setting. Ideal for birthdays and special occasions. A step above, without the starred formality.",
+        "es": "Bistronómica de referencia en Toulouse. Cocina cuidada, marco agradable. Ideal para cumpleaños y ocasiones especiales."
+      },
+      "acces": "Centre-ville — 8 min à pied du Capitole",
+      "prix": "€€€",
+      "priorite_edito": "4",
+      "tags": [
+        "gastronomique",
+        "romantique",
+        "élégant"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Acte 2 Yannick Delpech",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "07"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "1 rue Pane-Bœuf, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "soir"
+      ],
+      "note": {
+        "fr": "Étoilé Michelin. Ancienne scierie, ambiance table d'hôtes bohème, musique et projection vidéo. 15 convives max, menu dégustation surprise. Vins bio et nature uniquement. Expérience hors codes.",
+        "en": "Michelin starred. Former sawmill, bohemian dinner party atmosphere, music and video. Max 15 guests, surprise tasting menu. Natural wines only. An experience unlike any other.",
+        "es": "Estrella Michelin. Antigua serrería, ambiente íntimo y bohemio. Máx. 15 comensales, menú degustación sorpresa. Solo vinos naturales."
+      },
+      "acces": "Centre-ville — 10 min à pied du Capitole",
+      "prix": "€€€",
+      "priorite_edito": "4",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "romantique"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "L'Écorce",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "05"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "8 rue de l'Esquille, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Nouvelle étoile Michelin 2026. Cuisine épurée, circuits courts, saisonnalité. Menu Saveurs du marché à 34 € le midi en semaine : meilleure entrée en gastronomie étoilée de Toulouse.",
+        "en": "New Michelin star 2026. Pure cuisine, short supply chains, seasonality. Market menu at €34 for weekday lunch: the best entry point to Toulouse's starred gastronomy.",
+        "es": "Nueva estrella Michelin 2026. Cocina depurada, circuitos cortos, estacionalidad. Menú a 34 € al mediodía en semana: la mejor entrada a la gastronomía con estrella de Toulouse."
+      },
+      "acces": "Centre-ville — 6 min à pied du Capitole",
+      "prix": "€€",
+      "priorite_edito": "4",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "terrasse"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Maison Pellestor-Veyrier",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "07"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "28 chemin de Gramont, 31770 Colomiers",
+      "quartier": null,
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Nouvelle étoile Michelin 2026 + Jeune Chef de l'Année 2026. Quentin Pellestor-Veyrier, premier talent de la jeune gastronomie toulousaine. 15 min du centre en voiture.",
+        "en": "New Michelin star 2026 + Young Chef of the Year 2026. Quentin Pellestor-Veyrier, leading talent of Toulouse's new gastronomy. 15 min from the centre by car.",
+        "es": "Nueva estrella Michelin 2026 + Joven Chef del Año 2026. Quentin Pellestor-Veyrier, principal talento de la nueva gastronomía tolosana. 15 min del centro en coche."
+      },
+      "acces": "Colomiers — 15 min en voiture depuis le centre",
+      "prix": "€€€",
+      "priorite_edito": "4",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "romantique"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "En Marge",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.5283000",
+      "lng": "1.4361000",
+      "adresse": "1204 route de Lacroix-Falgarde, 31320 Aureville",
+      "quartier": null,
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Étoilé Michelin. Cuisine inspirée par la nature et les saisons, cadre verdoyant. Pour client avec véhicule, en recherche de quiétude et de gastronomie au vert. 20 min du centre.",
+        "en": "Michelin starred. Nature and season-inspired cuisine, green setting. For guests with a vehicle seeking peace and countryside gastronomy. 20 min from centre.",
+        "es": "Estrella Michelin. Cocina inspirada en la naturaleza y las estaciones, entorno verde. Para clientes con vehículo. 20 min del centro."
+      },
+      "acces": "Aureville — 20 min en voiture depuis le centre",
+      "prix": "€€€",
+      "priorite_edito": "3",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "terrasse"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "L'Aparté",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "21 rue de l'Europe, 31850 Montrabé",
+      "quartier": null,
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Étoilé Michelin depuis 2017. Jérémy Morin, ancien chef du Met à Toulouse. Cuisine aboutie et personnelle. Pour client fidèle à la gastronomie toulousaine voulant explorer les environs. 15 min.",
+        "en": "Michelin starred since 2017. Jérémy Morin, former chef at Le Met in Toulouse. Accomplished and personal cuisine. 15 min from centre.",
+        "es": "Estrella Michelin desde 2017. Jérémy Morin, ex chef del Met en Toulouse. Cocina elaborada y personal. 15 min del centro."
+      },
+      "acces": "Montrabé — 15 min en voiture depuis le centre",
+      "prix": "€€€",
+      "priorite_edito": "3",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "élégant"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Auberge de la Forge",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "8 rue Jean Parisot, 31590 Lavalette",
+      "quartier": null,
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Étoilé Michelin. Claire et Théo Fernandez. Cuisine de terroir étoilée en cadre d'auberge. Pour client amateur de gastronomie ancrée dans le terroir occitan. 20 min du centre.",
+        "en": "Michelin starred. Claire and Théo Fernandez. Starred terroir cuisine in an inn setting. For guests who love gastronomy rooted in Occitan terroir. 20 min from centre.",
+        "es": "Estrella Michelin. Claire y Théo Fernandez. Cocina de terruño con estrella. Para amantes de la gastronomía occitana. 20 min del centro."
+      },
+      "acces": "Lavalette — 20 min en voiture depuis le centre",
+      "prix": "€€€",
+      "priorite_edito": "3",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "chaleureux"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "En Pleine Nature",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "place_id": null,
+      "lat": null,
+      "lng": null,
+      "adresse": "6 place de la Mairie, 31130 Quint-Fonsegrives",
+      "quartier": null,
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Étoilé Michelin. Sylvain Joffre, étoile retrouvée dans son nouvel établissement. Cuisine instinctive, nature et produits. Pour client avec véhicule, gastronomie hors les murs. 15 min.",
+        "en": "Michelin starred. Sylvain Joffre, star regained in his new establishment. Instinctive cuisine, nature and produce. For guests with a vehicle. 15 min from centre.",
+        "es": "Estrella Michelin. Sylvain Joffre, estrella recuperada en su nuevo establecimiento. Cocina instintiva. Para clientes con vehículo. 15 min del centro."
+      },
+      "acces": "Quint-Fonsegrives — 15 min en voiture depuis le centre",
+      "prix": "€€€",
+      "priorite_edito": "3",
+      "tags": [
+        "gastronomique",
+        "étoilé",
+        "terrasse"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Une Table à Deux",
+      "categorie": "restaurant",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.6008000",
+      "lng": "1.4448000",
+      "adresse": "10 rue de la Pleau, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "soir"
+      ],
+      "note": {
+        "fr": "Cadre confidentiel, menus courts et travaillés. Bib Gourmand Michelin. Idéal pour dîner romantique ou soirée intime. Ne désemplit pas — réservation impérative.",
+        "en": "Intimate setting, short and refined menus. Michelin Bib Gourmand. Ideal for a romantic dinner. Always full — booking essential.",
+        "es": "Marco íntimo, menús cortos y trabajados. Bib Gourmand Michelin. Ideal para una cena romántica. Siempre lleno — reserva imprescindible."
+      },
+      "acces": "Centre-ville — 7 min à pied du Capitole",
+      "prix": "€€",
+      "priorite_edito": "4",
+      "tags": [
+        "romantique",
+        "élégant",
+        "gastronomique"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Théâtre de la Cité (TNT)",
+      "categorie": "theatre",
+      "personas": [
+        "04",
+        "07",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.6060000",
+      "lng": "1.4498000",
+      "adresse": "1 rue Pierre Baudis, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "soir"
+      ],
+      "note": {
+        "fr": "Centre dramatique national — théâtre contemporain de création. Pour le client curieux de la scène vivante française. Centre-ville, proche Jean Jaurès.",
+        "en": "National drama centre — contemporary creative theatre. For guests curious about the French live scene. City centre, near Jean Jaurès.",
+        "es": "Centro dramático nacional — teatro contemporáneo de creación. Para el cliente curioso de la escena francesa."
+      },
+      "acces": "Métro A/B Jean Jaurès, 3 min à pied",
+      "prix": "€€",
+      "priorite_edito": "3",
+      "tags": [
+        "culturel",
+        "contemporain"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "La Halle de la Machine",
+      "categorie": "musee",
+      "personas": [
+        "05",
+        "06",
+        "07"
+      ],
+      "place_id": null,
+      "lat": "43.5794000",
+      "lng": "1.4837000",
+      "adresse": "3 avenue de l'Aérodrome de Montaudran, 31400 Toulouse",
+      "quartier": "Rangueil",
+      "moment": [
+        "journée"
+      ],
+      "note": {
+        "fr": "Spectacles mécaniques, le Minotaure géant en balade. Immanquable en famille, voisin de L'Envol des Pionniers à Montaudran — combinez les deux.",
+        "en": "Mechanical spectacles, the giant Minotaur on the move. A must with children, next door to L'Envol des Pionniers in Montaudran — combine both.",
+        "es": "Espectáculos mecánicos, el Minotauro gigante en movimiento. Imprescindible en familia, junto a L'Envol des Pionniers."
+      },
+      "acces": "Ligne L9 ou TER halte Montaudran · 15 min du centre",
+      "prix": "€€",
+      "priorite_edito": "4",
+      "tags": [
+        "famille",
+        "moderne",
+        "contemporain"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Muséum de Toulouse",
+      "categorie": "musee",
+      "personas": [
+        "05",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.5936000",
+      "lng": "1.4485000",
+      "adresse": "35 allées Jules Guesde, 31000 Toulouse",
+      "quartier": "Carmes",
+      "moment": [
+        "journée"
+      ],
+      "note": {
+        "fr": "Muséum d'histoire naturelle, l'un des plus riches de France. Jardin des Plantes attenant — idéal pour une demi-journée famille au calme.",
+        "en": "Natural history museum, one of the richest in France. Adjoining Jardin des Plantes — ideal for a quiet family half-day.",
+        "es": "Museo de historia natural, uno de los más ricos de Francia. Junto al Jardin des Plantes — ideal para media jornada en familia."
+      },
+      "acces": "Métro B Carmes ou Palais de Justice, 5 min à pied",
+      "prix": "€€",
+      "priorite_edito": "3",
+      "tags": [
+        "famille",
+        "histoire",
+        "art"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Cathédrale Saint-Étienne",
+      "categorie": "eglise",
+      "personas": [
+        "07",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.6006000",
+      "lng": "1.4506000",
+      "adresse": "Place Saint-Étienne, 31000 Toulouse",
+      "quartier": "Carmes",
+      "moment": [
+        "journée"
+      ],
+      "note": {
+        "fr": "Cathédrale composite unique — deux églises inachevées réunies, nef romane et chœur gothique désaxés. La plus étrange et attachante des églises toulousaines. Gratuite.",
+        "en": "A unique composite cathedral — two unfinished churches joined, with misaligned Romanesque nave and Gothic choir. The strangest and most endearing church in Toulouse. Free.",
+        "es": "Catedral compuesta única — dos iglesias inacabadas unidas, nave románica y coro gótico desalineados. Gratuita."
+      },
+      "acces": "Métro B François Verdier, 4 min à pied",
+      "prix": "€",
+      "priorite_edito": "4",
+      "tags": [
+        "historique",
+        "religieux",
+        "patrimoine",
+        "gratuit"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Notre-Dame de la Daurade",
+      "categorie": "eglise",
+      "personas": [
+        "02",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.6002000",
+      "lng": "1.4396000",
+      "adresse": "1 place de la Daurade, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "journée"
+      ],
+      "note": {
+        "fr": "Basilique néoclassique face à la Garonne, Vierge noire vénérée. Sortir sur le quai au coucher du soleil : la plus belle lumière de Toulouse. Gratuite.",
+        "en": "Neoclassical basilica facing the Garonne, home to a revered Black Madonna. Step onto the quay at sunset: the most beautiful light in Toulouse. Free.",
+        "es": "Basílica neoclásica frente al Garona, Virgen negra venerada. Salga al muelle al atardecer: la luz más bella de Toulouse. Gratuita."
+      },
+      "acces": "Métro A Esquirol, 5 min à pied",
+      "prix": "€",
+      "priorite_edito": "3",
+      "tags": [
+        "historique",
+        "religieux",
+        "patrimoine",
+        "gratuit"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Notre-Dame du Taur",
+      "categorie": "eglise",
+      "personas": [
+        "07",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.6060000",
+      "lng": "1.4423000",
+      "adresse": "12 rue du Taur, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "journée"
+      ],
+      "note": {
+        "fr": "Sur le chemin entre Capitole et Saint-Sernin — clocher-mur emblématique du gothique toulousain. Halte discrète que les guides oublient. Gratuite.",
+        "en": "On the way between Capitole and Saint-Sernin — an iconic bell-wall of Toulouse Gothic. A discreet stop the guidebooks forget. Free.",
+        "es": "En el camino entre Capitole y Saint-Sernin — campanario-muro emblemático del gótico tolosano. Gratuita."
+      },
+      "acces": "Métro A Capitole, 3 min à pied",
+      "prix": "€",
+      "priorite_edito": "3",
+      "tags": [
+        "historique",
+        "religieux",
+        "patrimoine",
+        "gratuit"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Keepcool Toulouse Capitole",
+      "categorie": "salle_sport",
+      "personas": [
+        "01"
+      ],
+      "place_id": null,
+      "lat": "43.6046000",
+      "lng": "1.4459000",
+      "adresse": "6 impasse Baour Lormian, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "matin",
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Salle de sport en plein centre, 7j/7 de 6h à 23h. Séance d'essai possible — la solution pour le client business qui veut garder sa routine. Cardio, musculation, small groups.",
+        "en": "City-centre gym, open 7/7 from 6am to 11pm. Trial session possible — the solution for business guests keeping their routine. Cardio, weights, small groups.",
+        "es": "Gimnasio en pleno centro, 7/7 de 6h a 23h. Sesión de prueba posible — la solución para el cliente de negocios."
+      },
+      "acces": "Métro A Capitole, 2 min à pied",
+      "prix": "€€",
+      "priorite_edito": "4",
+      "tags": [
+        "moderne"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-07-01"
+    },
+    {
+      "nom": "Basic-Fit Toulouse Jean Jaurès",
+      "categorie": "salle_sport",
+      "personas": [
+        "01",
+        "05"
+      ],
+      "place_id": null,
+      "lat": "43.6063000",
+      "lng": "1.4497000",
+      "adresse": "Allées Jean Jaurès, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "matin",
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Grande enseigne accessible, 7 zones d'entraînement, ouverte 7j/7. Pass journée possible pour le client de passage. Proche gare et centre.",
+        "en": "Accessible chain gym, 7 training zones, open 7/7. Day pass available for visiting guests. Near the station and centre.",
+        "es": "Cadena accesible, 7 zonas de entrenamiento, abierta 7/7. Pase de día disponible para el cliente de paso."
+      },
+      "acces": "Métro A/B Jean Jaurès",
+      "prix": "€",
+      "priorite_edito": "3",
+      "tags": [
+        "moderne"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-07-01"
+    },
+    {
+      "nom": "Place du Capitole",
+      "categorie": "visite",
+      "personas": [
+        "01",
+        "02",
+        "04",
+        "05",
+        "06",
+        "07",
+        "08"
+      ],
+      "place_id": null,
+      "lat": "43.6045000",
+      "lng": "1.4440000",
+      "adresse": "Place du Capitole, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "matin",
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Le cœur battant de Toulouse — façade du Capitole, croix occitane au sol, Salle des Illustres gratuite à l'étage (souvent ignorée des visiteurs). Point de départ de toute découverte.",
+        "en": "The beating heart of Toulouse — the Capitole façade, the Occitan cross on the ground, and the free Salle des Illustres upstairs (often missed by visitors). The starting point of any visit.",
+        "es": "El corazón de Toulouse — fachada del Capitole, cruz occitana en el suelo, Salle des Illustres gratuita arriba (a menudo ignorada)."
+      },
+      "acces": "Métro A Capitole, sortie directe sur la place",
+      "prix": "€",
+      "priorite_edito": "5",
+      "tags": [
+        "historique",
+        "patrimoine",
+        "gratuit",
+        "animé"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "Émile",
+      "categorie": "restaurant",
+      "personas": [
+        "03",
+        "07"
+      ],
+      "place_id": null,
+      "lat": "43.6034000",
+      "lng": "1.4472000",
+      "adresse": "13 place Saint-Georges, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "L'adresse de référence pour le cassoulet toulousain — la spécialité qu'un visiteur doit goûter une fois. Terrasse sur la jolie place Saint-Georges.",
+        "en": "THE reference for Toulouse cassoulet — the local dish every visitor must try once. Terrace on pretty Place Saint-Georges.",
+        "es": "LA referencia del cassoulet tolosano — el plato que todo visitante debe probar. Terraza en la plaza Saint-Georges."
+      },
+      "acces": "Métro A Capitole ou Jean Jaurès, 5 min à pied",
+      "prix": "€€",
+      "priorite_edito": "5",
+      "tags": [
+        "gastronomique",
+        "terrasse",
+        "historique"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "L'Air de Famille",
+      "categorie": "restaurant",
+      "personas": [
+        "01",
+        "05"
+      ],
+      "place_id": null,
+      "lat": "43.6027000",
+      "lng": "1.4441000",
+      "adresse": "6 rue Jules-Chalande, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Bistrot authentique au décor d'époque, sélection Michelin. Cuisine traditionnelle sincère, rapport qualité-prix imbattable. Tête de veau ravigote pour les connaisseurs.",
+        "en": "Authentic bistro with a period interior, Michelin selected. Sincere traditional cuisine, unbeatable value.",
+        "es": "Bistró auténtico con decoración de época, selección Michelin. Cocina tradicional sincera, relación calidad-precio imbatible."
+      },
+      "acces": "Métro A Capitole, 4 min à pied",
+      "prix": "€€",
+      "priorite_edito": "4",
+      "tags": [
+        "bistronomique",
+        "historique",
+        "accueillant"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
+    },
+    {
+      "nom": "J'Go",
+      "categorie": "restaurant",
+      "personas": [
+        "03",
+        "05"
+      ],
+      "place_id": null,
+      "lat": "43.6064000",
+      "lng": "1.4462000",
+      "adresse": "16 place Victor-Hugo, 31000 Toulouse",
+      "quartier": "Capitole",
+      "moment": [
+        "midi",
+        "soir"
+      ],
+      "note": {
+        "fr": "Terroir et circuit court à deux pas du marché Victor-Hugo — agneau, canard, produits de paysans partenaires. Convivial, généreux, très toulousain.",
+        "en": "Terroir and short supply chains next to the Victor-Hugo market — lamb, duck, produce from partner farmers. Convivial, generous, very Toulouse.",
+        "es": "Terruño y circuito corto junto al mercado Victor-Hugo — cordero, pato, productos de agricultores. Convivial y generoso."
+      },
+      "acces": "Métro A Jean Jaurès ou Capitole, 4 min à pied",
+      "prix": "€€",
+      "priorite_edito": "3",
+      "tags": [
+        "terrasse",
+        "animé",
+        "accueillant"
+      ],
+      "pmr": false,
+      "verifie_le": "2026-05-01"
     }
   ],
   "evenements": [
@@ -1215,8 +1862,344 @@
       "date_fin": "2026-08-15",
       "recurrent": true,
       "url": "https://www.cite-espace.com"
+    },
+    {
+      "titre": {
+        "fr": "Rio Loco — musiques du monde",
+        "en": "Rio Loco World Music Festival",
+        "es": "Rio Loco — músicas del mundo"
+      },
+      "categorie": "concert",
+      "personas": [
+        "07",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2027-06-15",
+      "date_fin": "2027-06-20",
+      "recurrent": true,
+      "url": "https://riolo.co.toulouse.fr"
+    },
+    {
+      "titre": {
+        "fr": "Marché de Noël de Toulouse",
+        "en": "Toulouse Christmas Market",
+        "es": "Mercado de Navidad de Toulouse"
+      },
+      "categorie": "concert",
+      "personas": [
+        "02",
+        "05",
+        "07",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2026-11-27",
+      "date_fin": "2026-12-27",
+      "recurrent": true,
+      "url": null
+    },
+    {
+      "titre": {
+        "fr": "Toulouse les Orgues",
+        "en": "Toulouse les Orgues Organ Festival",
+        "es": "Toulouse les Orgues"
+      },
+      "categorie": "concert",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2026-10-01",
+      "date_fin": "2026-10-15",
+      "recurrent": true,
+      "url": "https://toulouse-les-orgues.org"
+    },
+    {
+      "titre": {
+        "fr": "Cinespaña — festival du cinéma espagnol",
+        "en": "Cinespaña Spanish Film Festival",
+        "es": "Cinespaña — festival de cine español"
+      },
+      "categorie": "concert",
+      "personas": [
+        "02"
+      ],
+      "lieu": null,
+      "date_debut": "2026-10-01",
+      "date_fin": "2026-10-11",
+      "recurrent": true,
+      "url": "https://cinespagnol.com"
+    },
+    {
+      "titre": {
+        "fr": "Le Printemps de Septembre",
+        "en": "Le Printemps de Septembre Art Festival",
+        "es": "Le Printemps de Septembre"
+      },
+      "categorie": "concert",
+      "personas": [
+        "04",
+        "07",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2026-09-18",
+      "date_fin": "2026-10-18",
+      "recurrent": true,
+      "url": "https://printempsdeseptembre.com"
+    },
+    {
+      "titre": {
+        "fr": "Carnaval de Toulouse",
+        "en": "Toulouse Carnival",
+        "es": "Carnaval de Toulouse"
+      },
+      "categorie": "concert",
+      "personas": [
+        "05"
+      ],
+      "lieu": null,
+      "date_debut": "2027-03-01",
+      "date_fin": "2027-03-31",
+      "recurrent": true,
+      "url": null
+    },
+    {
+      "titre": {
+        "fr": "Marathon des Mots",
+        "en": "Marathon des Mots Literary Festival",
+        "es": "Marathon des Mots"
+      },
+      "categorie": "concert",
+      "personas": [
+        "04",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2027-06-22",
+      "date_fin": "2027-06-27",
+      "recurrent": true,
+      "url": "https://lemarathondesmots.com"
+    },
+    {
+      "titre": {
+        "fr": "Toulouse Plages",
+        "en": "Toulouse Beaches",
+        "es": "Toulouse Playas"
+      },
+      "categorie": "concert",
+      "personas": [
+        "05",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2026-07-10",
+      "date_fin": "2026-08-31",
+      "recurrent": true,
+      "url": null
+    },
+    {
+      "titre": {
+        "fr": "Festival Toulouse d'Été",
+        "en": "Toulouse Summer Festival",
+        "es": "Festival Toulouse de Verano"
+      },
+      "categorie": "concert",
+      "personas": [
+        "07",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2026-07-15",
+      "date_fin": "2026-08-15",
+      "recurrent": true,
+      "url": "https://toulousedete.org"
+    },
+    {
+      "titre": {
+        "fr": "Siestes Électroniques",
+        "en": "Electronic Siestas",
+        "es": "Siestas Electrónicas"
+      },
+      "categorie": "concert",
+      "personas": [
+        "07"
+      ],
+      "lieu": null,
+      "date_debut": "2026-08-01",
+      "date_fin": "2026-08-31",
+      "recurrent": true,
+      "url": null
+    },
+    {
+      "titre": {
+        "fr": "Aeromart Toulouse 2026",
+        "en": "Aeromart Toulouse 2026",
+        "es": "Aeromart Toulouse 2026"
+      },
+      "categorie": "evenement_sportif",
+      "personas": [
+        "01"
+      ],
+      "lieu": null,
+      "date_debut": "2026-12-01",
+      "date_fin": "2026-12-03",
+      "recurrent": false,
+      "url": "https://toulouse.bciaerospace.com"
+    },
+    {
+      "titre": {
+        "fr": "Foire Internationale de Toulouse",
+        "en": "Toulouse International Fair",
+        "es": "Feria Internacional de Toulouse"
+      },
+      "categorie": "evenement_sportif",
+      "personas": [
+        "01"
+      ],
+      "lieu": null,
+      "date_debut": "2026-11-07",
+      "date_fin": "2026-11-15",
+      "recurrent": true,
+      "url": "https://foiredetoulouse.com"
+    },
+    {
+      "titre": {
+        "fr": "Top 14 — reprise saison 2026-2027 à Ernest-Wallon",
+        "en": "Top 14 — 2026-2027 season opener at Ernest-Wallon",
+        "es": "Top 14 — inicio temporada 2026-2027"
+      },
+      "categorie": "evenement_sportif",
+      "personas": [
+        "03"
+      ],
+      "lieu": null,
+      "date_debut": "2026-09-05",
+      "date_fin": "2027-06-05",
+      "recurrent": true,
+      "url": "https://billetterie.stadetoulousain.fr"
+    },
+    {
+      "titre": {
+        "fr": "Finale Top 14 2027 — Stade de France",
+        "en": "Top 14 Final 2027",
+        "es": "Final Top 14 2027"
+      },
+      "categorie": "evenement_sportif",
+      "personas": [
+        "03"
+      ],
+      "lieu": null,
+      "date_debut": "2027-06-27",
+      "date_fin": "2027-06-27",
+      "recurrent": false,
+      "url": null
+    },
+    {
+      "titre": {
+        "fr": "Fête de la Musique",
+        "en": "Music Day",
+        "es": "Fiesta de la Música"
+      },
+      "categorie": "concert",
+      "personas": [
+        "05",
+        "07",
+        "08"
+      ],
+      "lieu": null,
+      "date_debut": "2027-06-21",
+      "date_fin": "2027-06-21",
+      "recurrent": true,
+      "url": null
     }
   ],
-  "parcours": [],
-  "marche_calcule_le": "2026-07-08T11:18:46.837Z"
+  "parcours": [
+    {
+      "nom": {
+        "fr": "Footing des Berges — boucle Garonne",
+        "en": "Garonne Riverside Run",
+        "es": "Footing de las orillas del Garona"
+      },
+      "type": "Footing",
+      "personas": [
+        "01",
+        "08"
+      ],
+      "duree_min": "30",
+      "distance_km": "5",
+      "profil_ors": "foot-walking",
+      "points": [],
+      "description": {
+        "fr": "La boucle classique : quai de la Daurade → Pont Saint-Pierre → rive gauche par la Prairie des Filtres → retour Pont-Neuf. Plat, éclairé, sûr — parfait avant le petit-déjeuner. Lumière dorée au lever du soleil.",
+        "en": "The classic loop: Daurade quay → Pont Saint-Pierre → left bank via Prairie des Filtres → back over the Pont-Neuf. Flat, lit, safe — perfect before breakfast. Golden light at sunrise.",
+        "es": "El circuito clásico: muelle de la Daurade → Pont Saint-Pierre → orilla izquierda por la Prairie des Filtres → regreso por el Pont-Neuf. Llano, iluminado, seguro."
+      }
+    },
+    {
+      "nom": {
+        "fr": "Footing du Canal du Midi",
+        "en": "Canal du Midi Run",
+        "es": "Footing del Canal du Midi"
+      },
+      "type": "Footing",
+      "personas": [
+        "01",
+        "08"
+      ],
+      "duree_min": "45",
+      "distance_km": "8",
+      "profil_ors": "foot-walking",
+      "points": [],
+      "description": {
+        "fr": "Aller-retour sous les platanes du canal classé UNESCO — Port Saint-Sauveur vers Port de l'Embouchure. Ombragé l'été, au calme, sans dénivelé. Le footing signature de Toulouse.",
+        "en": "Out-and-back under the plane trees of the UNESCO-listed canal — Port Saint-Sauveur towards Port de l'Embouchure. Shaded in summer, calm, flat. Toulouse's signature run.",
+        "es": "Ida y vuelta bajo los plátanos del canal UNESCO — Port Saint-Sauveur hacia Port de l'Embouchure. Sombreado en verano, tranquilo, llano."
+      }
+    },
+    {
+      "nom": {
+        "fr": "Toulouse secrète — cours cachées et hôtels particuliers",
+        "en": "Secret Toulouse — hidden courtyards",
+        "es": "Toulouse secreta — patios escondidos"
+      },
+      "type": "Visite à pied",
+      "personas": [
+        "07",
+        "08"
+      ],
+      "duree_min": "150",
+      "distance_km": "4",
+      "profil_ors": "foot-walking",
+      "points": [],
+      "description": {
+        "fr": "Hors des sentiers battus : hôtel d'Assézat → rue Pharaon et les Carmes → cour de la Maison de l'Occitanie → hôtel de Bernuy → détours par les ruelles du vieux Toulouse. La ville des pastels que les guides ne montrent pas.",
+        "en": "Off the beaten track: Hôtel d'Assézat → rue Pharaon and Les Carmes → the Maison de l'Occitanie courtyard → Hôtel de Bernuy → detours through old Toulouse's alleys. The pastel merchants' city the guides never show.",
+        "es": "Fuera de las rutas típicas: hôtel d'Assézat → rue Pharaon y Les Carmes → patio de la Maison de l'Occitanie → hôtel de Bernuy. La ciudad de los pasteles que las guías no muestran."
+      }
+    },
+    {
+      "nom": {
+        "fr": "Balade du soir — coucher de soleil sur la Garonne",
+        "en": "Evening stroll — Garonne sunset",
+        "es": "Paseo del atardecer — puesta de sol en el Garona"
+      },
+      "type": "Visite à pied",
+      "personas": [
+        "02",
+        "04"
+      ],
+      "duree_min": "45",
+      "distance_km": "2",
+      "profil_ors": "foot-walking",
+      "points": [],
+      "description": {
+        "fr": "La plus belle heure de Toulouse : quai de la Daurade → Pont-Neuf → rive gauche → passerelle Viguerie → retour par le Pont Saint-Pierre. Les briques deviennent dorées puis roses. À proposer au couple avant le dîner — timing parfait avant une table à 20h30.",
+        "en": "Toulouse's finest hour: Daurade quay → Pont-Neuf → left bank → Viguerie footbridge → back over Pont Saint-Pierre. The bricks turn gold then pink. Suggest it to couples before dinner — perfect timing before an 8:30pm table.",
+        "es": "La hora más bella de Toulouse: muelle de la Daurade → Pont-Neuf → orilla izquierda → pasarela Viguerie → regreso por el Pont Saint-Pierre. Los ladrillos se vuelven dorados y luego rosas."
+      }
+    }
+  ]
 }

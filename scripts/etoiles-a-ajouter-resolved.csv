@@ -1,0 +1,15 @@
+nom,adresse,baserow_row_id,osm_type,osm_id,latitude,longitude,osm_url
+"Les Jardins de l Opera","1 place du Capitole Toulouse","11",,,,,
+"Brasserie des Beaux-Arts","1 quai de la Daurade Toulouse","19","node","803725007","43.5998208","1.4405189","https://www.openstreetmap.org/node/803725007"
+"Michel Sarran","21 boulevard Armand Duportal Toulouse","",,,,,
+"SEPT","11 rue Theodore-Ozenne Toulouse","","node","7785156363","43.5968129","1.4468358","https://www.openstreetmap.org/node/7785156363"
+"Acte 2 Yannick Delpech","1 rue Pane-Boeuf Toulouse","",,,,,
+"Agapes","7 rue de l Industrie Toulouse","",,,,,
+"L Ecorce","8 rue de l Esquille Toulouse","",,,,,
+"Maison Pellestor-Veyrier","28 chemin de Gramont Colomiers","",,,,,
+"En Marge","1204 route de Lacroix-Falgarde Aureville","","way","62842448","43.4905877","1.4410029","https://www.openstreetmap.org/way/62842448"
+"L Aparte","21 rue de l Europe Montrable","",,,,,
+"Auberge de la Forge","8 rue Jean Parisot Lavalette","",,,,,
+"En Pleine Nature","6 place de la Mairie Quint-Fonsegrives","",,,,,
+"Le Genty Magre","3 rue Genty-Magre Toulouse","",,,,,
+"Une Table a Deux","10 rue de la Pleau Toulouse","","node","5075018122","43.5968505","1.4469823","https://www.openstreetmap.org/node/5075018122"

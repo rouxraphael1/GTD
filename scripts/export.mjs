@@ -1,4 +1,4 @@
-// export.mjs — Génère app_data.json depuis Baserow (source de vérité TEFD).
+// export.mjs — Génère public/app_data.json depuis Baserow (source de vérité TEFD).
 // Node 18+ (fetch natif). Aucune dépendance.
 //
 // Lancement local :  BASEROW_TOKEN=xxx node scripts/export.mjs
@@ -17,7 +17,7 @@ const TABLES = {
   categories: process.env.T_CATEGORIES,
   hotels:     process.env.T_HOTELS,
 };
-const OUT = process.env.OUT_PATH || "public/app_data.json";
+const OUT = process.env.OUT_PATH || "docs/app_data.json";
 
 if (!TOKEN) { console.error("BASEROW_TOKEN manquant."); process.exit(1); }
 
@@ -59,14 +59,10 @@ async function main() {
   // -- Adresses publiées
   const outAdresses = adresses.filter(isPublished).map((r) => ({
     nom: r.nom,
-    // BUGFIX : "categorie" est un champ Lien → Catégories (table 5 du schéma),
-    // pas une sélection simple. single() ne fonctionne que sur les vraies
-    // sélections (quartier, fourchette_prix...) ; un champ lien renvoie un
-    // tableau même à liaison unique, d'où linkValues()[0]. Suppose que le
-    // champ primaire de la table Catégories est `cle` (le slug technique).
-    categorie: linkValues(r.categorie)[0] || null,
+    categorie: Array.isArray(r.categorie) ? (r.categorie[0]?.value || null) : (r.categorie || null),
     personas: linkValues(r.personas),
-    place_id: r.place_id_google || null,
+    osm_id:   r.osm_id   || null,
+    osm_type: r.osm_type || null,
     lat: r.latitude, lng: r.longitude,
     adresse: r.adresse,
     quartier: single(r.quartier),
@@ -74,7 +70,6 @@ async function main() {
     note: i18n(r, "note_edito"),
     acces: r.acces_transport || "",
     prix: single(r.fourchette_prix),
-    priorite_edito: r.priorite_edito ?? 3,   // signal "la maison recommande" du moteur de reco (1-5, défaut neutre)
     tags: linkValues(r.tags).length ? linkValues(r.tags) : (r.tags || []),
     pmr: !!r.accessible_pmr,
     verifie_le: r.verifie_le || null,
@@ -87,7 +82,7 @@ async function main() {
     .filter((r) => r.recurrent || (r.date_fin && r.date_fin >= todayParis))
     .map((r) => ({
       titre: i18n(r, "titre"),
-      categorie: linkValues(r.categorie)[0] || null, // même correctif que pour Adresses (champ lien, pas sélection simple)
+      categorie: Array.isArray(r.categorie) ? (r.categorie[0]?.value || null) : (r.categorie || null),
       personas: linkValues(r.personas),
       lieu: linkValues(r.lieu)[0] || null,
       date_debut: r.date_debut || null,
