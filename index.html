@@ -65,6 +65,10 @@
   .eyebrow{font:700 11px/1 'Hanken Grotesk';letter-spacing:.16em;text-transform:uppercase;color:var(--brique-fonce);margin:22px 0 12px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;}
   .eyebrow:first-child{margin-top:0;}
   .eyebrow .hint{font:600 10.5px 'Hanken Grotesk';letter-spacing:.02em;text-transform:none;color:var(--encre-doux);}
+  .eyebrow-tabs{display:flex;gap:6px;margin:22px 0 12px;flex-wrap:wrap;}
+  .eyebrow-tabs .tab-btn{font:700 11px/1 'Hanken Grotesk';letter-spacing:.16em;text-transform:uppercase;color:var(--encre-doux);margin:0;padding:8px 14px;border-radius:999px;border:1px solid var(--trait);background:transparent;cursor:pointer;transition:all .15s;}
+  .eyebrow-tabs .tab-btn:hover{border-color:var(--violette-clair);}
+  .eyebrow-tabs .tab-btn.active{background:var(--violette);border-color:var(--violette);color:#fff;}
 
   .deck{display:flex;flex-wrap:wrap;gap:8px;}
   .persona{border:1px solid var(--trait);background:var(--craie);border-radius:12px;padding:9px 13px;cursor:pointer;text-align:left;transition:transform .15s ease, border-color .15s ease, background .15s ease;min-width:0;}
@@ -223,12 +227,17 @@
       </div>
 
       <div id="eventsSection" style="display:none">
-        <p class="eyebrow" data-i="eventsLbl">Pendant le séjour</p>
+
+      <div class="eyebrow-tabs">
+        <p class="eyebrow tab-btn active" id="tabLieux" data-tab="lieux"><span data-i="catLbl">Quel type de lieu ?</span><span class="hint" id="catHint"></span></p>
+        <p class="eyebrow tab-btn" id="tabSejour" data-tab="sejour"><span data-i="sejourLbl">Suggestions pendant le séjour</span></p>
+      </div>
+      <div id="panelLieux">
+        <div class="chips" id="catChips" role="group" aria-label="Catégories"></div>
+      </div>
+      <div id="panelSejour" style="display:none">
         <div class="events-box" id="eventsBox"></div>
       </div>
-
-      <p class="eyebrow"><span data-i="catLbl">Quel type de lieu ?</span><span class="hint" id="catHint"></span></p>
-      <div class="chips" id="catChips" role="group" aria-label="Catégories"></div>
 
       <p class="eyebrow" data-i="momentLbl">Moment du jour</p>
       <div class="seg" id="momentSeg" role="group" aria-label="Moment du jour"></div>
@@ -287,6 +296,7 @@ const I18N = {
   forWhom:{fr:"Pour quel client ?",en:"For which guest?",es:"¿Para qué cliente?"},
   ressort:{fr:"Ressort émotionnel",en:"Emotional driver",es:"Resorte emocional"},
   eventsLbl:{fr:"Pendant le séjour",en:"During the stay",es:"Durante la estancia"},
+  sejourLbl:{fr:"Suggestions pendant le séjour",en:"During your stay",es:"Sugerencias durante la estancia"},
   catLbl:{fr:"Quel type de lieu ?",en:"What kind of place?",es:"¿Qué tipo de lugar?"},
   catAll:{fr:"tous les types",en:"all types",es:"todos los tipos"},
   catN:{fr:"type(s) sélectionné(s)",en:"type(s) selected",es:"tipo(s) seleccionado(s)"},
@@ -385,6 +395,7 @@ function freshState(){
     hotel: HOTELS[0] ? HOTELS[0].nom : null,
     categories:[], maxWalk:15, mask:true,
     rayonActif:false, moment: momentCourant(new Date()),
+    activeTab:"lieux",
   };
 }
 const t = (k)=> (I18N[k] && I18N[k][state.lang]) || k;
@@ -505,13 +516,23 @@ function renderMomentSeg(){
 // Les événements ne sont pas scorés par le moteur (v1) : simple liste datée,
 // déjà filtrée côté export.mjs (règle anti-hallucination — rien de périmé
 // n'arrive jusqu'ici). On affiche juste ceux qui touchent le lieu courant.
+// Filtrage par persona activé.
 function renderEvents(){
   const box=document.getElementById('eventsBox');
   const section=document.getElementById('eventsSection');
   box.innerHTML='';
   if(!EVENEMENTS.length){ section.style.display='none'; return; }
   section.style.display='';
-  EVENEMENTS.forEach(ev=>{
+  const persona = currentPersona();
+  const filtered = EVENEMENTS.filter(ev => {
+    if (!persona) return true;
+    return ev.personas && ev.personas.includes(persona.code);
+  });
+  if (!filtered.length) {
+    box.innerHTML = `<p class="empty">${t('empty')}</p>`;
+    return;
+  }
+  filtered.forEach(ev=>{
     const div=document.createElement('div');
     div.className='event';
     const dateTxt = ev.recurrent ? t('soir') : fmtDate(ev.date_debut, state.lang);
@@ -656,6 +677,14 @@ function renderStatics(){
 
 function renderAll(){ renderHotelSelect(); renderDeck(); renderEvents(); renderCatChips(); renderMomentSeg(); renderCards(); renderStatics(); }
 
+function switchTab(tab){
+  state.activeTab = tab;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
+  document.getElementById('panelLieux').style.display = tab === 'lieux' ? '' : 'none';
+  document.getElementById('panelSejour').style.display = tab === 'sejour' ? '' : 'none';
+  if (tab === 'sejour') renderEvents();
+}
+
 function bindEvents(){
   document.querySelectorAll('.lang button').forEach(b=>{
     b.onclick=()=>{
@@ -701,8 +730,13 @@ function bindEvents(){
     document.getElementById('walk').value = state.maxWalk;
     maskBtn.classList.toggle('on', state.mask); maskBtn.setAttribute('aria-checked', state.mask);
     rayonBtn.classList.toggle('on', state.rayonActif); rayonBtn.setAttribute('aria-checked', state.rayonActif);
+    switchTab(state.activeTab);
     renderAll();
   };
+
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.onclick = () => switchTab(btn.dataset.tab);
+  });
 
   document.getElementById('scrim').onclick=closeFiche;
   document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeFiche(); });
