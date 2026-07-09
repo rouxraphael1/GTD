@@ -218,8 +218,8 @@
     {
       "nom": "Hotel de France",
       "adresse": "5 rue d Austerlitz, 31000 Toulouse",
-      "lat": "43.6059075",
-      "lng": "1.4473638",
+      "lat": 43.6059075,
+      "lng": 1.4473638,
       "personas": []
     }
   ],
@@ -231,8 +231,8 @@
         "04"
       ],
       "place_id": null,
-      "lat": "43.5994814",
-      "lng": "1.4410164",
+      "lat": 43.5994814,
+      "lng": 1.4410164,
       "adresse": "19 descente de la Halle aux Poissons, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -263,8 +263,8 @@
         "04"
       ],
       "place_id": null,
-      "lat": "43.6006000",
-      "lng": "1.4448000",
+      "lat": 43.6006,
+      "lng": 1.4448,
       "adresse": "1 place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -295,8 +295,8 @@
         "04"
       ],
       "place_id": null,
-      "lat": "43.6028000",
-      "lng": "1.4432000",
+      "lat": 43.6028,
+      "lng": 1.4432,
       "adresse": "5 Rue de la Pomme, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -327,8 +327,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6032000",
-      "lng": "1.4445000",
+      "lat": 43.6032,
+      "lng": 1.4445,
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -359,8 +359,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6038000",
-      "lng": "1.4440000",
+      "lat": 43.6038,
+      "lng": 1.444,
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -391,8 +391,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6014000",
-      "lng": "1.4451000",
+      "lat": 43.6014,
+      "lng": 1.4451,
       "adresse": "Rue de la Pomme, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -422,8 +422,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6037802",
-      "lng": "1.4434455",
+      "lat": 43.6037802,
+      "lng": 1.4434455,
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -455,8 +455,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6009000",
-      "lng": "1.4446000",
+      "lat": 43.6009,
+      "lng": 1.4446,
       "adresse": "Rue Pargaminieres, 31000 Toulouse",
       "quartier": "Carmes",
       "moment": [
@@ -485,8 +485,8 @@
         "03"
       ],
       "place_id": null,
-      "lat": "43.5998208",
-      "lng": "1.4405189",
+      "lat": 43.5998208,
+      "lng": 1.4405189,
       "adresse": "1 quai de la Daurade, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -519,8 +519,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6065101",
-      "lng": "1.4466498",
+      "lat": 43.6065101,
+      "lng": 1.4466498,
       "adresse": "Place Victor Hugo, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -551,8 +551,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6055000",
-      "lng": "1.4395000",
+      "lat": 43.6055,
+      "lng": 1.4395,
       "adresse": "Allees Charles de Fitte, 31300 Toulouse",
       "quartier": "Saint-Aubin",
       "moment": [
@@ -584,8 +584,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6009000",
-      "lng": "1.4295000",
+      "lat": 43.6009,
+      "lng": 1.4295,
       "adresse": "76 Allees Charles de Fitte, 31300 Toulouse",
       "quartier": "Saint-Cyprien",
       "moment": [
@@ -616,8 +616,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6001991",
-      "lng": "1.4420464",
+      "lat": 43.6001991,
+      "lng": 1.4420464,
       "adresse": "Place d'Assezat, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -647,8 +647,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6002000",
-      "lng": "1.4442000",
+      "lat": 43.6002,
+      "lng": 1.4442,
       "adresse": "22 Rue de Metz, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -679,8 +679,8 @@
         "06"
       ],
       "place_id": null,
-      "lat": "43.6636000",
-      "lng": "1.3712000",
+      "lat": 43.6636,
+      "lng": 1.3712,
       "adresse": "Avenue Francis Crick, 31700 Blagnac",
       "quartier": "Blagnac",
       "moment": [
@@ -710,8 +710,8 @@
         "06"
       ],
       "place_id": null,
-      "lat": "43.5874000",
-      "lng": "1.4920000",
+      "lat": 43.5874,
+      "lng": 1.492,
       "adresse": "Avenue Jean Baylet, 31500 Toulouse",
       "quartier": "Rangueil",
       "moment": [
@@ -742,8 +742,8 @@
         "06"
       ],
       "place_id": null,
-      "lat": "43.5795000",
-      "lng": "1.4850000",
+      "lat": 43.5795,
+      "lng": 1.485,
       "adresse": "1 Rue de Montaudran, 31500 Toulouse",
       "quartier": "Montaudran",
       "moment": [
@@ -774,8 +774,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6083818",
-      "lng": "1.4419702",
+      "lat": 43.6083818,
+      "lng": 1.4419702,
       "adresse": "Place Saint-Sernin, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -806,8 +806,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6008000",
-      "lng": "1.4435000",
+      "lat": 43.6008,
+      "lng": 1.4435,
       "adresse": "Place des Jacobins, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -839,8 +839,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.5996918",
-      "lng": "1.4409577",
+      "lat": 43.5996918,
+      "lng": 1.4409577,
       "adresse": "Pont-Neuf, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -870,8 +870,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6024000",
-      "lng": "1.4451000",
+      "lat": 43.6024,
+      "lng": 1.4451,
       "adresse": "Place de la Trinite, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -899,8 +899,8 @@
         "04"
       ],
       "place_id": null,
-      "lat": "43.6041433",
-      "lng": "1.4443378",
+      "lat": 43.6041433,
+      "lng": 1.4443378,
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -928,8 +928,8 @@
         "03"
       ],
       "place_id": null,
-      "lat": "43.6175000",
-      "lng": "1.4088000",
+      "lat": 43.6175,
+      "lng": 1.4088,
       "adresse": "Route de Muret, 31200 Toulouse",
       "quartier": "Sept Deniers",
       "moment": [
@@ -960,8 +960,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6015000",
-      "lng": "1.4390000",
+      "lat": 43.6015,
+      "lng": 1.439,
       "adresse": "Quai de la Daurade, 31000 Toulouse",
       "quartier": "Saint-Cyprien",
       "moment": [
@@ -993,8 +993,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.5950000",
-      "lng": "1.4380000",
+      "lat": 43.595,
+      "lng": 1.438,
       "adresse": "Canal du Midi, 31300 Toulouse",
       "quartier": "Saint-Aubin",
       "moment": [
@@ -1026,8 +1026,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6005000",
-      "lng": "1.4380000",
+      "lat": 43.6005,
+      "lng": 1.438,
       "adresse": "Passerelle de la Daurade, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1084,8 +1084,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.5997000",
-      "lng": "1.4432000",
+      "lat": 43.5997,
+      "lng": 1.4432,
       "adresse": "11 rue Théodore-Ozenne, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1116,8 +1116,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6076000",
-      "lng": "1.4489000",
+      "lat": 43.6076,
+      "lng": 1.4489,
       "adresse": "7 rue de l'Industrie, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1274,8 +1274,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.5283000",
-      "lng": "1.4361000",
+      "lat": 43.5283,
+      "lng": 1.4361,
       "adresse": "1204 route de Lacroix-Falgarde, 31320 Aureville",
       "quartier": null,
       "moment": [
@@ -1402,8 +1402,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6008000",
-      "lng": "1.4448000",
+      "lat": 43.6008,
+      "lng": 1.4448,
       "adresse": "10 rue de la Pleau, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1434,8 +1434,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6060000",
-      "lng": "1.4498000",
+      "lat": 43.606,
+      "lng": 1.4498,
       "adresse": "1 rue Pierre Baudis, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1465,8 +1465,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.5794000",
-      "lng": "1.4837000",
+      "lat": 43.5794,
+      "lng": 1.4837,
       "adresse": "3 avenue de l'Aérodrome de Montaudran, 31400 Toulouse",
       "quartier": "Rangueil",
       "moment": [
@@ -1496,8 +1496,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.5936000",
-      "lng": "1.4485000",
+      "lat": 43.5936,
+      "lng": 1.4485,
       "adresse": "35 allées Jules Guesde, 31000 Toulouse",
       "quartier": "Carmes",
       "moment": [
@@ -1527,8 +1527,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6006000",
-      "lng": "1.4506000",
+      "lat": 43.6006,
+      "lng": 1.4506,
       "adresse": "Place Saint-Étienne, 31000 Toulouse",
       "quartier": "Carmes",
       "moment": [
@@ -1559,8 +1559,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6002000",
-      "lng": "1.4396000",
+      "lat": 43.6002,
+      "lng": 1.4396,
       "adresse": "1 place de la Daurade, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1591,8 +1591,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6060000",
-      "lng": "1.4423000",
+      "lat": 43.606,
+      "lng": 1.4423,
       "adresse": "12 rue du Taur, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1622,8 +1622,8 @@
         "01"
       ],
       "place_id": null,
-      "lat": "43.6046000",
-      "lng": "1.4459000",
+      "lat": 43.6046,
+      "lng": 1.4459,
       "adresse": "6 impasse Baour Lormian, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1653,8 +1653,8 @@
         "05"
       ],
       "place_id": null,
-      "lat": "43.6063000",
-      "lng": "1.4497000",
+      "lat": 43.6063,
+      "lng": 1.4497,
       "adresse": "Allées Jean Jaurès, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1689,8 +1689,8 @@
         "08"
       ],
       "place_id": null,
-      "lat": "43.6045000",
-      "lng": "1.4440000",
+      "lat": 43.6045,
+      "lng": 1.444,
       "adresse": "Place du Capitole, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1723,8 +1723,8 @@
         "07"
       ],
       "place_id": null,
-      "lat": "43.6034000",
-      "lng": "1.4472000",
+      "lat": 43.6034,
+      "lng": 1.4472,
       "adresse": "13 place Saint-Georges, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1755,8 +1755,8 @@
         "05"
       ],
       "place_id": null,
-      "lat": "43.6027000",
-      "lng": "1.4441000",
+      "lat": 43.6027,
+      "lng": 1.4441,
       "adresse": "6 rue Jules-Chalande, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [
@@ -1787,8 +1787,8 @@
         "05"
       ],
       "place_id": null,
-      "lat": "43.6064000",
-      "lng": "1.4462000",
+      "lat": 43.6064,
+      "lng": 1.4462,
       "adresse": "16 place Victor-Hugo, 31000 Toulouse",
       "quartier": "Capitole",
       "moment": [

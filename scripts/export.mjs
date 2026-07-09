@@ -63,7 +63,8 @@ async function main() {
     personas: linkValues(r.personas),
     osm_id:   r.osm_id   || null,
     osm_type: r.osm_type || null,
-    lat: r.latitude, lng: r.longitude,
+    lat: r.latitude != null ? Number(r.latitude) : null,
+    lng: r.longitude != null ? Number(r.longitude) : null,
     adresse: r.adresse,
     quartier: single(r.quartier),
     moment: linkValues(r.moment),
@@ -118,7 +119,8 @@ async function main() {
 
   const outHotels = hotels.filter((r) => r.actif).map((r) => ({
     nom: r.nom, adresse: r.adresse,
-    lat: r.latitude, lng: r.longitude,
+    lat: r.latitude != null ? Number(r.latitude) : null,
+    lng: r.longitude != null ? Number(r.longitude) : null,
     personas: linkValues(r.personas_dominants),
   }));
 
