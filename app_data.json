@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-07-09T12:24:32.407Z",
+  "genere_le": "2026-07-09T13:33:42.103Z",
   "date_reference": "2026-07-09",
   "personas": [
     {
@@ -254,7 +254,10 @@
         "romantique"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 13
+      }
     },
     {
       "nom": "Les Jardins de l'Opéra",
@@ -285,7 +288,10 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 9
+      }
     },
     {
       "nom": "Cave a manger N5",
@@ -317,7 +323,10 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 7
+      }
     },
     {
       "nom": "Bibendum",
@@ -349,7 +358,10 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 6
+      }
     },
     {
       "nom": "Cantine de l'Opera",
@@ -380,7 +392,10 @@
         "accueillant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 5
+      }
     },
     {
       "nom": "Solides",
@@ -412,7 +427,10 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 7
+      }
     },
     {
       "nom": "Cafe Le Bibent",
@@ -445,7 +463,10 @@
         "décontracté"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 6
+      }
     },
     {
       "nom": "El Bocadillo",
@@ -476,7 +497,10 @@
         "chaleureux"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 11
+      }
     },
     {
       "nom": "Brasserie des Beaux-Arts",
@@ -507,7 +531,10 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 13
+      }
     },
     {
       "nom": "Marche Victor Hugo",
@@ -541,7 +568,10 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 2
+      }
     },
     {
       "nom": "Marche Saint-Aubin",
@@ -573,7 +603,10 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 9
+      }
     },
     {
       "nom": "Les Abattoirs",
@@ -606,7 +639,10 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 24
+      }
     },
     {
       "nom": "Fondation Bemberg",
@@ -637,7 +673,10 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 12
+      }
     },
     {
       "nom": "Musee des Augustins",
@@ -669,7 +708,10 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 10
+      }
     },
     {
       "nom": "Aeroscopia",
@@ -700,7 +742,10 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 133
+      }
     },
     {
       "nom": "Cite de l'Espace",
@@ -732,7 +777,10 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 58
+      }
     },
     {
       "nom": "L'Envol des Pionniers",
@@ -763,7 +811,10 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 61
+      }
     },
     {
       "nom": "Basilique Saint-Sernin",
@@ -796,7 +847,10 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 9
+      }
     },
     {
       "nom": "Couvent des Jacobins",
@@ -828,7 +882,10 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 9
+      }
     },
     {
       "nom": "Pont-Neuf",
@@ -860,7 +917,10 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 13
+      }
     },
     {
       "nom": "Halle aux Grains",
@@ -890,7 +950,10 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 6
+      }
     },
     {
       "nom": "Theatre du Capitole",
@@ -919,7 +982,10 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 5
+      }
     },
     {
       "nom": "Stade Ernest-Wallon",
@@ -949,7 +1015,10 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 53
+      }
     },
     {
       "nom": "Berges de la Garonne",
@@ -983,7 +1052,10 @@
         "footing"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 13
+      }
     },
     {
       "nom": "Canal du Midi",
@@ -1017,7 +1089,10 @@
         "patrimoine"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 22
+      }
     },
     {
       "nom": "Passerelle de la Daurade",
@@ -1049,7 +1124,10 @@
         "patrimoine"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15"
+      "verifie_le": "2026-01-15",
+      "marche_min": {
+        "Hotel de France": 13
+      }
     },
     {
       "nom": "Michel Sarran",
@@ -1106,7 +1184,10 @@
         "élégant"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 11
+      }
     },
     {
       "nom": "Agapes",
@@ -1137,7 +1218,10 @@
         "chaleureux"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 3
+      }
     },
     {
       "nom": "Le Genty Magre",
@@ -1296,7 +1380,10 @@
         "terrasse"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 145
+      }
     },
     {
       "nom": "L'Aparté",
@@ -1423,7 +1510,10 @@
         "gastronomique"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 10
+      }
     },
     {
       "nom": "Théâtre de la Cité (TNT)",
@@ -1454,7 +1544,10 @@
         "contemporain"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 3
+      }
     },
     {
       "nom": "La Halle de la Machine",
@@ -1486,7 +1579,10 @@
         "contemporain"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 59
+      }
     },
     {
       "nom": "Muséum de Toulouse",
@@ -1517,7 +1613,10 @@
         "art"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 19
+      }
     },
     {
       "nom": "Cathédrale Saint-Étienne",
@@ -1549,7 +1648,10 @@
         "gratuit"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 9
+      }
     },
     {
       "nom": "Notre-Dame de la Daurade",
@@ -1581,7 +1683,10 @@
         "gratuit"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 14
+      }
     },
     {
       "nom": "Notre-Dame du Taur",
@@ -1613,7 +1718,10 @@
         "gratuit"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 6
+      }
     },
     {
       "nom": "Keepcool Toulouse Capitole",
@@ -1643,7 +1751,10 @@
         "moderne"
       ],
       "pmr": false,
-      "verifie_le": "2026-07-01"
+      "verifie_le": "2026-07-01",
+      "marche_min": {
+        "Hotel de France": 3
+      }
     },
     {
       "nom": "Basic-Fit Toulouse Jean Jaurès",
@@ -1674,7 +1785,10 @@
         "moderne"
       ],
       "pmr": false,
-      "verifie_le": "2026-07-01"
+      "verifie_le": "2026-07-01",
+      "marche_min": {
+        "Hotel de France": 3
+      }
     },
     {
       "nom": "Place du Capitole",
@@ -1713,7 +1827,10 @@
         "animé"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 5
+      }
     },
     {
       "nom": "Émile",
@@ -1745,7 +1862,10 @@
         "historique"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 4
+      }
     },
     {
       "nom": "L'Air de Famille",
@@ -1777,7 +1897,10 @@
         "accueillant"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 6
+      }
     },
     {
       "nom": "J'Go",
@@ -1809,7 +1932,10 @@
         "accueillant"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01"
+      "verifie_le": "2026-05-01",
+      "marche_min": {
+        "Hotel de France": 2
+      }
     }
   ],
   "evenements": [
@@ -2201,5 +2327,6 @@
         "es": "La hora más bella de Toulouse: muelle de la Daurade → Pont-Neuf → orilla izquierda → pasarela Viguerie → regreso por el Pont Saint-Pierre. Los ladrillos se vuelven dorados y luego rosas."
       }
     }
-  ]
+  ],
+  "marche_calcule_le": "2026-07-09T13:33:43.089Z"
 }
