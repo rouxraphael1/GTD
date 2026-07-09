@@ -1,20 +1,14 @@
 name: build-data
 
-# Trois déclencheurs :
-#  - schedule : rebuild quotidien à 04h30 Paris → garantit la fraîcheur du filtre
-#               anti-hallucination (un événement qui se termine aujourd'hui disparaît demain).
-#  - workflow_dispatch : bouton "Run workflow" manuel.
-#  - repository_dispatch : déclenché par un webhook Baserow (relayé par le Worker
-#                          Cloudflare qui ajoute le token GitHub) à chaque modif de la base.
 on:
   schedule:
-    - cron: "30 3 * * *"      # 03:30 UTC = 04:30 Paris (hiver) / 05:30 (été)
+    - cron: "30 3 * * *"
   workflow_dispatch:
   repository_dispatch:
     types: [baserow-update]
 
 permissions:
-  contents: write             # pour committer le JSON régénéré
+  contents: write
 
 jobs:
   build:
@@ -28,35 +22,26 @@ jobs:
 
       - name: Générer app_data.json depuis Baserow
         env:
-          BASEROW_TOKEN: ${{ secrets.BASEROW_TOKEN }}
-          BASEROW_API_URL: ${{ secrets.BASEROW_API_URL }}   # vide = baserow.io ; à définir si self-hosted
-          T_ADRESSES:   ${{ secrets.T_ADRESSES }}
-          T_EVENEMENTS: ${{ secrets.T_EVENEMENTS }}
-          T_PARCOURS:   ${{ secrets.T_PARCOURS }}
-          T_PERSONAS:   ${{ secrets.T_PERSONAS }}
-          T_CATEGORIES: ${{ secrets.T_CATEGORIES }}
-          T_HOTELS:     ${{ secrets.T_HOTELS }}
-          OUT_PATH: app_data.json
+          BASEROW_EMAIL:    ${{ secrets.BASEROW_EMAIL }}
+          BASEROW_PASSWORD: ${{ secrets.BASEROW_PASSWORD }}
+          OUT_PATH: docs/app_data.json
         run: node scripts/export.mjs
 
       - name: Précalculer les temps de marche (ORS Matrix)
         env:
           ORS_API_KEY: ${{ secrets.ORS_API_KEY }}
-          OUT_PATH: app_data.json
+          OUT_PATH: docs/app_data.json
         run: node scripts/precompute-walk.mjs
+        continue-on-error: true
 
       - name: Committer si le contenu a changé
         run: |
           git config user.name  "tefd-bot"
           git config user.email "bot@tefd.local"
-          git add app_data.json
+          git add docs/app_data.json app_data.json
           if git diff --staged --quiet; then
             echo "Aucun changement de données."
           else
             git commit -m "data: rebuild app_data.json ($(date -u +%F))"
             git push
           fi
-
-      # Si l'appli est buildée (Vite) et déployée sur Pages, remplacer l'étape
-      # ci-dessus par un build + actions/deploy-pages. Le commit du JSON suffit
-      # si le site sert public/ directement.

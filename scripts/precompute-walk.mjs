@@ -78,7 +78,11 @@ async function main() {
   });
 
   data.marche_calcule_le = new Date().toISOString();
-  await writeFile(FILE, JSON.stringify(data, null, 2), "utf8");
+  const json = JSON.stringify(data, null, 2);
+  await writeFile(FILE, json, "utf8");
+  if (FILE === "docs/app_data.json") {
+    await writeFile("app_data.json", json, "utf8");
+  }
 
   const total = hotels.length * adrGeo.length;
   console.log(`✓ Temps de marche calculés : ${hotels.length} hôtel(s) × ${adrGeo.length} adresses = ${total} trajets, en ${batches.length} requête(s) Matrix.`);
