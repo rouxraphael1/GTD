@@ -1,5 +1,5 @@
 {
-  "genere_le": "2026-07-09T12:24:32.407Z",
+  "genere_le": "2026-07-09T14:50:31.771Z",
   "date_reference": "2026-07-09",
   "personas": [
     {
@@ -221,6 +221,650 @@
       "lat": 43.6059075,
       "lng": 1.4473638,
       "personas": []
+    },
+    {
+      "nom": "La Chartreuse Hôtel",
+      "adresse": "4 bis Boulevard de Bonrepos, 31000, Toulouse",
+      "lat": 43.6099694,
+      "lng": 1.4528865,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Styles Toulouse Centre Gare Matabiau",
+      "adresse": "13 boulevard de Bonrepos, 31000 Toulouse",
+      "lat": 43.6108,
+      "lng": 1.4447,
+      "personas": []
+    },
+    {
+      "nom": "Holiday Inn Express Toulouse Airport",
+      "adresse": "39 avenue du Général de Gaulle, 31700 Blagnac",
+      "lat": 43.6293,
+      "lng": 1.3667,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Pullman Toulouse Airport",
+      "adresse": "Avenue Didier Daurat, 31700, Blagnac",
+      "lat": 43.6268685,
+      "lng": 1.3823678,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Gascogne",
+      "adresse": "25 Allées Charles de Fitte, 31300, Toulouse",
+      "lat": 43.595274,
+      "lng": 1.4322221,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel d'Orsay",
+      "adresse": "8 Boulevard de Bonrepos, 31000, Toulouse",
+      "lat": 43.6104205,
+      "lng": 1.4526817,
+      "personas": []
+    },
+    {
+      "nom": "Zenitude Toulouse Aéroport",
+      "adresse": "Rue de Caulet, 31300, Toulouse",
+      "lat": 43.6058232,
+      "lng": 1.3584333,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Aéroport Golf de Seilh",
+      "adresse": "Route de Grenade, 31840 Seilh",
+      "lat": 43.678,
+      "lng": 1.425,
+      "personas": []
+    },
+    {
+      "nom": "Logis Élégance Villa du Taur",
+      "adresse": "62 rue du Taur, 31000 Toulouse",
+      "lat": 43.6085,
+      "lng": 1.4409,
+      "personas": []
+    },
+    {
+      "nom": "Château de Drudas",
+      "adresse": "Rue du Château, 31480, Drudas",
+      "lat": 43.7551747,
+      "lng": 1.0987803,
+      "personas": []
+    },
+    {
+      "nom": "Zenitude Toulouse Métropole",
+      "adresse": "1 allée Antoine Osète, 31100 Toulouse",
+      "lat": 43.62,
+      "lng": 1.405,
+      "personas": []
+    },
+    {
+      "nom": "Radisson Blu Hôtel Toulouse Airport",
+      "adresse": "2 rue Dieudonné Costes, 31700 Blagnac",
+      "lat": 43.631,
+      "lng": 1.371,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Gare Matabiau",
+      "adresse": "Rue de Bayard, 31000, Toulouse",
+      "lat": 43.6111892,
+      "lng": 1.4522703,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Styles Toulouse Nord Sesquières",
+      "adresse": "49 avenue Jean Zay, 31200 Toulouse",
+      "lat": 43.64,
+      "lng": 1.42,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Budget Labège",
+      "adresse": "120 rue Garance, 31677 Labège",
+      "lat": 43.556,
+      "lng": 1.535,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel de Bordeaux",
+      "adresse": "4 Boulevard de Bonrepos, 31000, Toulouse",
+      "lat": 43.6098608,
+      "lng": 1.4530644,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Le Capitole",
+      "adresse": "10 Rue Rivals, 31000, Toulouse",
+      "lat": 43.6059813,
+      "lng": 1.4451364,
+      "personas": []
+    },
+    {
+      "nom": "Résidence Park Wilson Airport",
+      "adresse": "1 boulevard Jean-Auguste Ingres, 31770 Colomiers",
+      "lat": 43.635,
+      "lng": 1.375,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Styles Toulouse Canal du Midi",
+      "adresse": "5-7 boulevard de la Gare, 31500 Toulouse",
+      "lat": 43.587,
+      "lng": 1.452,
+      "personas": []
+    },
+    {
+      "nom": "Fasthotel Toulouse Blagnac Aéroport",
+      "adresse": "Rue de Bordebasse, 31700, Blagnac",
+      "lat": 43.639014,
+      "lng": 1.3721093,
+      "personas": []
+    },
+    {
+      "nom": "L'INITIAL HÔTEL - RESTAURANT - SÉMINAIRE",
+      "adresse": "1 rue Boudeville, 31100 Toulouse",
+      "lat": 43.618,
+      "lng": 1.42,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Centre Compans Caffarelli",
+      "adresse": "Boulevard Lascrosses, 31000, Toulouse",
+      "lat": 43.6107107,
+      "lng": 1.4348484,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Innès by HappyCulture",
+      "adresse": "13 bis rue Matabiau, 31000 Toulouse",
+      "lat": 43.612,
+      "lng": 1.447,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Pullman Toulouse Centre",
+      "adresse": "84 allées Jean Jaurès, 31000 Toulouse",
+      "lat": 43.6065,
+      "lng": 1.448,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Victor Hugo",
+      "adresse": "Rue Lafaille, 31000, Toulouse",
+      "lat": 43.607531,
+      "lng": 1.4471229,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Restaurant Campanile Toulouse Nord L'Union",
+      "adresse": "Avenue Saint-Caprais, 31240 l'Union",
+      "lat": 43.658,
+      "lng": 1.487,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Novotel Toulouse Aéroport",
+      "adresse": "23 impasse de Maubec, 31300 Toulouse",
+      "lat": 43.627,
+      "lng": 1.37,
+      "personas": []
+    },
+    {
+      "nom": "Appart'Hôtel Adagio Toulouse Centre Ramblas",
+      "adresse": "86 allées Jean Jaurès, 31000 Toulouse",
+      "lat": 43.606,
+      "lng": 1.449,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Le Patio Occitan",
+      "adresse": "Impasse Erasme, 31270, Cugnaux",
+      "lat": 43.5520109,
+      "lng": 1.33735,
+      "personas": []
+    },
+    {
+      "nom": "Campanile Toulouse Purpan",
+      "adresse": "33 Route de Bayonne, 31300, Toulouse",
+      "lat": 43.606547,
+      "lng": 1.3935991,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Styles Toulouse Blagnac Aéroport",
+      "adresse": "45 Rue de Bordebasse, 31700, Blagnac",
+      "lat": 43.6379405,
+      "lng": 1.3751523,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Blagnac Aéroport",
+      "adresse": "80 Avenue du Parc, 31700, Blagnac",
+      "lat": 43.6281094,
+      "lng": 1.3843389,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Campanile Toulouse Sud Labège Innopole",
+      "adresse": "342 Rue de la Découverte, 31670, Labège",
+      "lat": 43.546047,
+      "lng": 1.5028215,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Purpan",
+      "adresse": "1 Rue Jean Viollis, 31300, Toulouse",
+      "lat": 43.6138072,
+      "lng": 1.396421,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Styles Toulouse Cité de l'Espace",
+      "adresse": "21 Avenue Marcel Dassault, 31500, Toulouse",
+      "lat": 43.5773161,
+      "lng": 1.4959327,
+      "personas": []
+    },
+    {
+      "nom": "Appart'Hôtel Adagio Access Toulouse Saint-Cyprien",
+      "adresse": "37 ter avenue Etienne Billières, 31300 Toulouse",
+      "lat": 43.592,
+      "lng": 1.438,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Université",
+      "adresse": "Rue Jacques Babinet, 31100, Toulouse",
+      "lat": 43.5753286,
+      "lng": 1.4069107,
+      "personas": []
+    },
+    {
+      "nom": "Hampton by Hilton Toulouse Airport",
+      "adresse": "59 allées Jacques Monod, 31700 Blagnac",
+      "lat": 43.632,
+      "lng": 1.368,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Courtyard by Marriott Toulouse Blagnac Airport",
+      "adresse": "70 allées Jacques Monod, 31700 Blagnac",
+      "lat": 43.633,
+      "lng": 1.369,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Albert 1er",
+      "adresse": "Rue John Fitzgerald Kennedy, 31000, Toulouse",
+      "lat": 43.6058409,
+      "lng": 1.4449577,
+      "personas": []
+    },
+    {
+      "nom": "Brit Hôtel Toulouse Colomiers L'Esplanade",
+      "adresse": "Place Charles de Gaulle, 31770 Colomiers",
+      "lat": 43.637,
+      "lng": 1.378,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Styles Toulouse Labège",
+      "adresse": "Rue Carmin, 31670, Labège",
+      "lat": 43.5499239,
+      "lng": 1.4998214,
+      "personas": []
+    },
+    {
+      "nom": "Residhome Toulouse Occitania",
+      "adresse": "93 Avenue de Lombez, 31300, Toulouse",
+      "lat": 43.5937265,
+      "lng": 1.4099117,
+      "personas": []
+    },
+    {
+      "nom": "Mama Shelter Toulouse",
+      "adresse": "Boulevard Lazare Carnot, 31000, Toulouse",
+      "lat": 43.6049674,
+      "lng": 1.4498714,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Centre",
+      "adresse": "2 Rue Claire Pauilhac, 31000, Toulouse",
+      "lat": 43.6103281,
+      "lng": 1.4461913,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Centre Saint-Georges",
+      "adresse": "2 rue Sainte-Ursule, 31000 Toulouse",
+      "lat": 43.607,
+      "lng": 1.443,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Budget Colomiers",
+      "adresse": "2 Avenue Hermès, 31770, Colomiers",
+      "lat": 43.6066547,
+      "lng": 1.3509644,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Restaurant Campanile Toulouse Sud Balma Cité de l'Espace",
+      "adresse": "Rue des Pyrénées, 31130 Balma",
+      "lat": 43.573,
+      "lng": 1.51,
+      "personas": []
+    },
+    {
+      "nom": "Holiday Inn Toulouse Airport",
+      "adresse": "1 allées Jacques Borel, 31300 Toulouse",
+      "lat": 43.63,
+      "lng": 1.367,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Novotel Toulouse Centre Wilson",
+      "adresse": "Place du Président Wilson, 31000, Toulouse",
+      "lat": 43.6051525,
+      "lng": 1.4468585,
+      "personas": []
+    },
+    {
+      "nom": "Octel Hôtel et Résidence",
+      "adresse": "1 allées Jacques Borel, 31300 Toulouse",
+      "lat": 43.619,
+      "lng": 1.406,
+      "personas": []
+    },
+    {
+      "nom": "Palladia Hôtel",
+      "adresse": "Avenue de Grande Bretagne, 31300, Toulouse",
+      "lat": 43.6055227,
+      "lng": 1.4004239,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Sud",
+      "adresse": "Rue de la Redoute, 31100 Toulouse",
+      "lat": 43.585,
+      "lng": 1.43,
+      "personas": []
+    },
+    {
+      "nom": "NH Toulouse Airport",
+      "adresse": "15 Rue Charles Lindbergh, 31700, Blagnac",
+      "lat": 43.6302229,
+      "lng": 1.3767548,
+      "personas": []
+    },
+    {
+      "nom": "Résidence Inn by Marriott Toulouse Blagnac Airport",
+      "adresse": "1 allées Jacques Borel, 31300 Toulouse",
+      "lat": 43.634,
+      "lng": 1.37,
+      "personas": []
+    },
+    {
+      "nom": "Zenitude Toulouse Le Parc de L'Escale",
+      "adresse": "1 allées Jacques Borel, 31300 Toulouse",
+      "lat": 43.56,
+      "lng": 1.53,
+      "personas": []
+    },
+    {
+      "nom": "Citadines Wilson Toulouse",
+      "adresse": "1 allées du Professeur Charles Soussial, 31000 Toulouse",
+      "lat": 43.6055,
+      "lng": 1.446,
+      "personas": []
+    },
+    {
+      "nom": "Domaine de Montjoie",
+      "adresse": "31520, Ramonville-Saint-Agne",
+      "lat": 43.5404154,
+      "lng": 1.4609495,
+      "personas": []
+    },
+    {
+      "nom": "COWOOL TOULOUSE",
+      "adresse": "6 Avenue Hubert Curien, 31100, Toulouse",
+      "lat": 43.5568394,
+      "lng": 1.4297603,
+      "personas": []
+    },
+    {
+      "nom": "The Social Hub",
+      "adresse": "1 Rue de Sébastopol, 31000, Toulouse",
+      "lat": 43.6101189,
+      "lng": 1.43049,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Le Cousture",
+      "adresse": "Rue de la Colombette, 31000, Toulouse",
+      "lat": 43.6042707,
+      "lng": 1.4505464,
+      "personas": []
+    },
+    {
+      "nom": "Cour des Consuls Hôtel & Spa Toulouse",
+      "adresse": "1 rue du Pont Saint-Pierre, 31000 Toulouse",
+      "lat": 43.602,
+      "lng": 1.44,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Ponts Jumeaux",
+      "adresse": "Boulevard des Minimes, 31200, Toulouse",
+      "lat": 43.6158342,
+      "lng": 1.444709,
+      "personas": []
+    },
+    {
+      "nom": "Sangha Hôtel Toulouse",
+      "adresse": "Rue Thomas Dupuy, 31300, Toulouse",
+      "lat": 43.6017658,
+      "lng": 1.4069476,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel de France Toulouse",
+      "adresse": "5 Rue d'Austerlitz, 31000, Toulouse",
+      "lat": 43.6059068,
+      "lng": 1.4472681,
+      "personas": []
+    },
+    {
+      "nom": "Citiz Hôtel Toulouse",
+      "adresse": "Rue des Sept Troubadours, 31000, Toulouse",
+      "lat": 43.6056617,
+      "lng": 1.4492456,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Centre Wilson Capitole",
+      "adresse": "1 allées du Professeur Charles Soussial, 31000 Toulouse",
+      "lat": 43.605,
+      "lng": 1.4455,
+      "personas": []
+    },
+    {
+      "nom": "Grand Hôtel d'Orléans",
+      "adresse": "72 Rue de Bayard, 31000, Toulouse",
+      "lat": 43.61101,
+      "lng": 1.4519411,
+      "personas": []
+    },
+    {
+      "nom": "Campanile Toulouse Nord Sesquières",
+      "adresse": "1 rue de Pôle, 31200 Toulouse",
+      "lat": 43.642,
+      "lng": 1.418,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Courrier Sud",
+      "adresse": "55 Chemin de Ribaute, 31130, Quint-Fonsegrives",
+      "lat": 43.5826072,
+      "lng": 1.5130745,
+      "personas": []
+    },
+    {
+      "nom": "Eklo Toulouse",
+      "adresse": "Place de la Charte des Libertés Communales, 31300, Toulouse",
+      "lat": 43.6029241,
+      "lng": 1.4076328,
+      "personas": []
+    },
+    {
+      "nom": "Nemea Appart'Hôtel Toulouse Saint-Martin",
+      "adresse": "4 Rue Alain Fournier, 31300, Toulouse",
+      "lat": 43.607713,
+      "lng": 1.3714695,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Toulouse Sud",
+      "adresse": "6 Avenue Hubert Curien, 31100, Toulouse",
+      "lat": 43.5568394,
+      "lng": 1.4297603,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Héliot",
+      "adresse": "Rue Héliot, 31000, Toulouse",
+      "lat": 43.6070619,
+      "lng": 1.4496009,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Le Père Léon",
+      "adresse": "31000, Toulouse",
+      "lat": 43.6006102,
+      "lng": 1.4439093,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel de Brienne",
+      "adresse": "Boulevard du Maréchal Leclerc, 31000, Toulouse",
+      "lat": 43.607884,
+      "lng": 1.431617,
+      "personas": []
+    },
+    {
+      "nom": "Grand Hôtel de l'Opéra",
+      "adresse": "Place du Capitole, 31000, Toulouse",
+      "lat": 43.6035313,
+      "lng": 1.4440139,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel le Trèfle",
+      "adresse": "1 allées Jacques Borel, 31300 Toulouse",
+      "lat": 43.6075,
+      "lng": 1.4425,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Centre",
+      "adresse": "Boulevard Lascrosses, 31000, Toulouse",
+      "lat": 43.6107107,
+      "lng": 1.4348484,
+      "personas": []
+    },
+    {
+      "nom": "Novotel Toulouse Centre",
+      "adresse": "Place du Président Wilson, 31000, Toulouse",
+      "lat": 43.6051525,
+      "lng": 1.4468585,
+      "personas": []
+    },
+    {
+      "nom": "Ibis Toulouse Centre Gare",
+      "adresse": "5 Boulevard de la Gare, 31500, Toulouse",
+      "lat": 43.6014756,
+      "lng": 1.4570884,
+      "personas": []
+    },
+    {
+      "nom": "Comfort Hôtel Toulouse Sud",
+      "adresse": "5 Avenue des Crêtes, 31520, Ramonville-Saint-Agne",
+      "lat": 43.537167,
+      "lng": 1.480678,
+      "personas": []
+    },
+    {
+      "nom": "Résidence Adagio Toulouse Centre",
+      "adresse": "1 allées du Professeur Charles Soussial, 31000 Toulouse",
+      "lat": 43.6062,
+      "lng": 1.4475,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Ibis Toulouse Ponts Jumeaux",
+      "adresse": "Boulevard des Minimes, 31200, Toulouse",
+      "lat": 43.6158342,
+      "lng": 1.444709,
+      "personas": []
+    },
+    {
+      "nom": "Zenitude Toulouse Le Parc",
+      "adresse": "Rue de Caulet, 31300, Toulouse",
+      "lat": 43.6058232,
+      "lng": 1.3584333,
+      "personas": []
+    },
+    {
+      "nom": "Appart'City Toulouse Labège",
+      "adresse": "Rue Jean Rostand, 31670, Labège",
+      "lat": 43.542595,
+      "lng": 1.5124512,
+      "personas": []
+    },
+    {
+      "nom": "Ibis Budget Toulouse Centre",
+      "adresse": "13 boulevard de Bonrepos, 31000 Toulouse",
+      "lat": 43.611,
+      "lng": 1.444,
+      "personas": []
+    },
+    {
+      "nom": "Courtyard by Marriott Toulouse",
+      "adresse": "Rue Alain Fournier, 31300, Toulouse",
+      "lat": 43.6074966,
+      "lng": 1.3706133,
+      "personas": []
+    },
+    {
+      "nom": "Adagio Access Toulouse Jolimont",
+      "adresse": "1 allées Jacques Borel, 31300 Toulouse",
+      "lat": 43.6,
+      "lng": 1.455,
+      "personas": []
+    },
+    {
+      "nom": "Hôtel Mercure Toulouse Sud Balma",
+      "adresse": "Rue des Pyrénées, 31130 Balma",
+      "lat": 43.574,
+      "lng": 1.511,
+      "personas": []
+    },
+    {
+      "nom": "Novotel Toulouse Aéroport",
+      "adresse": "23 impasse de Maubec, 31300 Toulouse",
+      "lat": 43.6275,
+      "lng": 1.3705,
+      "personas": []
+    },
+    {
+      "nom": "Pullman Toulouse Airport",
+      "adresse": "Avenue Didier Daurat, 31700, Blagnac",
+      "lat": 43.6268685,
+      "lng": 1.3823678,
+      "personas": []
     }
   ],
   "adresses": [
@@ -231,6 +875,7 @@
         "04"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5994814,
       "lng": 1.4410164,
       "adresse": "19 descente de la Halle aux Poissons, 31000 Toulouse",
@@ -254,8 +899,7 @@
         "romantique"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.py-r.com/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Les Jardins de l'Opéra",
@@ -264,6 +908,7 @@
         "04"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6006,
       "lng": 1.4448,
       "adresse": "1 place du Capitole, 31000 Toulouse",
@@ -286,8 +931,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://lesjardinsdelopera.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cave a manger N5",
@@ -297,6 +941,7 @@
         "04"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6028,
       "lng": 1.4432,
       "adresse": "5 Rue de la Pomme, 31000 Toulouse",
@@ -319,8 +964,7 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.le5winebar.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Bibendum",
@@ -330,6 +974,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6032,
       "lng": 1.4445,
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -352,8 +997,7 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://bibent.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cantine de l'Opera",
@@ -363,6 +1007,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6038,
       "lng": 1.444,
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -384,8 +1029,7 @@
         "accueillant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://lesjardinsdelopera.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Solides",
@@ -396,6 +1040,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6014,
       "lng": 1.4451,
       "adresse": "Rue de la Pomme, 31000 Toulouse",
@@ -417,8 +1062,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.solides.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cafe Le Bibent",
@@ -428,6 +1072,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6037802,
       "lng": 1.4434455,
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -451,8 +1096,7 @@
         "décontracté"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://bibent.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "El Bocadillo",
@@ -462,6 +1106,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6009,
       "lng": 1.4446,
       "adresse": "Rue Pargaminieres, 31000 Toulouse",
@@ -483,8 +1128,7 @@
         "chaleureux"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.boca-toulouse.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Brasserie des Beaux-Arts",
@@ -493,6 +1137,7 @@
         "03"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5998208,
       "lng": 1.4405189,
       "adresse": "1 quai de la Daurade, 31000 Toulouse",
@@ -515,8 +1160,7 @@
         "branché"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://brasserielesbeauxarts.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Marche Victor Hugo",
@@ -528,6 +1172,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6065101,
       "lng": 1.4466498,
       "adresse": "Place Victor Hugo, 31000 Toulouse",
@@ -560,6 +1205,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6055,
       "lng": 1.4395,
       "adresse": "Allees Charles de Fitte, 31300 Toulouse",
@@ -593,6 +1239,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6009,
       "lng": 1.4295,
       "adresse": "76 Allees Charles de Fitte, 31300 Toulouse",
@@ -615,8 +1262,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.lesabattoirs.org/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Fondation Bemberg",
@@ -626,6 +1272,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6001991,
       "lng": 1.4420464,
       "adresse": "Place d'Assezat, 31000 Toulouse",
@@ -647,8 +1294,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.fondation-bemberg.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Musee des Augustins",
@@ -658,6 +1304,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6002,
       "lng": 1.4442,
       "adresse": "22 Rue de Metz, 31000 Toulouse",
@@ -680,8 +1327,7 @@
         "famille"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://augustins.toulouse.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Aeroscopia",
@@ -691,6 +1337,7 @@
         "06"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6636,
       "lng": 1.3712,
       "adresse": "Avenue Francis Crick, 31700 Blagnac",
@@ -712,8 +1359,7 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.aeroscopia.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Cite de l'Espace",
@@ -723,6 +1369,7 @@
         "06"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5874,
       "lng": 1.492,
       "adresse": "Avenue Jean Baylet, 31500 Toulouse",
@@ -745,8 +1392,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.cite-espace.com/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "L'Envol des Pionniers",
@@ -756,6 +1402,7 @@
         "06"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5795,
       "lng": 1.485,
       "adresse": "1 Rue de Montaudran, 31500 Toulouse",
@@ -777,8 +1424,7 @@
         "moderne"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://www.lenvol-des-pionniers.com/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Basilique Saint-Sernin",
@@ -789,6 +1435,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6083818,
       "lng": 1.4419702,
       "adresse": "Place Saint-Sernin, 31000 Toulouse",
@@ -811,8 +1458,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://basilique-saint-sernin.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Couvent des Jacobins",
@@ -822,6 +1468,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6008,
       "lng": 1.4435,
       "adresse": "Place des Jacobins, 31000 Toulouse",
@@ -844,8 +1491,7 @@
         "gratuit"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://jacobins.toulouse.fr/fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Pont-Neuf",
@@ -856,6 +1502,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5996918,
       "lng": 1.4409577,
       "adresse": "Pont-Neuf, 31000 Toulouse",
@@ -887,6 +1534,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6024,
       "lng": 1.4451,
       "adresse": "Place de la Trinite, 31000 Toulouse",
@@ -907,8 +1555,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://onct.toulouse.fr/la-halle-aux-grains/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Theatre du Capitole",
@@ -917,6 +1564,7 @@
         "04"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6041433,
       "lng": 1.4443378,
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -937,8 +1585,7 @@
         "élégant"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://opera.toulouse.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Stade Ernest-Wallon",
@@ -947,6 +1594,7 @@
         "03"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6175,
       "lng": 1.4088,
       "adresse": "Route de Muret, 31200 Toulouse",
@@ -968,8 +1616,7 @@
         "animé"
       ],
       "pmr": true,
-      "verifie_le": "2026-01-15",
-      "url": "https://billetterie.stadetoulousain.fr/"
+      "verifie_le": "2026-01-15"
     },
     {
       "nom": "Berges de la Garonne",
@@ -980,6 +1627,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6015,
       "lng": 1.439,
       "adresse": "Quai de la Daurade, 31000 Toulouse",
@@ -1013,6 +1661,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.595,
       "lng": 1.438,
       "adresse": "Canal du Midi, 31300 Toulouse",
@@ -1046,6 +1695,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6005,
       "lng": 1.438,
       "adresse": "Passerelle de la Daurade, 31000 Toulouse",
@@ -1079,6 +1729,7 @@
         "04"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "21 boulevard Armand Duportal, 31000 Toulouse",
@@ -1094,8 +1745,7 @@
       "priorite_edito": 3,
       "tags": [],
       "pmr": false,
-      "verifie_le": null,
-      "url": "https://www.michel-sarran.com/fr"
+      "verifie_le": null
     },
     {
       "nom": "SEPT",
@@ -1105,6 +1755,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5997,
       "lng": 1.4432,
       "adresse": "11 rue Théodore-Ozenne, 31000 Toulouse",
@@ -1127,8 +1778,7 @@
         "élégant"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01",
-      "url": "https://www.restaurant-sept.fr/"
+      "verifie_le": "2026-05-01"
     },
     {
       "nom": "Agapes",
@@ -1138,6 +1788,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6076,
       "lng": 1.4489,
       "adresse": "7 rue de l'Industrie, 31000 Toulouse",
@@ -1169,6 +1820,7 @@
         "04"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "3 rue Genty-Magre, 31000 Toulouse",
@@ -1201,6 +1853,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "1 rue Pane-Bœuf, 31000 Toulouse",
@@ -1232,6 +1885,7 @@
         "05"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "8 rue de l'Esquille, 31000 Toulouse",
@@ -1264,6 +1918,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "28 chemin de Gramont, 31770 Colomiers",
@@ -1296,6 +1951,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5283,
       "lng": 1.4361,
       "adresse": "1204 route de Lacroix-Falgarde, 31320 Aureville",
@@ -1328,6 +1984,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "21 rue de l'Europe, 31850 Montrabé",
@@ -1360,6 +2017,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "8 rue Jean Parisot, 31590 Lavalette",
@@ -1392,6 +2050,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": null,
       "lng": null,
       "adresse": "6 place de la Mairie, 31130 Quint-Fonsegrives",
@@ -1424,6 +2083,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6008,
       "lng": 1.4448,
       "adresse": "10 rue de la Pleau, 31000 Toulouse",
@@ -1456,6 +2116,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.606,
       "lng": 1.4498,
       "adresse": "1 rue Pierre Baudis, 31000 Toulouse",
@@ -1476,8 +2137,7 @@
         "contemporain"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01",
-      "url": "https://theatre-cite.com/"
+      "verifie_le": "2026-05-01"
     },
     {
       "nom": "La Halle de la Machine",
@@ -1488,6 +2148,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5794,
       "lng": 1.4837,
       "adresse": "3 avenue de l'Aérodrome de Montaudran, 31400 Toulouse",
@@ -1509,8 +2170,7 @@
         "contemporain"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01",
-      "url": "https://www.halledelamachine.fr/"
+      "verifie_le": "2026-05-01"
     },
     {
       "nom": "Muséum de Toulouse",
@@ -1520,6 +2180,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.5936,
       "lng": 1.4485,
       "adresse": "35 allées Jules Guesde, 31000 Toulouse",
@@ -1541,8 +2202,7 @@
         "art"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01",
-      "url": "https://museum.toulouse-metropole.fr/"
+      "verifie_le": "2026-05-01"
     },
     {
       "nom": "Cathédrale Saint-Étienne",
@@ -1552,6 +2212,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6006,
       "lng": 1.4506,
       "adresse": "Place Saint-Étienne, 31000 Toulouse",
@@ -1574,8 +2235,7 @@
         "gratuit"
       ],
       "pmr": false,
-      "verifie_le": "2026-05-01",
-      "url": "https://paroissescathedraletoulouse.fr/"
+      "verifie_le": "2026-05-01"
     },
     {
       "nom": "Notre-Dame de la Daurade",
@@ -1585,6 +2245,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6002,
       "lng": 1.4396,
       "adresse": "1 place de la Daurade, 31000 Toulouse",
@@ -1617,6 +2278,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.606,
       "lng": 1.4423,
       "adresse": "12 rue du Taur, 31000 Toulouse",
@@ -1648,6 +2310,7 @@
         "01"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6046,
       "lng": 1.4459,
       "adresse": "6 impasse Baour Lormian, 31000 Toulouse",
@@ -1669,8 +2332,7 @@
         "moderne"
       ],
       "pmr": false,
-      "verifie_le": "2026-07-01",
-      "url": "https://www.keepcool.fr/s/salle-de-sport-toulouse-capitole"
+      "verifie_le": "2026-07-01"
     },
     {
       "nom": "Basic-Fit Toulouse Jean Jaurès",
@@ -1680,6 +2342,7 @@
         "05"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6063,
       "lng": 1.4497,
       "adresse": "Allées Jean Jaurès, 31000 Toulouse",
@@ -1701,8 +2364,7 @@
         "moderne"
       ],
       "pmr": false,
-      "verifie_le": "2026-07-01",
-      "url": "https://www.basic-fit.fr/"
+      "verifie_le": "2026-07-01"
     },
     {
       "nom": "Place du Capitole",
@@ -1717,6 +2379,7 @@
         "08"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6045,
       "lng": 1.444,
       "adresse": "Place du Capitole, 31000 Toulouse",
@@ -1751,6 +2414,7 @@
         "07"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6034,
       "lng": 1.4472,
       "adresse": "13 place Saint-Georges, 31000 Toulouse",
@@ -1783,6 +2447,7 @@
         "05"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6027,
       "lng": 1.4441,
       "adresse": "6 rue Jules-Chalande, 31000 Toulouse",
@@ -1815,6 +2480,7 @@
         "05"
       ],
       "place_id": null,
+      "url": null,
       "lat": 43.6064,
       "lng": 1.4462,
       "adresse": "16 place Victor-Hugo, 31000 Toulouse",
