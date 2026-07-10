@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-07-09T14:50:31.771Z",
-  "date_reference": "2026-07-09",
+  "genere_le": "2026-07-10T11:47:50.378Z",
+  "date_reference": "2026-07-10",
   "personas": [
     {
       "code": "01",
@@ -934,7 +934,7 @@
       "verifie_le": "2026-01-15"
     },
     {
-      "nom": "Cave a manger N5",
+      "nom": "Cave à Manger N°5",
       "categorie": "restaurant",
       "personas": [
         "01",
@@ -962,71 +962,6 @@
         "bistronomique",
         "terrasse",
         "branché"
-      ],
-      "pmr": true,
-      "verifie_le": "2026-01-15"
-    },
-    {
-      "nom": "Bibendum",
-      "categorie": "restaurant",
-      "personas": [
-        "04",
-        "07"
-      ],
-      "place_id": null,
-      "url": null,
-      "lat": 43.6032,
-      "lng": 1.4445,
-      "adresse": "Place du Capitole, 31000 Toulouse",
-      "quartier": "Capitole",
-      "moment": [
-        "midi",
-        "soir"
-      ],
-      "note": {
-        "fr": "Bistronomique sur la Place du Capitole — terrasse avec vue.",
-        "en": "Bistro on Place du Capitole — terrace with view.",
-        "es": "Bistro en la Place del Capitole — terraza con vista."
-      },
-      "acces": "",
-      "prix": "€€",
-      "priorite_edito": "3",
-      "tags": [
-        "bistronomique",
-        "terrasse",
-        "animé"
-      ],
-      "pmr": true,
-      "verifie_le": "2026-01-15"
-    },
-    {
-      "nom": "Cantine de l'Opera",
-      "categorie": "restaurant",
-      "personas": [
-        "04",
-        "08"
-      ],
-      "place_id": null,
-      "url": null,
-      "lat": 43.6038,
-      "lng": 1.444,
-      "adresse": "Place du Capitole, 31000 Toulouse",
-      "quartier": "Capitole",
-      "moment": [
-        "midi"
-      ],
-      "note": {
-        "fr": "Bistronomique élégant — cuisine française revisitée, cadre raffiné.",
-        "en": "Elegant bistro — reimagined French cuisine, refined setting.",
-        "es": "Bistro elegante — cocina francesa reinventada."
-      },
-      "acces": "",
-      "prix": "€€",
-      "priorite_edito": "4",
-      "tags": [
-        "bistronomique",
-        "décontracté",
-        "accueillant"
       ],
       "pmr": true,
       "verifie_le": "2026-01-15"
@@ -1099,7 +1034,7 @@
       "verifie_le": "2026-01-15"
     },
     {
-      "nom": "El Bocadillo",
+      "nom": "Boca",
       "categorie": "restaurant",
       "personas": [
         "02",
@@ -2304,69 +2239,6 @@
       "verifie_le": "2026-05-01"
     },
     {
-      "nom": "Keepcool Toulouse Capitole",
-      "categorie": "salle_sport",
-      "personas": [
-        "01"
-      ],
-      "place_id": null,
-      "url": null,
-      "lat": 43.6046,
-      "lng": 1.4459,
-      "adresse": "6 impasse Baour Lormian, 31000 Toulouse",
-      "quartier": "Capitole",
-      "moment": [
-        "matin",
-        "midi",
-        "soir"
-      ],
-      "note": {
-        "fr": "Salle de sport en plein centre, 7j/7 de 6h à 23h. Séance d'essai possible — la solution pour le client business qui veut garder sa routine. Cardio, musculation, small groups.",
-        "en": "City-centre gym, open 7/7 from 6am to 11pm. Trial session possible — the solution for business guests keeping their routine. Cardio, weights, small groups.",
-        "es": "Gimnasio en pleno centro, 7/7 de 6h a 23h. Sesión de prueba posible — la solución para el cliente de negocios."
-      },
-      "acces": "Métro A Capitole, 2 min à pied",
-      "prix": "€€",
-      "priorite_edito": "4",
-      "tags": [
-        "moderne"
-      ],
-      "pmr": false,
-      "verifie_le": "2026-07-01"
-    },
-    {
-      "nom": "Basic-Fit Toulouse Jean Jaurès",
-      "categorie": "salle_sport",
-      "personas": [
-        "01",
-        "05"
-      ],
-      "place_id": null,
-      "url": null,
-      "lat": 43.6063,
-      "lng": 1.4497,
-      "adresse": "Allées Jean Jaurès, 31000 Toulouse",
-      "quartier": "Capitole",
-      "moment": [
-        "matin",
-        "midi",
-        "soir"
-      ],
-      "note": {
-        "fr": "Grande enseigne accessible, 7 zones d'entraînement, ouverte 7j/7. Pass journée possible pour le client de passage. Proche gare et centre.",
-        "en": "Accessible chain gym, 7 training zones, open 7/7. Day pass available for visiting guests. Near the station and centre.",
-        "es": "Cadena accesible, 7 zonas de entrenamiento, abierta 7/7. Pase de día disponible para el cliente de paso."
-      },
-      "acces": "Métro A/B Jean Jaurès",
-      "prix": "€",
-      "priorite_edito": "3",
-      "tags": [
-        "moderne"
-      ],
-      "pmr": false,
-      "verifie_le": "2026-07-01"
-    },
-    {
       "nom": "Place du Capitole",
       "categorie": "visite",
       "personas": [
@@ -2522,7 +2394,7 @@
       "date_debut": "2026-09-01",
       "date_fin": "2026-09-30",
       "recurrent": true,
-      "url": "https://www.pianoauxjacobins.com"
+      "url": "https://www.pianojacobins.com"
     },
     {
       "titre": {
@@ -2538,7 +2410,7 @@
       "date_debut": "2026-10-01",
       "date_fin": "2027-06-30",
       "recurrent": true,
-      "url": "https://www.opera-toulouse.fr"
+      "url": "https://opera.toulouse.fr/"
     },
     {
       "titre": {
@@ -2572,7 +2444,7 @@
       "date_debut": "2027-06-15",
       "date_fin": "2027-06-20",
       "recurrent": true,
-      "url": "https://riolo.co.toulouse.fr"
+      "url": "https://rio-loco.org/"
     },
     {
       "titre": {
@@ -2591,7 +2463,7 @@
       "date_debut": "2026-11-27",
       "date_fin": "2026-12-27",
       "recurrent": true,
-      "url": null
+      "url": "https://marches-de-noel.fr/marches/toulouse/"
     },
     {
       "titre": {
@@ -2642,7 +2514,7 @@
       "date_debut": "2026-09-18",
       "date_fin": "2026-10-18",
       "recurrent": true,
-      "url": "https://printempsdeseptembre.com"
+      "url": "https://www.lenouveauprintemps.com/fr/le-festival"
     },
     {
       "titre": {
@@ -2658,7 +2530,7 @@
       "date_debut": "2027-03-01",
       "date_fin": "2027-03-31",
       "recurrent": true,
-      "url": null
+      "url": "https://carnavaldetoulouse.fr/SiteCarnaval/"
     },
     {
       "titre": {
@@ -2692,7 +2564,7 @@
       "date_debut": "2026-07-10",
       "date_fin": "2026-08-31",
       "recurrent": true,
-      "url": null
+      "url": "https://metropole.toulouse.fr/actualites/toulouse-plages"
     },
     {
       "titre": {
@@ -2709,7 +2581,7 @@
       "date_debut": "2026-07-15",
       "date_fin": "2026-08-15",
       "recurrent": true,
-      "url": "https://toulousedete.org"
+      "url": "https://metropole.toulouse.fr/agenda"
     },
     {
       "titre": {
@@ -2725,7 +2597,7 @@
       "date_debut": "2026-08-01",
       "date_fin": "2026-08-31",
       "recurrent": true,
-      "url": null
+      "url": "https://31.agendaculturel.fr/festival/les-siestes-electroniques.html#google_vignette"
     },
     {
       "titre": {
@@ -2757,7 +2629,7 @@
       "date_debut": "2026-11-07",
       "date_fin": "2026-11-15",
       "recurrent": true,
-      "url": "https://foiredetoulouse.com"
+      "url": "https://www.foiredetoulouse.com/infos-pratiques"
     },
     {
       "titre": {
@@ -2789,7 +2661,7 @@
       "date_debut": "2027-06-27",
       "date_fin": "2027-06-27",
       "recurrent": false,
-      "url": null
+      "url": "https://top14.lnr.fr/actualite/decouvrez-le-calendrier-2026-2027-de-top-14"
     },
     {
       "titre": {
@@ -2807,7 +2679,7 @@
       "date_debut": "2027-06-21",
       "date_fin": "2027-06-21",
       "recurrent": true,
-      "url": null
+      "url": "https://31.agendaculturel.fr/festival/fete-de-la-musique-toulouse.html"
     }
   ],
   "parcours": [
