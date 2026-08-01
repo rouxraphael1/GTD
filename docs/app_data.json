@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-07-31T06:30:20.182Z",
-  "date_reference": "2026-07-31",
+  "genere_le": "2026-08-01T06:14:54.401Z",
+  "date_reference": "2026-08-01",
   "personas": [
     {
       "code": "01",
@@ -3271,7 +3271,7 @@
         "Zenitude Toulouse Le Parc": 100,
         "Appart'City Toulouse Labège": 123,
         "Ibis Budget Toulouse Centre": 13,
-        "Courtyard by Marriott Toulouse": 84,
+        "Courtyard by Marriott Toulouse": 85,
         "Adagio Access Toulouse Jolimont": 13,
         "Hôtel Mercure Toulouse Sud Balma": 93,
         "Novotel Toulouse Aéroport": 97,
@@ -3338,7 +3338,7 @@
         "Hôtel Novotel Toulouse Aéroport": 96,
         "Appart'Hôtel Adagio Toulouse Centre Ramblas": 6,
         "Hôtel Le Patio Occitan": 152,
-        "Campanile Toulouse Purpan": 58,
+        "Campanile Toulouse Purpan": 59,
         "Hôtel Ibis Styles Toulouse Blagnac Aéroport": 105,
         "Hôtel Ibis Toulouse Blagnac Aéroport": 84,
         "Hôtel Campanile Toulouse Sud Labège Innopole": 110,
@@ -4371,7 +4371,7 @@
         "Hôtel Ibis Toulouse Gare Matabiau": 155,
         "Hôtel Ibis Styles Toulouse Nord Sesquières": 203,
         "Hôtel Ibis Budget Labège": 155,
-        "Hôtel de Bordeaux": 152,
+        "Hôtel de Bordeaux": 153,
         "Hôtel Le Capitole": 146,
         "Résidence Park Wilson Airport": 224,
         "Hôtel Ibis Styles Toulouse Canal du Midi": 119,
@@ -4432,7 +4432,7 @@
         "Hôtel Héliot": 147,
         "Hôtel Le Père Léon": 138,
         "Hôtel de Brienne": 153,
-        "Grand Hôtel de l'Opéra": 142,
+        "Grand Hôtel de l'Opéra": 143,
         "Hôtel le Trèfle": 147,
         "Hôtel Mercure Toulouse Centre": 157,
         "Novotel Toulouse Centre": 144,
@@ -5120,7 +5120,7 @@
         "Hôtel Ibis Styles Toulouse Blagnac Aéroport": 111,
         "Hôtel Ibis Toulouse Blagnac Aéroport": 90,
         "Hôtel Campanile Toulouse Sud Labège Innopole": 104,
-        "Hôtel Ibis Toulouse Purpan": 63,
+        "Hôtel Ibis Toulouse Purpan": 64,
         "Hôtel Ibis Styles Toulouse Cité de l'Espace": 64,
         "Appart'Hôtel Adagio Access Toulouse Saint-Cyprien": 20,
         "Hôtel Ibis Toulouse Université": 61,
@@ -5688,7 +5688,7 @@
         "Zenitude Toulouse Le Parc": 102,
         "Appart'City Toulouse Labège": 123,
         "Ibis Budget Toulouse Centre": 12,
-        "Courtyard by Marriott Toulouse": 86,
+        "Courtyard by Marriott Toulouse": 87,
         "Adagio Access Toulouse Jolimont": 11,
         "Hôtel Mercure Toulouse Sud Balma": 91,
         "Novotel Toulouse Aéroport": 99,
@@ -6340,5 +6340,5 @@
       }
     }
   ],
-  "marche_calcule_le": "2026-07-31T06:30:24.127Z"
+  "marche_calcule_le": "2026-08-01T06:14:58.491Z"
 }
