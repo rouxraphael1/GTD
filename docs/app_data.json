@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-08-25T04:08:52.845Z",
-  "date_reference": "2026-08-25",
+  "genere_le": "2026-08-26T04:10:29.820Z",
+  "date_reference": "2026-08-26",
   "personas": [
     {
       "code": "01",
@@ -6340,5 +6340,5 @@
       }
     }
   ],
-  "marche_calcule_le": "2026-08-25T04:08:57.063Z"
+  "marche_calcule_le": "2026-08-26T04:10:33.549Z"
 }
