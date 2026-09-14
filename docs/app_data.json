@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-09-13T08:29:43.628Z",
-  "date_reference": "2026-09-13",
+  "genere_le": "2026-09-14T09:12:00.025Z",
+  "date_reference": "2026-09-14",
   "personas": [
     {
       "code": "01",
@@ -5029,7 +5029,7 @@
         "Hôtel Mercure Toulouse Centre Wilson Capitole": 17,
         "Grand Hôtel d'Orléans": 28,
         "Campanile Toulouse Nord Sesquières": 94,
-        "Hôtel Courrier Sud": 79,
+        "Hôtel Courrier Sud": 80,
         "Eklo Toulouse": 49,
         "Nemea Appart'Hôtel Toulouse Saint-Martin": 91,
         "Hôtel Toulouse Sud": 71,
@@ -5040,7 +5040,7 @@
         "Hôtel le Trèfle": 22,
         "Hôtel Mercure Toulouse Centre": 33,
         "Novotel Toulouse Centre": 18,
-        "Ibis Toulouse Centre Gare": 17,
+        "Ibis Toulouse Centre Gare": 16,
         "Comfort Hôtel Toulouse Sud": 92,
         "Résidence Adagio Toulouse Centre": 19,
         "Zenitude Toulouse Le Parc": 105,
@@ -5168,7 +5168,7 @@
         "Hôtel Mercure Toulouse Centre": 26,
         "Novotel Toulouse Centre": 9,
         "Ibis Toulouse Centre Gare": 9,
-        "Comfort Hôtel Toulouse Sud": 103,
+        "Comfort Hôtel Toulouse Sud": 102,
         "Résidence Adagio Toulouse Centre": 9,
         "Zenitude Toulouse Le Parc": 103,
         "Appart'City Toulouse Labège": 119,
@@ -5686,7 +5686,7 @@
         "Comfort Hôtel Toulouse Sud": 105,
         "Résidence Adagio Toulouse Centre": 4,
         "Zenitude Toulouse Le Parc": 102,
-        "Appart'City Toulouse Labège": 123,
+        "Appart'City Toulouse Labège": 124,
         "Ibis Budget Toulouse Centre": 12,
         "Courtyard by Marriott Toulouse": 87,
         "Adagio Access Toulouse Jolimont": 11,
@@ -6340,5 +6340,5 @@
       }
     }
   ],
-  "marche_calcule_le": "2026-09-13T08:29:47.274Z"
+  "marche_calcule_le": "2026-09-14T09:12:04.351Z"
 }
