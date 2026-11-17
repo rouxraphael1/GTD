@@ -1,6 +1,6 @@
 {
-  "genere_le": "2026-11-16T11:55:17.972Z",
-  "date_reference": "2026-11-16",
+  "genere_le": "2026-11-17T12:19:15.285Z",
+  "date_reference": "2026-11-17",
   "personas": [
     {
       "code": "01",
@@ -4403,7 +4403,7 @@
         "Hôtel Ibis Toulouse Centre": 150,
         "Hôtel Mercure Toulouse Centre Saint-Georges": 147,
         "Hôtel Ibis Budget Colomiers": 196,
-        "Hôtel Restaurant Campanile Toulouse Sud Balma Cité de l'Espace": 136,
+        "Hôtel Restaurant Campanile Toulouse Sud Balma Cité de l'Espace": 137,
         "Holiday Inn Toulouse Airport": 226,
         "Hôtel Novotel Toulouse Centre Wilson": 143,
         "Octel Hôtel et Résidence": 185,
@@ -4425,7 +4425,7 @@
         "Hôtel Mercure Toulouse Centre Wilson Capitole": 143,
         "Grand Hôtel d'Orléans": 154,
         "Campanile Toulouse Nord Sesquières": 218,
-        "Hôtel Courrier Sud": 140,
+        "Hôtel Courrier Sud": 142,
         "Eklo Toulouse": 159,
         "Nemea Appart'Hôtel Toulouse Saint-Martin": 198,
         "Hôtel Toulouse Sud": 86,
@@ -4444,7 +4444,7 @@
         "Ibis Budget Toulouse Centre": 152,
         "Courtyard by Marriott Toulouse": 197,
         "Adagio Access Toulouse Jolimont": 139,
-        "Hôtel Mercure Toulouse Sud Balma": 136,
+        "Hôtel Mercure Toulouse Sud Balma": 137,
         "Novotel Toulouse Aéroport": 221,
         "Pullman Toulouse Airport": 210
       }
@@ -6340,5 +6340,5 @@
       }
     }
   ],
-  "marche_calcule_le": "2026-11-16T11:55:21.748Z"
+  "marche_calcule_le": "2026-11-17T12:19:28.834Z"
 }
